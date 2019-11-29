@@ -1,0 +1,93 @@
+.main-nav {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .main-nav {
+        display: flex;
+        width: 100vw;
+        background-color: $brand-color;
+        height: 56px;
+
+        .cards {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 20px;
+            list-style: none;
+
+            .card-item {
+                width: 113px;
+                height: 41px;
+                background-color: $light-bg-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-transform: uppercase;
+                    color: $brand-color;
+                    font-size: 12px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    letter-spacing: 0.14px;
+                }
+
+
+            }
+
+            .card-item-2 {
+                background-color: $brand-color;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        .search-bar {
+            width: 280px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: $white;
+            position: absolute;
+            right: 20px;
+            align-self: center;
+            display: flex;
+            align-items: center;
+
+            input.search {
+                width: 150px;
+                height: 22px;
+                font-size: 16px;
+                margin: 10px auto 11px 18px;
+                color: #b4b4b4;
+                letter-spacing: 0.19px;
+                border: 0px;
+
+                &:placeholder {
+                    color: #b4b4b4;
+                }
+            }
+
+            .Icon---Search {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                margin-right: 18px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .main-nav {
+        .cards {
+            margin-left: 66px;
+        }
+
+        .search-bar {
+            width: 485px;
+            right: 66px;
+        }
+    }
+}

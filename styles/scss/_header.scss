@@ -1,0 +1,117 @@
+header {
+    width: 100vw;
+    height: 56px;
+    background-color: $brand-color;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .ikona---lupa {
+        position: absolute;
+        right: 70px;
+    }
+
+    .ikona---hamburger {
+        position: absolute;
+        right: 20px;
+    }
+
+    .Logo-tablet,
+    .settings,
+    .mail,
+    .user,
+    .log-out,
+    .user-name {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    header {
+        background-color: #ac1419;
+
+        .logo,
+        .ikona---lupa,
+        .ikona---hamburger {
+            display: none;
+        }
+
+        .Logo-tablet,
+        .settings,
+        .mail,
+        .user,
+        .log-out {
+            display: flex;
+        }
+
+        .Logo-tablet {
+            margin-left: 20px;
+        }
+
+        .settings {
+            right: 197px;
+            position: absolute;
+        }
+
+        .mail {
+            right: 157px;
+            position: absolute;
+        }
+
+        .user {
+            position: absolute;
+            right: 121px;
+        }
+
+        .log-out {
+            position: absolute;
+            right: 20px;
+            text-transform: uppercase;
+            color: $white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    header {
+        .Logo-tablet {
+            display: none;
+        }
+
+        .logo {
+            display: flex;
+            margin-left: 66px;
+        }
+
+        .settings {
+            right: 420px;
+        }
+
+        .mail {
+            right: 380px;
+        }
+
+        .user {
+            right: 344px;
+        }
+
+        .user-name {
+            display: flex;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.14px;
+            position: absolute;
+            right: 201px;
+            color: $white;
+        }
+
+        .log-out {
+            right: 66px;
+        }
+    }
+}

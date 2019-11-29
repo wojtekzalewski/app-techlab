@@ -1,0 +1,400 @@
+body {
+    main {
+        .main-section {
+            .titles-row {
+                display: none;
+            }
+
+            .main-headers {
+                .main-headers-col-1 {
+                    h1 {
+                        font-size: 10px;
+                        letter-spacing: 1px;
+                        width: 151px;
+                        height: 12px;
+                        margin: 31px auto 2px 18px;
+                        text-transform: uppercase;
+                    }
+
+                    h2 {
+                        margin: 0px auto 2px 17px;
+                        font-size: 24px;
+                        font-weight: 900;
+                        letter-spacing: 0.29px;
+                        display: inline-block;
+                    }
+
+                    img {
+                        width: 19.6px;
+                        height: 16px;
+                        margin-left: 14px;
+                    }
+
+                    .count-number {
+                        margin: 0px auto 17px 18px;
+                        font-size: 10px;
+                        width: 199px;
+                        height: 12px;
+                        letter-spacing: 1px;
+                        color: #858585;
+                    }
+                }
+
+                .main-headers-col-2 {
+                    h3 {
+                        margin: 17px auto 0px 19px;
+                        font-size: 10px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    .account-founds {
+                        margin: 0px auto 16.5px 19px;
+
+                        .account {
+                            font-size: 18px;
+                            color: $second-brand-color;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+
+            .line {
+                margin: 0px 20px 0px 19px;
+                background-color: #dbdbdb;
+                height: 1px;
+                width: auto;
+                display: block;
+            }
+
+            .first-line {
+                margin: 0px 20px 23.5px 19px;
+            }
+
+            .main-buttons {
+                display: flex;
+                flex-direction: column;
+
+                .new-paymant {
+                    margin: auto 21px 25px 20px;
+                    background-color: $brand-color;
+                    color: #fff;
+                    border: 1px solid $brand-color;
+                    @extend %main-buttons;
+                }
+
+                .history {
+                    margin: 0px 22px 24.5px 20px;
+                    background-color: #f4f4f4;
+                    color: $brand-color;
+                    border: 1px solid #f4f4f4;
+                    @extend %main-buttons;
+                }
+            }
+
+            .transaction {
+                display: flex;
+                margin: 17.5px 23.5px 14.5px 30.5px;
+                justify-content: space-between;
+
+                .date-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .data-arrow {
+                        width: 13px;
+                        height: 13px;
+                        object-fit: contain;
+                        margin: 0px;
+                    }
+
+                    .data {
+                        font-size: 14px;
+                        color: #858585;
+                    }
+                }
+
+                .data-arrow-tablet {
+                    display: none;
+                }
+
+                .name-box {
+                    display: flex;
+                    flex-direction: column;
+                    // margin-left: -50px;
+
+                    .full-name {
+                        font-size: 14px;
+                        font-weight: 900;
+                        color: #000000;
+                    }
+
+                    .subscribe-transaction {
+                        font-size: 12px;
+                        color: #858585;
+                    }
+                }
+
+                .category-section {
+                    display: none;
+                }
+
+                .price-transation {
+                    font-size: 14px;
+                    font-weight: 900;
+                    color: #000;
+                    width: 100px;
+                    text-align: right;
+                }
+            }
+
+            .more {
+                text-transform: uppercase;
+                color: $brand-color;
+                font-size: 14px;
+                line-height: 15px;
+                font-weight: 600;
+                width: 103px;
+                height: 15px;
+                margin: 12.5px auto 15.3px 18px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    body {
+        background-color: #f4f4f4;
+
+        main {
+            .main-section {
+                width: auto;
+                height: 500px;
+                margin: 40px 20px 231.5px 20px;
+                background-color: #fff;
+                padding-top: 1px;
+
+                .titles-row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0px 24px 0px 36px;
+                    margin: 0px auto 4.5px auto;
+
+                    div {
+                        color: #858585;
+                        font-size: 10px;
+                        line-height: 15px;
+                        letter-spacing: 0.12px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+
+                    .type {
+                        transform: translateX(-51px);
+                    }
+
+                    .receiver-sender {
+                        transform: translateX(-101px);
+                    }
+
+                    .category {
+                        transform: translateX(-100px);
+                    }
+                }
+
+                .main-headers {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .main-headers-col-1 {
+                        display: flex;
+                        flex-direction: column;
+
+                        h1 {
+                            margin: 21px auto 0px 22px;
+                            color: $second-brand-color;
+                        }
+
+                        h2 {
+                            margin: 0px auto 0px 22px;
+                        }
+
+                        .count-number {
+                            margin: 0px auto 16px 22px;
+                        }
+                    }
+
+                    .main-headers-col-2 {
+                        display: flex;
+                        flex-direction: column;
+
+                        h2 {
+                            font-size: 26px;
+                        }
+
+                        h3 {
+                            margin: 22px 20px 0px auto;
+                        }
+
+                        .account-founds {
+                            margin-right: 22px;
+
+                            .account {
+                                font-size: 25px;
+                                ;
+                            }
+                        }
+                    }
+                }
+
+                .main-buttons {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 16px auto 24px 20px;
+
+                    .new-paymant,
+                    .history {
+                        width: 210px;
+                        height: 50px;
+                    }
+
+                    .new-paymant {
+                        margin: 0px 21px 0px 0px;
+                    }
+
+                    .history {
+                        margin: 0px;
+                    }
+                }
+
+                .first-line {
+                    display: none;
+                }
+
+                .transaction {
+                    height: 15px;
+                    margin: 17.5px 23.5px 23.5px 33px;
+
+                    .date-box {
+                        flex-direction: row-reverse;
+
+                        .data-arrow {
+                            display: none;
+                        }
+                    }
+
+                    .name-box {
+                        margin-top: -8px;
+                        height: 30px;
+                        transform: translateX(-77px);
+                        margin-left: 0px;
+
+                        .subscribe-transaction {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .data-arrow-tablet {
+                        display: flex;
+                        width: 13px;
+                        height: 13px;
+                        transform: translateX(-41px);
+                    }
+
+                    .category-section {
+                        display: flex;
+                        text-transform: uppercase;
+                        color: #3cae64;
+                        font-size: 10px;
+                        letter-spacing: 0.12px;
+                        transform: translateX(-21px);
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                    margin: 0px;
+                }
+
+                .more {
+                    margin: 27.5px auto 35px 32px;
+                }
+            }
+        }
+    }
+}
+
+aside {
+    display: none;
+}
+
+@media(min-width: 1024px) {
+    body {
+        main {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: 40px;
+            padding: 0px 66px;
+
+            .main-section {
+                margin: 39px 0px 232.5px 0px;
+                grid-column: 1 / 9;
+            }
+
+            aside {
+                display: table-column-group;
+                grid-column: 9 / -1;
+
+                .free-founds-box {
+                    margin: 39px 0px 41px 0px;
+                    height: 180px;
+                    background-color: #4c92e0;
+                    color: $white;
+
+                    h4 {
+                        font-size: 22px;
+                        margin: 0px auto 17px 20px;
+                        padding-top: 20px;
+                    }
+
+                    .free-founds-discription {
+                        font-size: 14px;
+                        width: auto;
+                        margin: 0px 72px 22px 20px;
+                    }
+
+                    .call {
+                        width: 117px;
+                        height: 17px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        margin: 0px 126px 26px 20px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                    }
+                }
+
+                .analize-box {
+                    background-color: $white;
+                    height: 385px;
+                    
+
+                    h5 {
+                        font-size: 16px;
+                        color: #000;
+                        letter-spacing: 0.19px;
+                        padding-top: 14px;
+                        padding-left: 20px;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+}

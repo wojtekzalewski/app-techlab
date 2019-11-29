@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+
+:root {
+    --white: #ffffff;
+    --brand-color: #d71920;
+    --second-brand-color: #2f3234;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    width: 100vw;
+    height: 56px;
+    background-color: var(--brand-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.ikona---lupa {
+    position: absolute;
+    right: 70px;
+}
+
+.ikona---hamburger {
+    position: absolute;
+    right: 20px;
+}
+
+.Logo-tablet,
+.settings,
+.mail,
+.user,
+.log-out,
+.main-nav,
+.user-name {
+    display: none;
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    background-color: var(--second-brand-color);
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer-links-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 35px;
+}
+
+.footer-links-box .footer-link-item a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    font-size: 14px;
+    height: 17px;
+    color: var(--white);
+}
+
+.footer-content {
+    margin: 28px 15px 25px 15px;
+    font-size: 9px;
+    color: #747474;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+
+    .logo,
+    .ikona---lupa,
+    .ikona---hamburger {
+        display: none;
+    }
+
+    .Logo-tablet,
+    .settings,
+    .mail,
+    .user,
+    .log-out {
+        display: flex;
+    }
+
+    header {
+        background-color: #ac1419;
+    }
+
+    .Logo-tablet {
+        margin-left: 20px;
+    }
+
+    .settings {
+        right: 197px;
+        position: absolute;
+    }
+
+    .mail {
+        right: 157px;
+        position: absolute;
+    }
+
+    .user {
+        position: absolute;
+        right: 121px;
+    }
+
+    .log-out {
+        position: absolute;
+        right: 20px;
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .main-nav {
+        display: flex;
+        width: 100vw;
+        background-color: var(--brand-color);
+        height: 56px;
+    }
+
+    .cards {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 20px;
+        list-style: none;
+    }
+
+    .card-item {
+        width: 113px;
+        height: 41px;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card-item a {
+        text-transform: uppercase;
+        color: var(--brand-color);
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 0.14px;
+    }
+
+    .card-item-2 {
+        background-color: var(--brand-color);
+    }
+
+    .cards .card-item-2 a {
+        color: var(--white);
+    }
+
+    .search-bar {
+        width: 280px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: var(--white);
+        position: absolute;
+        right: 20px;
+        align-self: center;
+        display: flex;
+        align-items: center;
+    }
+
+    input.search {
+        width: 150px;
+        height: 22px;
+        font-size: 16px;
+        margin: 10px auto 11px 18px;
+        color: #b4b4b4;
+        letter-spacing: 0.19px;
+        border: 0px;
+    }
+    input.search::placeholder {
+        color: #b4b4b4;
+    }
+
+    .Icon---Search {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin-right: 18px;
+    }
+
+    footer {
+        height: 140px;
+        background-color: var(--second-brand-color);
+    }
+    .footer-links-box{
+        flex-direction: row;
+        margin: 30px 30px 15px 30px;
+        justify-content: space-between;
+    }
+    .footer-copyright{
+        margin-top: 0px;
+    }
+    .footer-content{
+        margin: 15px 30px 13px 30px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .Logo-tablet{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        margin-left: 66px;
+    }
+    .settings{
+        right: 420px;
+    }
+    .mail{
+        right: 380px;
+    }
+    .user{
+        right: 344px;
+    }
+    .user-name{
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.14px;
+        position: absolute;
+        right: 201px;
+        color: var(--white);
+    }
+    .log-out{
+        right: 66px;
+    }
+    .cards{
+        margin-left: 66px;
+    }
+    .search-bar{
+        width: 485px;
+        right: 66px;
+    }
+    .footer{
+        height: 140px;
+    }
+    .footer-links-desktop-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 66px 38px 66px;
+        height: 17px;
+        font-size: 14px;
+    }
+    .footer-links-box{
+        margin: 0px;
+        width: 630px;
+    }
+    .footer-content{
+        margin: 0px 100px 33px 100px;
+    }
+}
