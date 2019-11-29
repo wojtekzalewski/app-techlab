@@ -36,11 +36,11 @@ header {
 header .logo {
   margin-left: 20px;
 }
-header .ikona---lupa {
+header .ikona-lupa {
   position: absolute;
   right: 70px;
 }
-header .ikona---hamburger {
+header .ikona-hamburger {
   position: absolute;
   right: 20px;
 }
@@ -58,8 +58,8 @@ header .user-name {
     background-color: #ac1419;
   }
   header .logo,
-  header .ikona---lupa,
-  header .ikona---hamburger {
+  header .ikona-lupa,
+  header .ikona-hamburger {
     display: none;
   }
   header .Logo-tablet,
