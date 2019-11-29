@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (min-width:768px) {
+@media (min-width:$tablet-width) {
     .main-nav {
         display: flex;
         width: 100vw;
@@ -31,8 +31,6 @@
                     font-weight: bold;
                     letter-spacing: 0.14px;
                 }
-
-
             }
 
             .card-item-2 {
@@ -69,7 +67,7 @@
                 }
             }
 
-            .Icon---Search {
+            .icon-search {
                 width: 20px;
                 height: 20px;
                 object-fit: contain;
@@ -79,7 +77,7 @@
     }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: $desktop-width) {
     .main-nav {
         .cards {
             margin-left: 66px;

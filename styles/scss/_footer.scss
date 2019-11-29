@@ -43,7 +43,7 @@ footer {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:$tablet-width) {
     footer {
         height: 140px;
 
@@ -76,7 +76,7 @@ footer {
     }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: $desktop-width) {
     footer {
         height: 140px;
 
