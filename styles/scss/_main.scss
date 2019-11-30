@@ -8,8 +8,7 @@ body {
             .main-headers {
                 .main-headers-col-1 {
                     h1 {
-                        font-size: 10px;
-                        letter-spacing: 1px;
+                        @extend %text-style-widely;
                         width: 151px;
                         height: 12px;
                         margin: 31px auto 2px 18px;
@@ -32,19 +31,17 @@ body {
 
                     .count-number {
                         margin: 0px auto 17px 18px;
-                        font-size: 10px;
                         width: 199px;
                         height: 12px;
-                        letter-spacing: 1px;
                         color: #858585;
+                        @extend %text-style-widely;
                     }
                 }
 
                 .main-headers-col-2 {
                     h3 {
                         margin: 17px auto 0px 19px;
-                        font-size: 10px;
-                        letter-spacing: 1px;
+                        @extend %text-style-widely;
                         text-transform: uppercase;
                     }
 

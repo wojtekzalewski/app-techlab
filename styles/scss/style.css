@@ -10,6 +10,11 @@ body main .main-section .main-buttons .new-paymant, body main .main-section .mai
   letter-spacing: 0.14px;
 }
 
+body main .main-section .main-headers .main-headers-col-1 h1, body main .main-section .main-headers .main-headers-col-1 .count-number, body main .main-section .main-headers .main-headers-col-2 h3 {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -229,8 +234,6 @@ body main .main-section .titles-row {
   display: none;
 }
 body main .main-section .main-headers .main-headers-col-1 h1 {
-  font-size: 10px;
-  letter-spacing: 1px;
   width: 151px;
   height: 12px;
   margin: 31px auto 2px 18px;
@@ -250,16 +253,12 @@ body main .main-section .main-headers .main-headers-col-1 img {
 }
 body main .main-section .main-headers .main-headers-col-1 .count-number {
   margin: 0px auto 17px 18px;
-  font-size: 10px;
   width: 199px;
   height: 12px;
-  letter-spacing: 1px;
   color: #858585;
 }
 body main .main-section .main-headers .main-headers-col-2 h3 {
   margin: 17px auto 0px 19px;
-  font-size: 10px;
-  letter-spacing: 1px;
   text-transform: uppercase;
 }
 body main .main-section .main-headers .main-headers-col-2 .account-founds {
