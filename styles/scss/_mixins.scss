@@ -1,0 +1,30 @@
+@mixin main-buttons {
+    background-color: $brand-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: auto;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.14px;
+}
+
+@mixin text-style-widely {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@mixin text-style-narrow {
+    font-size: 10px;
+    letter-spacing: .12px;
+}
+
+@mixin text-style-bold {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}

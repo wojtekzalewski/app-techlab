@@ -8,7 +8,7 @@ body {
             .main-headers {
                 .main-headers-col-1 {
                     h1 {
-                        @extend %text-style-widely;
+                        @include text-style-widely;
                         width: 151px;
                         height: 12px;
                         margin: 31px auto 2px 18px;
@@ -34,14 +34,14 @@ body {
                         width: 199px;
                         height: 12px;
                         color: #858585;
-                        @extend %text-style-widely;
+                        @include text-style-widely;
                     }
                 }
 
                 .main-headers-col-2 {
                     h3 {
                         margin: 17px auto 0px 19px;
-                        @extend %text-style-widely;
+                        @include text-style-widely;
                         text-transform: uppercase;
                     }
 
@@ -70,23 +70,22 @@ body {
             }
 
             .main-buttons {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
 
                 .new-paymant {
                     margin: auto 21px 25px 20px;
                     background-color: $brand-color;
                     color: #fff;
                     border: 1px solid $brand-color;
-                    @extend %main-buttons;
+                    @include main-buttons;
                 }
 
                 .history {
+                    @include main-buttons;
                     margin: 0px 22px 24.5px 20px;
                     background-color: #f4f4f4;
                     color: $brand-color;
                     border: 1px solid #f4f4f4;
-                    @extend %main-buttons;
                 }
             }
 
@@ -96,8 +95,7 @@ body {
                 justify-content: space-between;
 
                 .date-box {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-column;
                     align-items: center;
                     justify-content: center;
 
@@ -119,12 +117,10 @@ body {
                 }
 
                 .name-box {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-column;
 
                     .full-name {
-                        font-size: 14px;
-                        font-weight: 900;
+                        @include text-style-bold;
                         color: #000000;
                     }
 
@@ -139,8 +135,7 @@ body {
                 }
 
                 .price-transation {
-                    font-size: 14px;
-                    font-weight: 900;
+                    @include text-style-bold;
                     color: #000;
                     width: 100px;
                     text-align: right;
@@ -176,18 +171,16 @@ body {
 
                 .titles-row {
                     display: flex;
-                    flex-direction: row;
                     justify-content: space-between;
                     padding: 0px 24px 0px 36px;
                     margin: 0px auto 4.5px auto;
 
                     div {
                         color: #858585;
-                        font-size: 10px;
                         line-height: 15px;
-                        letter-spacing: 0.12px;
                         text-align: center;
                         text-transform: uppercase;
+                        @include text-style-narrow;
                     }
 
                     .type {
@@ -205,12 +198,10 @@ body {
 
                 .main-headers {
                     display: flex;
-                    flex-direction: row;
                     justify-content: space-between;
 
                     .main-headers-col-1 {
-                        display: flex;
-                        flex-direction: column;
+                        @include flex-column;
 
                         h1 {
                             margin: 21px auto 0px 22px;
@@ -227,8 +218,7 @@ body {
                     }
 
                     .main-headers-col-2 {
-                        display: flex;
-                        flex-direction: column;
+                        @include flex-column;
 
                         h2 {
                             font-size: 26px;
@@ -307,8 +297,7 @@ body {
                         display: flex;
                         text-transform: uppercase;
                         color: #3cae64;
-                        font-size: 10px;
-                        letter-spacing: 0.12px;
+                        @include text-style-narrow;
                         transform: translateX(-21px);
                     }
                 }
@@ -368,11 +357,10 @@ aside {
                     .call {
                         width: 117px;
                         height: 17px;
-                        font-size: 14px;
+                        @include text-style-bold;
                         cursor: pointer;
                         margin: 0px 126px 26px 20px;
                         text-transform: uppercase;
-                        font-weight: 900;
                     }
                 }
 
