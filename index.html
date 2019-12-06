@@ -166,7 +166,74 @@
             </div>
         </aside>
     </main>
+
+    <!-- transferFormPopup -->
+
+    <!-- transferFormPopup -->
+
     <!-- footer -->
+
+    <!-- transfer-form -->
+
+
+    <section class="transfer-form-popup none">
+        <form action="" id="transfer-form">
+            <div class="header-form">
+                <h6>Przelew krajowy</h6>
+                <img src="img/a.png" srcset="img/a@2x.png 2x,
+             img/a@3x.png 3x" class="close-popup-transfer-form">
+            </div>
+            <div class="main-section-transfer-form">
+                <label for="select-account">z rachunku</label>
+                <div class="select-account-box">
+                    <div class="account-box">
+                        <div class="main-account">Moje Konto Przekorzystne</div>
+                        <div class="amount-account">12 734,56 PLN</div>
+                    </div>
+                    <img src="img/arrow.png" srcset="img/arrow@2x.png 2x,
+                        img/arrow@3x.png 3x" class="arrow-account">
+                </div>
+                <label for="account-number">na rachunek</label>
+                <div class="account-number-box">
+                    <input type="text" placeholder="Wpisz rachunek odbiorcy" id="account-number"">
+                </div>
+                <div class=" empty-account-number">
+                    <p class="enter-account-number">Wpisz kwotę
+                    </p>
+                </div>
+                <label for="transfer-amount">kwota przelewu</label>
+                <div class="transfer-amount-box">
+                    <input id="transfer-amount" type="text" placeholder="12 040,37">
+                    <span class="currency-transfer-amount">PLN</span>
+                </div>
+                <label for="address-recipient">adres odbiorcy (opcjonalnie)</label>
+                <div class="address-recipient-box">
+                    <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy">
+                </div>
+                <label for="title-transfer">tytułem</label>
+
+                <div class="title-transfer-box">
+                    <input type="text" id="title-transfer" placeholder="Placeholder">
+                </div>
+            </div>
+            <div class="save-order-box">
+                <input type="checkbox" id="save-order"><label for="save-order">Zapisz zlecenie stałe</label>
+            </div>
+            <div class="order-name-container">
+                <label for="order-name">nazwa zlecenia</label>
+                <div class="order-name-box">
+                    <input type="text" placeholder="Placeholder" id="order-name">
+                </div>
+
+            </div>
+        </form>
+        <div class="next-button-box">
+            <img src="img/110.png" srcset="img/110@2x.png 2x,
+             img/110@3x.png 3x" class="next-arrow">
+            <span class="next">dalej</span>
+        </div>
+    </section>
+    <!-- transfer-form -->
     <footer>
         <div class="footer-links-desktop-row">
             <div class="tablet-footer-line"></div>
@@ -185,10 +252,13 @@
             wysokość kapitału zakładowego i kapitału wpłaconego:
             262 470 034 zł.
         </p>
+
+
     </footer>
     <!-- footer -->
 
-    <!-- <script src="scripts/app.js"></script> -->
+    <!-- <script src="./scripts/app.js"></script> -->
+    <script src="./scripts/form.js"></script>
 </body>
 
 </html>

@@ -721,3 +721,294 @@ footer .footer-content {
     margin: 0px 100px 33px 100px;
   }
 }
+.none {
+  display: none;
+}
+
+.appear {
+  display: block;
+}
+
+.transfer-form-popup {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  background-color: #fff;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.transfer-form-popup #transfer-form .header-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f4f4f4;
+  height: 60px;
+  width: 100%;
+}
+.transfer-form-popup #transfer-form .header-form h6 {
+  font-size: 16px;
+  font-weight: 900;
+  height: 19px;
+  margin-left: 20px;
+}
+.transfer-form-popup #transfer-form .header-form .close-popup-transfer-form {
+  width: 18.2px;
+  height: 18.2px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 20px;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box {
+  width: auto;
+  margin: 9px 20px 0px 20px;
+  border-radius: 4px;
+  border: solid 1px #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box .arrow-account {
+  cursor: pointer;
+  width: 21px;
+  height: 11px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 21px 20px 19px auto;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box .main-account {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 7px auto 0px 21px;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box .amount-account {
+  margin: 0px auto 8px 21px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #858585;
+  height: 13px;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box {
+  width: auto;
+  margin: 9px 20px 0px 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: solid 1px #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box #account-number {
+  width: 100%;
+  margin: 13px 21px 18px 21px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #858585;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .empty-account-number {
+  width: auto;
+  margin: 0px 20px 0px 20px;
+  height: 39px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: solid 1px #ac1419;
+  background-color: #ac1419;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .empty-account-number .enter-account-number {
+  margin: 10px auto 11px 21px;
+  height: 19px;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
+  width: auto;
+  margin: 9px 20px 0px 20px;
+  border-radius: 4px;
+  border: solid 1px #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box #transfer-amount {
+  width: 73px;
+  margin: 13px 174px 18px 21px;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #2f3234;
+  border: 0px;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box .currency-transfer-amount {
+  margin: 13px 21px 18px auto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box {
+  width: auto;
+  margin: 9px 20px 0px 20px;
+  border-radius: 4px;
+  border: solid 1px #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box #address-recipient {
+  width: 164px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #858585;
+  border: 0px;
+  margin: 13px auto 18px 21px;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box {
+  width: auto;
+  margin: 9px 20px 0px 20px;
+  border-radius: 4px;
+  border: solid 1px #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box #title-transfer {
+  height: 19px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #858585;
+  margin: 13px auto 18px 21px;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form label {
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #979797;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+  color: #2f3234;
+  margin: 30px auto 9px 20px;
+}
+.transfer-form-popup #transfer-form .save-order-box {
+  margin: 30px 20px 15px 20px;
+  width: auto;
+}
+.transfer-form-popup #transfer-form .save-order-box label[for=save-order] {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2f3234;
+}
+.transfer-form-popup #transfer-form .order-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 19px auto 201px 20px;
+}
+.transfer-form-popup #transfer-form .order-name-container label[for=order-name] {
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #979797;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+  color: #2f3234;
+}
+.transfer-form-popup #transfer-form .order-name-container .order-name-box {
+  width: auto;
+  margin: 9px 20px 0px 0px;
+  border-radius: 4px;
+  border: solid 1px #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.transfer-form-popup #transfer-form .order-name-container #order-name {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #858585;
+  margin: 13px auto 18px 21px;
+}
+.transfer-form-popup .next-button-box {
+  cursor: pointer;
+  width: 104px;
+  height: 89px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: #d71920;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+.transfer-form-popup .next-button-box .next-arrow {
+  width: 19.6px;
+  height: 16px;
+  color: #fff;
+  margin: 27px 40px 5px 44px;
+}
+.transfer-form-popup .next-button-box .next {
+  text-transform: uppercase;
+  margin: 0px 27px 25px 33px;
+  width: 44px;
+  height: 16px;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #fff;
+}

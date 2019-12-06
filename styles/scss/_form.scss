@@ -1,0 +1,293 @@
+.none {
+    display: none;
+}
+
+.appear {
+    display: block;
+}
+
+
+
+.transfer-form-popup {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+    transition: all 1s linear;
+
+    #transfer-form {
+
+        .header-form {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f4f4f4;
+            height: 60px;
+            width: 100%;
+
+            h6 {
+                font-size: 16px;
+                font-weight: 900;
+                height: 19px;
+                margin-left: 20px;
+            }
+
+            .close-popup-transfer-form {
+                width: 18.2px;
+                height: 18.2px;
+                object-fit: contain;
+                margin-right: 20px;
+            }
+
+        }
+
+        .main-section-transfer-form {
+            display: flex;
+            flex-direction: column;
+
+            .select-account-box {
+                width: auto;
+                margin: 9px 20px 0px 20px;
+                border-radius: 4px;
+                border: solid 1px #b4b4b4;
+                display: flex;
+
+                .arrow-account {
+                    cursor: pointer;
+                    width: 21px;
+                    height: 11px;
+                    object-fit: contain;
+                    margin: 21px 20px 19px auto;
+                }
+
+                .main-account {
+                    font-size: 18px;
+                    font-weight: 900;
+                    margin: 7px auto 0px 21px;
+                }
+
+                .amount-account {
+                    margin: 0px auto 8px 21px;
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                    color: #858585;
+                    height: 13px;
+                }
+            }
+
+            .account-number-box {
+                width: auto;
+                margin: 9px 20px 0px 20px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border: solid 1px #b4b4b4;
+                display: flex;
+
+                #account-number {
+                    width: 100%;
+                    margin: 13px 21px 18px 21px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #858585;
+                }
+            }
+
+            .empty-account-number {
+                width: auto;
+                margin: 0px 20px 0px 20px;
+                height: 39px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border: solid 1px #ac1419;
+                background-color: #ac1419;
+                display: flex;
+                align-items: center;
+
+                .enter-account-number {
+                    margin: 10px auto 11px 21px;
+                    height: 19px;
+                    font-size: 16px;
+                    // font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $white;
+                }
+            }
+
+            .transfer-amount-box {
+                width: auto;
+                margin: 9px 20px 0px 20px;
+                border-radius: 4px;
+                border: solid 1px #b4b4b4;
+                display: flex;
+
+                #transfer-amount {
+                    width: 73px;
+                    margin: 13px 174px 18px 21px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    letter-spacing: normal;
+                    color: $second-brand-color;
+                    border: 0px;
+                }
+
+                .currency-transfer-amount {
+                    margin: 13px 21px 18px auto;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                }
+            }
+
+            .address-recipient-box {
+                width: auto;
+                margin: 9px 20px 0px 20px;
+                border-radius: 4px;
+                border: solid 1px #b4b4b4;
+                display: flex;
+
+                #address-recipient {
+                    width: 164px;
+                    height: 19px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #858585;
+                    border: 0px;
+                    margin: 13px auto 18px 21px;
+                }
+            }
+
+            .title-transfer-box {
+                width: auto;
+                margin: 9px 20px 0px 20px;
+                border-radius: 4px;
+                border: solid 1px #b4b4b4;
+                display: flex;
+
+                #title-transfer {
+                    height: 19px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #858585;
+                    margin: 13px auto 18px 21px;
+                }
+            }
+
+            label {
+                text-transform: uppercase;
+                -webkit-text-stroke: 1px #979797;
+                font-size: 11px;
+                letter-spacing: 1.1px;
+                color: $second-brand-color;
+                margin: 30px auto 9px 20px;
+            }
+        }
+
+
+
+        .save-order-box {
+            margin: 30px 20px 15px 20px;
+            width: auto;
+
+            #save-order {}
+
+            label[for=save-order] {
+                margin-left: 20px;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $second-brand-color;
+            }
+        }
+
+        .order-name-container {
+            display: flex;
+            flex-direction: column;
+            margin: 19px auto 201px 20px;
+
+            label[for=order-name] {
+                text-transform: uppercase;
+                -webkit-text-stroke: 1px #979797;
+                font-size: 11px;
+                letter-spacing: 1.1px;
+                color: $second-brand-color;
+
+            }
+
+            .order-name-box {
+                width: auto;
+                margin: 9px 20px 0px 0px;
+                border-radius: 4px;
+                border: solid 1px #b4b4b4;
+                display: flex;
+            }
+
+            #order-name {
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #858585;
+                margin: 13px auto 18px 21px;
+            }
+        }
+    }
+
+    .next-button-box {
+        cursor: pointer;
+        width: 104px;
+        height: 89px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        background-color: $brand-color;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        .next-arrow {
+            width: 19.6px;
+            height: 16px;
+            color: $white;
+            margin: 27px 40px 5px 44px;
+        }
+
+        .next {
+            text-transform: uppercase;
+            margin: 0px 27px 25px 33px;
+            width: 44px;
+            height: 16px;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: $white;
+
+        }
+    }
+}
