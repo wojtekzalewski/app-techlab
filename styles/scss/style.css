@@ -824,7 +824,7 @@ footer .footer-content {
   letter-spacing: normal;
   color: #858585;
 }
-.transfer-form-popup #transfer-form .main-section-transfer-form .empty-account-number {
+.transfer-form-popup #transfer-form .main-section-transfer-form .alert-empty-account-number {
   width: auto;
   margin: 0px 20px 0px 20px;
   height: 39px;
@@ -839,7 +839,7 @@ footer .footer-content {
       -ms-flex-align: center;
           align-items: center;
 }
-.transfer-form-popup #transfer-form .main-section-transfer-form .empty-account-number .enter-account-number {
+.transfer-form-popup #transfer-form .main-section-transfer-form .alert-empty-account-number .enter-account-number {
   margin: 10px auto 11px 21px;
   height: 19px;
   font-size: 16px;
@@ -860,7 +860,7 @@ footer .footer-content {
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box #transfer-amount {
   width: 73px;
-  margin: 13px 174px 18px 21px;
+  margin: 13px auto 18px 21px;
   font-size: 16px;
   font-weight: normal;
   letter-spacing: normal;
@@ -976,7 +976,7 @@ footer .footer-content {
   color: #858585;
   margin: 13px auto 18px 21px;
 }
-.transfer-form-popup .next-button-box {
+.transfer-form-popup #transfer-form .next-button-box {
   cursor: pointer;
   width: 104px;
   height: 89px;
@@ -993,13 +993,13 @@ footer .footer-content {
           flex-direction: column;
   margin: auto;
 }
-.transfer-form-popup .next-button-box .next-arrow {
+.transfer-form-popup #transfer-form .next-button-box .next-arrow {
   width: 19.6px;
   height: 16px;
   color: #fff;
   margin: 27px 40px 5px 44px;
 }
-.transfer-form-popup .next-button-box .next {
+.transfer-form-popup #transfer-form .next-button-box .next {
   text-transform: uppercase;
   margin: 0px 27px 25px 33px;
   width: 44px;
@@ -1011,4 +1011,12 @@ footer .footer-content {
   line-height: normal;
   letter-spacing: 1px;
   color: #fff;
+}
+
+.alert-display {
+  visibility: visible;
+}
+
+.alert-hidden {
+  visibility: hidden;
 }

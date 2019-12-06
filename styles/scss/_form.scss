@@ -98,7 +98,7 @@
                 }
             }
 
-            .empty-account-number {
+            .alert-empty-account-number {
                 width: auto;
                 margin: 0px 20px 0px 20px;
                 height: 39px;
@@ -131,7 +131,7 @@
 
                 #transfer-amount {
                     width: 73px;
-                    margin: 13px 174px 18px 21px;
+                    margin: 13px auto 18px 21px;
                     font-size: 16px;
                     font-weight: normal;
                     letter-spacing: normal;
@@ -255,39 +255,49 @@
                 margin: 13px auto 18px 21px;
             }
         }
+
+        .next-button-box {
+            cursor: pointer;
+            width: 104px;
+            height: 89px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+            background-color: $brand-color;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+    
+            .next-arrow {
+                width: 19.6px;
+                height: 16px;
+                color: $white;
+                margin: 27px 40px 5px 44px;
+            }
+    
+            .next {
+                text-transform: uppercase;
+                margin: 0px 27px 25px 33px;
+                width: 44px;
+                height: 16px;
+                font-size: 13px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: $white;
+    
+            }
+        }
     }
 
-    .next-button-box {
-        cursor: pointer;
-        width: 104px;
-        height: 89px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-        background-color: $brand-color;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
+    
+}
 
-        .next-arrow {
-            width: 19.6px;
-            height: 16px;
-            color: $white;
-            margin: 27px 40px 5px 44px;
-        }
+.alert-display {
+    visibility: visible;
+}
 
-        .next {
-            text-transform: uppercase;
-            margin: 0px 27px 25px 33px;
-            width: 44px;
-            height: 16px;
-            font-size: 13px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: 1px;
-            color: $white;
-
-        }
-    }
+.alert-hidden {
+    visibility: hidden;
 }
