@@ -111,6 +111,7 @@ class Validator {
 
 	}
 
+
 	customValidation(inputElementObj) {
 		if (inputElementObj.regexp.test(inputElementObj.selector.value)) {
 			// inputElementObj.selector.classList.contains("alert-display") && inputElementObj.selector.classList.remove("alert-display");
@@ -137,6 +138,8 @@ class Validator {
 function validatorObject() {
 	return new Validator();
 }
+
+let myValidator = new Validator();
 
 document.addEventListener("DOMContentLoaded", function () {
 			const transferBtn = document.querySelector(".new-paymant");
@@ -236,13 +239,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				element.setInputListener(customValidator.customValidation);
 			});
 
-
-
-
-
-
-
-
 				// "account-number",  /^(\d{2}-\d{4}-\d{4}-\d{4}-\d{4}-\d{4}-\d{4})$/
 				//   let transferForm = document.querySelector('#transfer-form');
 				//   transferForm.addEventListener("submit", function (e) {
@@ -283,3 +279,19 @@ document.addEventListener("DOMContentLoaded", function () {
 				//     pushToSubmitArray.push(this);
 				//   }
 			})
+
+				let data = new FormData();
+				data.append(name, "dupa")
+				let testVariable = "name=dupa";
+				fetch(`http://localhost:3001/rest/v1/products/postForm`, {
+						method: 'POST',
+						mode: 'cors',
+						body: data
+				}).then(response=>{
+					console.log(response)
+					if (response.status === 200) {
+					response.json().then(dupa => {
+						console.log(dupa)
+					})
+					}
+			});
