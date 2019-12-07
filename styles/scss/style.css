@@ -992,6 +992,12 @@ footer .footer-content {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .transfer-form-popup #transfer-form .next-button-box .next-arrow {
   width: 19.6px;
