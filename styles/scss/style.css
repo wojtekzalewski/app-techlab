@@ -598,19 +598,20 @@ aside {
   }
   body main aside .free-founds-box {
     margin: 39px 0px 41px 0px;
-    height: 180px;
+    height: 209.7px;
     background-color: #4c92e0;
     color: #fff;
   }
   body main aside .free-founds-box h4 {
     font-size: 22px;
-    margin: 0px auto 17px 20px;
-    padding-top: 20px;
+    margin: 0px auto 21px 20px;
+    padding-top: 18.8px;
   }
   body main aside .free-founds-box .free-founds-discription {
     font-size: 14px;
     width: auto;
     margin: 0px 72px 22px 20px;
+    height: 60px;
   }
   body main aside .free-founds-box .free-founds-bottom-row {
     display: -webkit-box;

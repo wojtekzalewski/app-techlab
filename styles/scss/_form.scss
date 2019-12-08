@@ -381,8 +381,6 @@
         }
 
         #transfer-form {
-
-
             .main-section-transfer-form {
                 .address-desktop-box {
                     display: block;
@@ -409,7 +407,7 @@
                 label[for=transfer-amount],
                 .transfer-amount-box {
                     display: none;
-                    
+
                 }
 
                 .amount-and-title-desktop-box {
@@ -419,7 +417,7 @@
                     margin-left: 19px;
                     margin-right: 19px;
 
-                    .amount-desktop-box{
+                    .amount-desktop-box {
                         grid-column: 1/5;
                     }
 
@@ -427,7 +425,8 @@
                     .transfer-amount-box {
                         display: flex;
                     }
-                    label[for=transfer-amount]{
+
+                    label[for=transfer-amount] {
                         margin: 30px auto 9px 0px;
                     }
 
