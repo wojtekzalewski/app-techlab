@@ -79,13 +79,33 @@
 
 @media(min-width: $desktop-width) {
     .main-nav {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 40px;
+        padding-left: 75px;
+        padding-right: 75px;
+
         .cards {
-            margin-left: 75px;
+            display: flex;
+            align-items: flex-end;
+            margin-left: 0px;
+            grid-column: 1/4;
+
         }
 
         .search-bar {
-            width: 373px;
-            right: 75px;
+            height: 40px;
+            border-radius: 4px;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            width: auto;
+            position: static;
+            right: 0px;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            grid-column: 9/-1;
         }
     }
 }

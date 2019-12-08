@@ -159,10 +159,16 @@
                 <p class="free-founds-discription">
                     Na swoim koncie masz dużo wolnych środków. Warto przenieść je na lokatę i uchronić przed inflacją
                 </p>
-                <span class="call">call to action</span>
-            </div>
-            <div class="analize-box">
-                <h5>Analiza wydatków</h5>
+                <div class="free-founds-bottom-row">
+                    <span class="call">call to action</span>
+                    <div class="dots-row">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                </div> <div class="analize-box">
+                    <h5>Analiza wydatków</h5>
             </div>
         </aside>
     </main>
@@ -176,12 +182,13 @@
     <!-- transfer-form -->
 
     <section class="transfer-form-popup none">
+        <div class="header-form">
+            <h6>Przelew krajowy</h6>
+            <img src="img/a.png" srcset="img/a@2x.png 2x,
+                 img/a@3x.png 3x" class="close-popup-transfer-form">
+        </div>
         <form action="" id="transfer-form">
-            <div class="header-form">
-                <h6>Przelew krajowy</h6>
-                <img src="img/a.png" srcset="img/a@2x.png 2x,
-             img/a@3x.png 3x" class="close-popup-transfer-form">
-            </div>
+
             <div class="main-section-transfer-form">
                 <label for="select-account">z rachunku</label>
                 <div class="select-account-box">
@@ -200,6 +207,12 @@
                     <p class="enter-account-number">Wpisz kwotę
                     </p>
                 </div>
+                <div class="address-desktop-box">
+                    <label for="address-recipient">adres odbiorcy (opcjonalnie)</label>
+                    <div class="address-recipient-box">
+                        <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy">
+                    </div>
+                </div>
                 <label for="transfer-amount">kwota przelewu</label>
                 <div class="transfer-amount-box">
                     <input id="transfer-amount" type="text" placeholder="12 040,37">
@@ -210,11 +223,26 @@
                     <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy">
                 </div>
                 <label for="title-transfer">tytułem</label>
-
                 <div class="title-transfer-box">
                     <input type="text" id="title-transfer" placeholder="Placeholder">
                 </div>
+                <div class="amount-and-title-desktop-box">
+                    <div class="amount-desktop-box">
+                        <label for="transfer-amount">kwota przelewu</label>
+                        <div class="transfer-amount-box">
+                            <input id="transfer-amount" type="text" placeholder="12 040,37">
+                            <span class="currency-transfer-amount">PLN</span>
+                        </div>
+                    </div>
+                    <div class="title-desktop-box">
+                        <label for="title-transfer">tytułem</label>
+                        <div class="title-transfer-box">
+                            <input type="text" id="title-transfer" placeholder="Placeholder">
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="save-order-box">
                 <input type="checkbox" id="save-order" class="custom-checkbox" checked="checked">
                 <span class="checkmark"></span><label for="save-order">Zapisz zlecenie stałe</label>
@@ -227,11 +255,11 @@
 
             </div>
             <div class="submit-button-container">
-            <button type="submit" class="next-button-box">
-                <img src="img/110.png" srcset="img/110@2x.png 2x,
+                <button type="submit" class="next-button-box">
+                    <img src="img/110.png" srcset="img/110@2x.png 2x,
                  img/110@3x.png 3x" class="next-arrow">
-                <span class="next">dalej</span>
-            </button>
+                    <span class="next">dalej</span>
+                </button>
             </div>
         </form>
     </section>
@@ -260,4 +288,5 @@
     <!-- <script src="./scripts/app.js"></script> -->
     <script src="./scripts/form.js"></script>
 </body>
+
 </html>

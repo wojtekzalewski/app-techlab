@@ -206,12 +206,41 @@ header .user-name {
   }
 }
 @media (min-width: 1024px) {
+  .main-nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
   .main-nav .cards {
-    margin-left: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: 0px;
+    grid-column: 1/4;
   }
   .main-nav .search-bar {
-    width: 373px;
-    right: 75px;
+    height: 40px;
+    border-radius: 4px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    position: static;
+    right: 0px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    grid-column: 9/-1;
   }
 }
 body main .main-section .titles-row {
@@ -583,7 +612,17 @@ aside {
     width: auto;
     margin: 0px 72px 22px 20px;
   }
-  body main aside .free-founds-box .call {
+  body main aside .free-founds-box .free-founds-bottom-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 42px 27px 25.8px 20px;
+  }
+  body main aside .free-founds-box .free-founds-bottom-row .call {
     width: 117px;
     height: 17px;
     font-size: 14px;
@@ -591,6 +630,24 @@ aside {
     cursor: pointer;
     margin: 0px 126px 26px 20px;
     text-transform: uppercase;
+    margin: 0px;
+  }
+  body main aside .free-founds-box .free-founds-bottom-row .dots-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main aside .free-founds-box .free-founds-bottom-row .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 11px;
+  }
+  body main aside .free-founds-box .free-founds-bottom-row .dot:first-child {
+    border: solid 2px #fff;
+    color: black;
+    background-color: #4c92e0;
   }
   body main aside .analize-box {
     background-color: #fff;
@@ -738,7 +795,7 @@ footer .footer-content {
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
-.transfer-form-popup #transfer-form .header-form {
+.transfer-form-popup .header-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,13 +809,13 @@ footer .footer-content {
   height: 60px;
   width: 100%;
 }
-.transfer-form-popup #transfer-form .header-form h6 {
+.transfer-form-popup .header-form h6 {
   font-size: 16px;
   font-weight: 900;
   height: 19px;
   margin-left: 20px;
 }
-.transfer-form-popup #transfer-form .header-form .close-popup-transfer-form {
+.transfer-form-popup .header-form .close-popup-transfer-form {
   width: 18.2px;
   height: 18.2px;
   -o-object-fit: contain;
@@ -782,6 +839,7 @@ footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box .arrow-account {
   cursor: pointer;
@@ -812,6 +870,7 @@ footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box #account-number {
   width: 100%;
@@ -823,6 +882,10 @@ footer .footer-content {
   line-height: normal;
   letter-spacing: normal;
   color: #858585;
+  height: 22px;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box {
+  display: none;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .alert-empty-account-number {
   width: auto;
@@ -851,12 +914,13 @@ footer .footer-content {
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
   width: auto;
-  margin: 9px 20px 0px 20px;
+  margin: 9px 0px 0px 0px;
   border-radius: 4px;
   border: solid 1px #b4b4b4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box #transfer-amount {
   width: 100%;
@@ -884,6 +948,7 @@ footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box #address-recipient {
   width: 100%;
@@ -906,6 +971,7 @@ footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box #title-transfer {
   height: 19px;
@@ -918,6 +984,9 @@ footer .footer-content {
   color: #858585;
   margin: 13px 21px 18px 21px;
   width: 100%;
+}
+.transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
+  display: none;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form label {
   text-transform: uppercase;
@@ -1003,7 +1072,7 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
 }
-.transfer-form-popup #transfer-form .order-name-container #order-name {
+.transfer-form-popup #transfer-form .order-name-container .order-name-box #order-name {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -1062,9 +1131,131 @@ footer .footer-content {
 }
 
 .alert-display {
-  visibility: visible;
+  display: block;
 }
 
 .alert-hidden {
-  visibility: hidden;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .transfer-form-popup {
+    top: 20px;
+  }
+  .transfer-form-popup .header-form {
+    height: 80px;
+  }
+  .transfer-form-popup .header-form h6 {
+    font-size: 26px;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    height: 32px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box {
+    display: block;
+    margin-top: 0px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
+    display: block;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box #address-recipient {
+    width: auto;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=address-recipient] {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=transfer-amount],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 19px;
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box {
+    grid-column: 1/5;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .transfer-amount-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount] {
+    margin: 30px auto 9px 0px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box {
+    padding-top: 24px;
+    width: 100%;
+    margin-right: 20px;
+    grid-column: 5/-1;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box #transfer-amount {
+    width: 100%;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=title-transfer] {
+    margin: 30px auto 9px 0px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-transfer-box {
+    margin: 9px 0px 0px 0px;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
+    width: 230px;
+    height: 50px;
+    border-radius: 4px;
+    -webkit-transform: translateY(26px);
+            transform: translateY(26px);
+    margin: 26px 20px 26px auto;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
+    margin: 17px 93px;
+  }
+}
+@media (min-width: 1024px) {
+  .transfer-form-popup #transfer-form .main-section-transfer-form,
+  .transfer-form-popup #transfer-form .submit-button-container {
+    margin-left: 246px;
+    margin-right: 246px;
+  }
+  .transfer-form-popup #transfer-form .save-order-box,
+  .transfer-form-popup #transfer-form .order-name-container {
+    margin-left: 266px;
+    margin-right: 266px;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
+    width: 230px;
+    height: 50px;
+    border-radius: 4px;
+    -webkit-transform: translateY(26px);
+            transform: translateY(26px);
+    margin: 26px 266px 26px auto;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
+    margin: 17px 93px;
+  }
 }
