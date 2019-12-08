@@ -6,8 +6,6 @@
     display: block;
 }
 
-
-
 .transfer-form-popup {
     width: 100%;
     z-index: 1;
@@ -338,9 +336,7 @@
                 }
             }
         }
-
     }
-
 }
 
 .alert-display {
@@ -349,4 +345,12 @@
 
 .alert-hidden {
     visibility: hidden;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+    
 }

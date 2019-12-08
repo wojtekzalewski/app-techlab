@@ -92,16 +92,16 @@ header .user-name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 66px;
+    margin-left: 75px;
   }
   header .settings {
-    right: 420px;
+    right: 430px;
   }
   header .mail {
-    right: 380px;
+    right: 390px;
   }
   header .user {
-    right: 344px;
+    right: 354px;
   }
   header .user-name {
     display: -webkit-box;
@@ -115,7 +115,7 @@ header .user-name {
     color: #fff;
   }
   header .log-out {
-    right: 66px;
+    right: 75px;
   }
 }
 .main-nav {
@@ -207,11 +207,11 @@ header .user-name {
 }
 @media (min-width: 1024px) {
   .main-nav .cards {
-    margin-left: 66px;
+    margin-left: 75px;
   }
   .main-nav .search-bar {
-    width: 485px;
-    right: 66px;
+    width: 373px;
+    right: 75px;
   }
 }
 body main .main-section .titles-row {
@@ -557,7 +557,7 @@ aside {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 40px;
-    padding: 0px 66px;
+    padding: 0px 75.5px;
   }
   body main .main-section {
     margin: 39px 0px 232.5px 0px;
