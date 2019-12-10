@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 56px;
   background-color: #d71920;
   display: -webkit-box;
@@ -127,7 +127,7 @@ header .user-name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100vw;
+    width: 100%;
     background-color: #d71920;
     height: 56px;
   }
@@ -211,7 +211,7 @@ header .user-name {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
     padding-left: 75px;
-    padding-right: 75px;
+    padding-right: 76px;
   }
   .main-nav .cards {
     display: -webkit-box;
@@ -664,7 +664,7 @@ aside {
   }
 }
 footer {
-  width: 100vw;
+  width: 100%;
   height: 330px;
   background-color: #f4f4f4;
   position: relative;
@@ -874,7 +874,7 @@ footer .footer-content {
   height: 50px;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box #account-number {
-  width: 100%;
+  width: auto;
   margin: 13px 21px 18px 21px;
   font-size: 16px;
   font-weight: normal;
@@ -915,7 +915,7 @@ footer .footer-content {
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
   width: auto;
-  margin: 9px 0px 0px 0px;
+  margin: 9px 20px 0px 20px;
   border-radius: 4px;
   border: solid 1px #b4b4b4;
   display: -webkit-box;
@@ -952,7 +952,7 @@ footer .footer-content {
   height: 50px;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box #address-recipient {
-  width: 100%;
+  width: auto;
   height: 19px;
   font-size: 16px;
   font-weight: normal;
@@ -1164,9 +1164,6 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
     display: block;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box #address-recipient {
-    width: auto;
-  }
   .transfer-form-popup #transfer-form .main-section-transfer-form label[for=address-recipient] {
     display: none;
   }
@@ -1187,6 +1184,18 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box {
     grid-column: 1/5;
   }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box {
+    margin: 9px 0px 0px 0px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box #transfer-amount-desktop {
+    width: 100%;
+    margin: 13px 21px 18px 21px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal;
+    color: #2f3234;
+    border: 0px;
+  }
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount],
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .transfer-amount-box {
     display: -webkit-box;
@@ -1202,14 +1211,26 @@ footer .footer-content {
     margin-right: 20px;
     grid-column: 5/-1;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box #transfer-amount {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box #transfer-amount {
     width: 100%;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=title-transfer] {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box label[for=title-transfer] {
     margin: 30px auto 9px 0px;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-transfer-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
     margin: 9px 0px 0px 0px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box #title-transfer-desktop {
+    height: 19px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #858585;
+    margin: 13px 21px 18px 21px;
+    width: 100%;
   }
   .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;

@@ -5,7 +5,7 @@
 @media (min-width:$tablet-width) {
     .main-nav {
         display: flex;
-        width: 100vw;
+        width: 100%;
         background-color: $brand-color;
         height: 56px;
 
@@ -83,7 +83,7 @@
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 40px;
         padding-left: 75px;
-        padding-right: 75px;
+        padding-right: 76px;
 
         .cards {
             display: flex;
