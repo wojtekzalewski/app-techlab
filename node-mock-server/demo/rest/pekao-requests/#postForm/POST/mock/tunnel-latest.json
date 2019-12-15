@@ -1,0 +1,17 @@
+{
+  "name": "RandomName",
+  "surname": "RandomSurname",
+  "clinetId": "1234567sdz23sacsd",
+  "accounts": {
+    "pln": {
+      "accountType": "PLN",  
+      "accountName": "SuperEkstra Konto Złotówkowe",
+      "accountBalance": "23400.23"
+    },
+    "eur": {
+      "accountType": "EUR",  
+      "accountName": "SuperEkstra Konto Ojro",
+      "accountBalance": "200"
+    }
+  }
+}

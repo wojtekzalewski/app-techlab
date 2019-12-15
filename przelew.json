@@ -1,0 +1,10 @@
+{
+    "date":"12.12",
+    "from": (
+        "clientID" : "123",
+        "accNr": "1234...",
+        "currency": "USD",
+        "quete":"1234.12",
+        "title": "za cheP"
+    ),
+}

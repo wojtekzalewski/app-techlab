@@ -28,3 +28,10 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin text-style-normal {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+}
