@@ -907,7 +907,6 @@ footer .footer-content {
   margin: 10px auto 11px 21px;
   height: 19px;
   font-size: 16px;
-  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -1124,11 +1123,10 @@ footer .footer-content {
   width: 44px;
   height: 16px;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  font-weight: 900;
   letter-spacing: 1px;
   color: #fff;
 }
@@ -1137,63 +1135,59 @@ footer .footer-content {
   display: block;
 }
 
-.transfer-form-popup #transfer-form .main-section-transfer-form .none {
+.alert-hidden {
   display: none;
 }
 
-.transfer-form-popup #transfer-form .main-section-transfer-form .alert-empty-account-number .alert-hidden {
-  display: none;
-}
 @media (min-width: 768px) {
-  .transfer-form-popup .transfer-form-popup {
+  .transfer-form-popup {
     top: 20px;
   }
-  .transfer-form-popup .transfer-form-popup .header-form {
+  .transfer-form-popup .header-form {
     height: 80px;
   }
-  .transfer-form-popup .transfer-form-popup .header-form h6 {
+  .transfer-form-popup .header-form h6 {
     font-size: 26px;
     font-size: 26px;
-    font-weight: normal;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
-    font-weight: 900;
     letter-spacing: normal;
     height: 32px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box {
     display: block;
     margin-top: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
     display: block;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form label[for=address-recipient] {
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=address-recipient] {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form label[for=transfer-amount],
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=transfer-amount],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 19px;
     margin-left: 19px;
     margin-right: 19px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box {
     grid-column: 1/5;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box {
     margin: 9px 0px 0px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box #transfer-amount-desktop {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box #transfer-amount-desktop {
     width: 100%;
     margin: 13px 21px 18px 21px;
     font-size: 16px;
@@ -1202,31 +1196,31 @@ footer .footer-content {
     color: #2f3234;
     border: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount],
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .transfer-amount-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .transfer-amount-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount] {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount] {
     margin: 30px auto 9px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box {
     padding-top: 24px;
     width: 100%;
     margin-right: 20px;
     grid-column: 5/-1;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box #transfer-amount {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box #transfer-amount {
     width: 100%;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box label[for=title-transfer] {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box label[for=title-transfer] {
     margin: 30px auto 9px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
     margin: 9px 0px 0px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box #title-transfer-desktop {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box #title-transfer-desktop {
     height: 19px;
     font-size: 16px;
     font-weight: normal;
@@ -1238,11 +1232,11 @@ footer .footer-content {
     margin: 13px 21px 18px 21px;
     width: 100%;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container {
+  .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
     width: 230px;
     height: 50px;
     border-radius: 4px;
@@ -1250,29 +1244,29 @@ footer .footer-content {
             transform: translateY(26px);
     margin: 26px 20px 26px auto;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
   }
 }
 @media (min-width: 1024px) {
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form,
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container {
+  .transfer-form-popup #transfer-form .main-section-transfer-form,
+  .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 246px;
     margin-right: 246px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .save-order-box,
-  .transfer-form-popup .transfer-form-popup #transfer-form .order-name-container {
+  .transfer-form-popup #transfer-form .save-order-box,
+  .transfer-form-popup #transfer-form .order-name-container {
     margin-left: 266px;
     margin-right: 266px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container {
+  .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
     width: 230px;
     height: 50px;
     border-radius: 4px;
@@ -1280,565 +1274,10 @@ footer .footer-content {
             transform: translateY(26px);
     margin: 26px 266px 26px auto;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
-  }
-}
-
-#transfer-success {
-  background-color: #3ca933;
-  width: 100%;
-  height: 330px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#transfer-success .header-transfer-success {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 21px 17px 20px 20px;
-}
-#transfer-success .header-transfer-success .transfer-success-check {
-  width: 20px;
-  height: 14px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-}
-#transfer-success .header-transfer-success .transfer-realized-header {
-  height: 19px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  color: #fff;
-}
-#transfer-success .header-transfer-success .transfer-realized-box-oval {
-  font-family: LatoLatin;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  color: #fff;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-}
-#transfer-success .header-transfer-success .transfer-realized-box-oval .cross-white {
-  width: 20px;
-  height: 14px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 7px;
-}
-#transfer-success .header-transfer-success .transfer-realized-box-oval {
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  border: solid 1px rgba(255, 255, 255, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#transfer-success .body-transfer-success .sender-reciver-row .sender-col .sender {
-  height: 13px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 0px 239px 0px 55px;
-}
-#transfer-success .body-transfer-success .sender-reciver-row .sender-col .my-account {
-  margin: 4px 91px 4px 55px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: #fff;
-}
-#transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number {
-  margin: 0px 87px 20px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-}
-#transfer-success .body-transfer-success .sender-reciver-row .receiver-col .recipient {
-  margin: 0px 238px 4px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-}
-#transfer-success .body-transfer-success .sender-reciver-row .receiver-col .name {
-  margin: 0px 151px 4px 55px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: #fff;
-}
-#transfer-success .body-transfer-success .sender-reciver-row .receiver-col .account {
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  margin: 0px 87px 20px 55px;
-}
-#transfer-success .body-transfer-success .amount {
-  margin: 0px 259px 4px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-}
-#transfer-success .body-transfer-success .amount-value {
-  margin: 0px 184px 4px 55px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: #fff;
-}
-#transfer-success .body-transfer-success .saldo {
-  margin: 0px 75px 20px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-}
-#transfer-success .body-transfer-success .pdf-confirmation {
-  margin: 0px 121px 21px 54px;
-  width: 186px;
-  height: 30px;
-  border-radius: 4px;
-  background-color: rgba(47, 50, 52, 0.3);
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-#transfer-success .pdf-confirmation-desktop {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  #transfer-success .header-transfer-success {
-    margin-left: 0px;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-  }
-  #transfer-success .header-transfer-success .transfer-realized-header {
-    margin-left: 15px;
-  }
-  #transfer-success .header-transfer-success .transfer-realized-box-oval {
-    position: absolute;
-    right: 22px;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 55px;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .sender {
-    margin: 4px 91px 4px 0px;
-    text-transform: uppercase;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .my-account {
-    margin: 4px 91px 4px 0px;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number {
-    margin: 4px 91px 4px 0px;
-  }
-}
-@media (min-width: 1024px) {
-  #transfer-success {
-    height: 204px;
-  }
-  #transfer-success .body-transfer-success {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #transfer-success .body-transfer-success .sender-reciver-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #transfer-success .body-transfer-success .amount-col .pdf-confirmation {
-    display: none;
-  }
-  #transfer-success .pdf-confirmation-desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0px 121px 21px 54px;
-    width: 186px;
-    height: 30px;
-    border-radius: 4px;
-    background-color: rgba(47, 50, 52, 0.3);
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.1px;
-    color: #fff;
-    text-transform: uppercase;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer;
-  }
-}
-#transfer-failed {
-  background-color: #ac1419;
-  width: 100%;
-  height: 330px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#transfer-failed .header-transfer-failed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 21px 17px 20px 20px;
-}
-#transfer-failed .header-transfer-failed .transfer-failed-check {
-  width: 20px;
-  height: 14px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-}
-#transfer-failed .header-transfer-failed .transfer-realized-header {
-  height: 19px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #fff;
-}
-#transfer-failed .header-transfer-failed .transfer-realized-box-oval {
-  font-family: LatoLatin;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  color: #fff;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-}
-#transfer-failed .header-transfer-failed .transfer-realized-box-oval .cross-white {
-  width: 20px;
-  height: 14px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 7px;
-}
-#transfer-failed .header-transfer-failed .transfer-realized-box-oval {
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  border: solid 1px rgba(255, 255, 255, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .sender {
-  height: 13px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 0px 239px 0px 55px;
-}
-#transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .my-account {
-  margin: 4px 91px 4px 55px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: #fff;
-}
-#transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .acc-number {
-  margin: 0px 87px 20px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-}
-#transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .recipient {
-  margin: 0px 238px 4px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-}
-#transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .name {
-  margin: 0px 151px 4px 55px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: #fff;
-}
-#transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .account {
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  margin: 0px 87px 20px 55px;
-}
-#transfer-failed .body-transfer-failed .amount {
-  margin: 0px 259px 4px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-}
-#transfer-failed .body-transfer-failed .amount-value {
-  margin: 0px 184px 4px 55px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 900;
-  letter-spacing: 1px;
-  color: #fff;
-}
-#transfer-failed .body-transfer-failed .saldo {
-  margin: 0px 75px 20px 55px;
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-}
-#transfer-failed .body-transfer-failed .pdf-confirmation {
-  margin: 0px 121px 21px 54px;
-  width: 186px;
-  height: 30px;
-  border-radius: 4px;
-  background-color: rgba(47, 50, 52, 0.3);
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  color: #fff;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-#transfer-failed .pdf-confirmation-desktop {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  #transfer-failed .header-transfer-failed {
-    margin-left: 0px;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-  }
-  #transfer-failed .header-transfer-failed .transfer-realized-header {
-    margin-left: 15px;
-  }
-  #transfer-failed .header-transfer-failed .transfer-realized-box-oval {
-    position: absolute;
-    right: 22px;
-  }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 55px;
-  }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .sender {
-    margin: 4px 91px 4px 0px;
-    text-transform: uppercase;
-  }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .my-account {
-    margin: 4px 91px 4px 0px;
-    text-transform: uppercase;
-  }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .acc-number {
-    margin: 4px 91px 4px 0px;
-    text-transform: uppercase;
-  }
-}
-@media (min-width: 1024px) {
-  #transfer-failed {
-    height: 204px;
-  }
-  #transfer-failed .body-transfer-failed {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #transfer-failed .body-transfer-failed .sender-reciver-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #transfer-failed .body-transfer-failed .amount-col .pdf-confirmation {
-    display: none;
-  }
-  #transfer-failed .pdf-confirmation-desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0px 121px 21px 54px;
-    width: 186px;
-    height: 30px;
-    border-radius: 4px;
-    background-color: rgba(47, 50, 52, 0.3);
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.1px;
-    color: #fff;
-    text-transform: uppercase;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer;
   }
 }

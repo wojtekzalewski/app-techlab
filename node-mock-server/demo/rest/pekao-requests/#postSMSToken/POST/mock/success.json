@@ -1,8 +1,0 @@
-{
-	"id": "smsCodeUniqueID",
-	"productCode": "someNumber",
-	"tokenOk": true,
-	"query": {
-	  "queryKey": "value2"
-	}
-}

@@ -198,20 +198,16 @@
                 <div class="account-number-box">
                     <input type="text" placeholder="Wpisz rachunek odbiorcy" id="account-number">
                 </div>
-                <span class="alert-empty-account-number">
+                <div class="alert-empty-account-number alert-hidden">
                     <p class="enter-account-number">Wpisz kwotę
                     </p>
-                </span>
+                </div>
                 <div class="address-desktop-box">
                     <label for="address-recipient">adres odbiorcy (opcjonalnie)</label>
                     <div class="address-recipient-box">
                         <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy">
                     </div>
                 </div>
-                <!-- <span class="alert-empty-account-number alert-hidden">
-                    <p class="enter-account-number">Wpisz adres
-                    </p>
-                </span> -->
                 <label for="transfer-amount">kwota przelewu</label>
                 <div class="transfer-amount-box">
                     <input id="transfer-amount" type="text" placeholder="12 040,37">
@@ -225,10 +221,6 @@
                 <div class="title-transfer-box">
                     <input type="text" id="title-transfer" class="title-transfer" placeholder="Placeholder">
                 </div>
-                <span class="alert-empty-account-number">
-                    <p class="enter-account-number">Wpisz tytuł
-                    </p>
-                </span>
                 <div class="amount-and-title-desktop-box">
                     <div class="amount-desktop-box">
                         <label for="transfer-amount">kwota przelewu</label>
@@ -240,8 +232,7 @@
                     <div class="title-desktop-box">
                         <label for="title-transfer">tytułem</label>
                         <div class="title-transfer-box">
-                            <input type="text" id="title-transfer-desktop" class="title-transfer"
-                                placeholder="Placeholder">
+                            <input type="text" id="title-transfer-desktop" class="title-transfer" placeholder="Placeholder">
                         </div>
                     </div>
                 </div>
@@ -269,75 +260,10 @@
     </section>
 
     <!-- section transfer success -->
+        <section id="transfer-success">
 
-    <section id="transfer-success">
-        <div class="header-transfer-success">
-            <img src="img/97.png" srcset="img/97@2x.png 2x,
-                        img/97@3x.png 3x" class="transfer-success-check">
-            <h5 class="transfer-realized-header">Twój przelew został zrealizowany</h5>
-            <div class="transfer-realized-box-oval">
-                <img src="img/white-cross@.png" srcset="img/white-cross@2x.png 2x,
-                                img/white-cross@3x.png 3x" class="cross-white">
-            </div>
-        </div>
-        <div class="body-transfer-success">
-            <div class="sender-reciver-row">
-                <div class="sender-col">
-                    <p class="sender">nadawca</p>
-                    <p class="my-account">Moje konto Przekorzystne</p>
-                    <p class="acc-number">12 1234 1234 1234 1234 1234 1234</p>
-                </div>
-                <div class="receiver-col">
-                    <p class="recipient">odbiorca</p>
-                    <p class="name">Marek Kowalewski</p>
-                    <p class="account">12 1234 1234 1234 1234 1234 1234</p>
-                </div>
-            </div>
-            <div class="amount-col">
-                <p class="amount">kwota</p>
-                <p class="amount-value">23 100,23 PLN</p>
-                <p class="saldo">saldo po operacji: 123 123, 12 PLN</p>
-                <p class="pdf-confirmation">potwierdzenie pdf</p>
-            </div>
-        </div>
-        <p class="pdf-confirmation-desktop">potwierdzenie pdf</p>
-    </section>
-
-    <section id="transfer-failed">
-        <div class="header-transfer-failed">
-            <img src="img/97.png" srcset="img/97@2x.png 2x,
-                        img/97@3x.png 3x" class="transfer-failed-check">
-            <h5 class="transfer-realized-header">Twój przelew nie został zrealizowany</h5>
-            <div class="transfer-realized-box-oval">
-                <img src="img/white-cross@.png" srcset="img/white-cross@2x.png 2x,
-                                img/white-cross@3x.png 3x" class="cross-white">
-            </div>
-        </div>
-        <div class="body-transfer-failed">
-            <div class="sender-reciver-row">
-                <div class="sender-col">
-                    <p class="sender">nadawca</p>
-                    <p class="my-account">Moje konto Przekorzystne</p>
-                    <p class="acc-number">12 1234 1234 1234 1234 1234 1234</p>
-                </div>
-                <div class="receiver-col">
-                    <p class="recipient">odbiorca</p>
-                    <p class="name">Marek Kowalewski</p>
-                    <p class="account">12 1234 1234 1234 1234 1234 1234</p>
-                </div>
-            </div>
-            <div class="amount-col">
-                <p class="amount">kwota</p>
-                <p class="amount-value">23 100,23 PLN</p>
-                <p class="saldo">saldo po operacji: 123 123, 12 PLN</p>
-                <p class="pdf-confirmation">spróbuj ponownie</p>
-            </div>
-            
-        </div>
-        <p class="pdf-confirmation-desktop">spróbuj ponownie</p>
-    </section>
-
-    <!-- section transfer success
+        </section>
+    <!-- section transfer success -->
 
     <!-- transfer-form -->
 
@@ -365,7 +291,6 @@
 
     <!-- <script src="./scripts/app.js"></script> -->
     <script src="./scripts/form.js"></script>
-    <!-- <script src="./scripts/index.js"></script> -->
 </body>
 
 </html>

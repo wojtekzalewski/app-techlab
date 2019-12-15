@@ -36,6 +36,7 @@
             object-fit: contain;
             margin-right: 20px;
         }
+
     }
 
     #transfer-form {
@@ -88,7 +89,10 @@
                     width: auto;
                     margin: 13px 21px 18px 21px;
                     font-size: 16px;
-                    @include text-style-normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
                     letter-spacing: normal;
                     color: #858585;
                     height: 22px;
@@ -114,7 +118,10 @@
                     margin: 10px auto 11px 21px;
                     height: 19px;
                     font-size: 16px;
-                    @include text-style-normal;
+                    // font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
                     letter-spacing: normal;
                     color: $white;
                 }
@@ -141,7 +148,10 @@
                 .currency-transfer-amount {
                     margin: 13px 21px 18px auto;
                     font-size: 16px;
-                    @include text-style-normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
                     letter-spacing: normal;
                 }
             }
@@ -158,7 +168,10 @@
                     width: auto;
                     height: 19px;
                     font-size: 16px;
-                    @include text-style-normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
                     letter-spacing: normal;
                     color: #858585;
                     border: 0px;
@@ -177,7 +190,10 @@
                 #title-transfer {
                     height: 19px;
                     font-size: 16px;
-                    @include text-style-normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
                     letter-spacing: normal;
                     color: #858585;
                     margin: 13px 21px 18px 21px;
@@ -249,7 +265,10 @@
             label[for=save-order] {
                 margin-left: 48px;
                 font-size: 14px;
-                @include text-style-normal;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
                 letter-spacing: normal;
                 color: $second-brand-color;
             }
@@ -278,7 +297,10 @@
 
                 #order-name {
                     font-size: 16px;
-                    @include text-style-normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
                     letter-spacing: normal;
                     color: #858585;
                     width: 100%;
@@ -319,8 +341,10 @@
                     width: 44px;
                     height: 16px;
                     font-size: 13px;
-                    @include text-style-normal;
-                    font-weight: 900;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
                     letter-spacing: 1px;
                     color: $white;
                 }
@@ -333,195 +357,182 @@
     display: block;
 }
 
-.transfer-form-popup {
-    #transfer-form {
-        .main-section-transfer-form {
-            .none {
-                    display: none;
-                }
+.alert-hidden {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .transfer-form-popup {
+        top: 20px;
+
+        .header-form {
+            height: 80px;
+
+            h6 {
+                font-size: 26px;
+                font-size: 26px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                height: 32px;
             }
         }
-    }
 
-.transfer-form-popup {
-    #transfer-form {
-        .main-section-transfer-form {
-            .alert-empty-account-number {
-                .alert-hidden {
-                    display: none;
-                }
-            }
-        }
-    }
+        #transfer-form {
+            .main-section-transfer-form {
+                .address-desktop-box {
+                    display: block;
+                    margin-top: 0px;
 
-    @media (min-width: $tablet-width) {
-        .transfer-form-popup {
-            top: 20px;
-
-            .header-form {
-                height: 80px;
-
-                h6 {
-                    font-size: 26px;
-                    font-size: 26px;
-                    @include text-style-normal;
-                    font-weight: 900;
-                    letter-spacing: normal;
-                    height: 32px;
-                }
-            }
-
-            #transfer-form {
-                .main-section-transfer-form {
-                    .address-desktop-box {
-                        display: block;
-                        margin-top: 0px;
-
-                        label[for=address-recipient],
-                        .address-recipient-box {
-                            display: block;
-                        }
-                    }
-
-                    label[for=address-recipient] {
-                        display: none;
-                    }
-
+                    label[for=address-recipient],
                     .address-recipient-box {
-                        display: none;
+                        display: block;
+                    }
+                }
+
+                label[for=address-recipient] {
+                    display: none;
+                }
+
+                .address-recipient-box {
+                    display: none;
+                }
+
+                label[for=transfer-amount],
+                .transfer-amount-box {
+                    display: none;
+
+                }
+
+                .amount-and-title-desktop-box {
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    grid-gap: 19px;
+                    margin-left: 19px;
+                    margin-right: 19px;
+
+                    .amount-desktop-box {
+                        grid-column: 1/5;
+
+                        .transfer-amount-box {
+                            margin: 9px 0px 0px 0px;
+
+                            #transfer-amount-desktop {
+                                width: 100%;
+                                margin: 13px 21px 18px 21px;
+                                font-size: 16px;
+                                font-weight: normal;
+                                letter-spacing: normal;
+                                color: $second-brand-color;
+                                border: 0px;
+                            }
+                        }
                     }
 
                     label[for=transfer-amount],
                     .transfer-amount-box {
-                        display: none;
-
+                        display: flex;
                     }
 
-                    .amount-and-title-desktop-box {
-                        display: grid;
-                        grid-template-columns: repeat(12, 1fr);
-                        grid-gap: 19px;
-                        margin-left: 19px;
-                        margin-right: 19px;
+                    label[for=transfer-amount] {
+                        margin: 30px auto 9px 0px;
+                    }
 
-                        .amount-desktop-box {
-                            grid-column: 1/5;
+                    .title-desktop-box {
+                        padding-top: 24px;
+                        width: 100%;
+                        margin-right: 20px;
+                        grid-column: 5/-1;
 
-                            .transfer-amount-box {
-                                margin: 9px 0px 0px 0px;
 
-                                #transfer-amount-desktop {
-                                    width: 100%;
-                                    margin: 13px 21px 18px 21px;
-                                    font-size: 16px;
-                                    font-weight: normal;
-                                    letter-spacing: normal;
-                                    color: $second-brand-color;
-                                    border: 0px;
-                                }
-                            }
+                        #transfer-amount {
+                            width: 100%;
                         }
 
-                        label[for=transfer-amount],
-                        .transfer-amount-box {
-                            display: flex;
-                        }
-
-                        label[for=transfer-amount] {
+                        label[for=title-transfer] {
                             margin: 30px auto 9px 0px;
                         }
 
-                        .title-desktop-box {
-                            padding-top: 24px;
-                            width: 100%;
-                            margin-right: 20px;
-                            grid-column: 5/-1;
+                        .title-transfer-box {
+                            margin: 9px 0px 0px 0px;
 
-
-                            #transfer-amount {
+                            #title-transfer-desktop {
+                                height: 19px;
+                                font-size: 16px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                color: #858585;
+                                margin: 13px 21px 18px 21px;
                                 width: 100%;
                             }
-
-                            label[for=title-transfer] {
-                                margin: 30px auto 9px 0px;
-                            }
-
-                            .title-transfer-box {
-                                margin: 9px 0px 0px 0px;
-
-                                #title-transfer-desktop {
-                                    height: 19px;
-                                    font-size: 16px;
-                                    @include text-style-normal;
-                                    letter-spacing: normal;
-                                    color: #858585;
-                                    margin: 13px 21px 18px 21px;
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .submit-button-container {
-                    margin-left: 0px;
-                    margin-right: 0px;
-
-                    .next-button-box {
-                        width: 230px;
-                        height: 50px;
-                        border-radius: 4px;
-                        transform: translateY(26px);
-                        margin: 26px 20px 26px auto;
-
-                        .next-arrow {
-                            display: none;
-                        }
-
-                        .next {
-                            margin: 17px 93px;
                         }
                     }
                 }
             }
 
+            .submit-button-container {
+                margin-left: 0px;
+                margin-right: 0px;
+
+                .next-button-box {
+                    width: 230px;
+                    height: 50px;
+                    border-radius: 4px;
+                    transform: translateY(26px);
+                    margin: 26px 20px 26px auto;
+
+                    .next-arrow {
+                        display: none;
+                    }
+
+                    .next {
+                        margin: 17px 93px;
+                    }
+                }
+            }
         }
+
     }
+}
 
-    @media (min-width: $desktop-width) {
-        .transfer-form-popup {
-            #transfer-form {
+@media (min-width: $desktop-width) {
+    .transfer-form-popup {
+        #transfer-form {
 
-                .main-section-transfer-form,
-                .submit-button-container {
-                    margin-left: 246px;
-                    margin-right: 246px;
-                }
+            .main-section-transfer-form,
+            .submit-button-container {
+                margin-left: 246px;
+                margin-right: 246px;
+            }
 
-                .save-order-box,
-                .order-name-container {
-                    margin-left: 266px;
-                    margin-right: 266px;
-                }
+            .save-order-box,
+            .order-name-container {
+                margin-left: 266px;
+                margin-right: 266px;
+            }
 
-                .submit-button-container {
-                    margin-left: 0px;
-                    margin-right: 0px;
+            .submit-button-container {
+                margin-left: 0px;
+                margin-right: 0px;
 
-                    .next-button-box {
-                        width: 230px;
-                        height: 50px;
-                        border-radius: 4px;
-                        transform: translateY(26px);
-                        margin: 26px 266px 26px auto;
+                .next-button-box {
+                    width: 230px;
+                    height: 50px;
+                    border-radius: 4px;
+                    transform: translateY(26px);
+                    margin: 26px 266px 26px auto;
 
-                        .next-arrow {
-                            display: none;
-                        }
+                    .next-arrow {
+                        display: none;
+                    }
 
-                        .next {
-                            margin: 17px 93px;
-                        }
+                    .next {
+                        margin: 17px 93px;
                     }
                 }
             }
