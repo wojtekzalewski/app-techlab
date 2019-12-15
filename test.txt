@@ -1,0 +1,49 @@
+3 , 15 - oszacowanie wydajnosci czasowej  i pamiciowej algrotytmu , zlozonosc obliczeniowa bazuje na wielu modelach ktore sluza do latwego poruwnania algrotytmu, 
+
+7 - typeof - podana zmienna - " typ zmiennej" || typeof(podana zmienna) = "Typ zmienej";
+
+1 - console.log(); DevTools(debugger w przeglądarce) ustawianie breakpointów, 
+włączenie debugera w IDE, lintowanie kodu( pluginy/funckje edytora );
+
+4, 16 - es6 - lety, consty, funkcja strzałkowa, map, every, for of, for in, symbol, promise, fetch, rest(...), spread(...), template string, class, constructor, 
+
+2 - regex - walidacja, selekcja plików wyszukiwanie, mutowanie wartości, formatowanie    stringów
+5 - scope , temporal dead zone , zmienna nie jest dostępna przed inicjacją , 
+func(a);
+
+=> ok!
+
+var a = "var";
+func(a); let a = "let" =>Error;
+
+6 - domknięcia, zwracanie funkcjiw funcji, zapobięgnięcie hostingowi, funkcja wewnętrzna ma prywatny scope. 
+function a () {
+    let b= "cos tam";
+    function bFunc() {
+        console.log(b);   cos tam
+    }
+    return function bFunc();
+}
+
+let d = c();
+
+13 - class = pojawiło się w ES6, pozwala stworzyć konstruktor z predofiniowanymi parametrami, metody; zeby utworzyc nowa instancje klasy uzyc slowa kluczowego - "new"; let x = new Class(parametr1, parametr2, etc..);
+wprowadza czytelniejsza skladnie kod staje latwiejszy w debugowaniu;
+
+14 - jak jest obliczana zlozonosc obliczania, 
+
+9 - (.) tylko kropka przejdzie.
+
+10 - b{5} - ciag 5 znakow b
+
+IIFE - (function a (){
+    console.log("a");
+})();
+
+11 - umieszczanie breakpointów w kodzie. za pomocą umieszczenie w kodzie słowa debugger;
+debug();
+
+let b = {
+    key: "value"
+}
+
