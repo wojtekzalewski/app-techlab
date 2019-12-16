@@ -337,11 +337,11 @@
     #transfer-form {
         .main-section-transfer-form {
             .none {
-                    display: none;
-                }
+                display: none;
             }
         }
     }
+}
 
 .transfer-form-popup {
     #transfer-form {
@@ -353,6 +353,7 @@
             }
         }
     }
+}
 
     @media (min-width: $tablet-width) {
         .transfer-form-popup {
@@ -491,7 +492,6 @@
     @media (min-width: $desktop-width) {
         .transfer-form-popup {
             #transfer-form {
-
                 .main-section-transfer-form,
                 .submit-button-container {
                     margin-left: 246px;
@@ -527,4 +527,3 @@
             }
         }
     }
-}

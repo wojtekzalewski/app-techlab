@@ -1144,14 +1144,15 @@ footer .footer-content {
 .transfer-form-popup #transfer-form .main-section-transfer-form .alert-empty-account-number .alert-hidden {
   display: none;
 }
+
 @media (min-width: 768px) {
-  .transfer-form-popup .transfer-form-popup {
+  .transfer-form-popup {
     top: 20px;
   }
-  .transfer-form-popup .transfer-form-popup .header-form {
+  .transfer-form-popup .header-form {
     height: 80px;
   }
-  .transfer-form-popup .transfer-form-popup .header-form h6 {
+  .transfer-form-popup .header-form h6 {
     font-size: 26px;
     font-size: 26px;
     font-weight: normal;
@@ -1162,38 +1163,38 @@ footer .footer-content {
     letter-spacing: normal;
     height: 32px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box {
     display: block;
     margin-top: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
     display: block;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form label[for=address-recipient] {
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=address-recipient] {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form label[for=transfer-amount],
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=transfer-amount],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 19px;
     margin-left: 19px;
     margin-right: 19px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box {
     grid-column: 1/5;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box {
     margin: 9px 0px 0px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box #transfer-amount-desktop {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box #transfer-amount-desktop {
     width: 100%;
     margin: 13px 21px 18px 21px;
     font-size: 16px;
@@ -1202,31 +1203,31 @@ footer .footer-content {
     color: #2f3234;
     border: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount],
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .transfer-amount-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .transfer-amount-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount] {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount] {
     margin: 30px auto 9px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box {
     padding-top: 24px;
     width: 100%;
     margin-right: 20px;
     grid-column: 5/-1;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box #transfer-amount {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box #transfer-amount {
     width: 100%;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box label[for=title-transfer] {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box label[for=title-transfer] {
     margin: 30px auto 9px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
     margin: 9px 0px 0px 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box #title-transfer-desktop {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box #title-transfer-desktop {
     height: 19px;
     font-size: 16px;
     font-weight: normal;
@@ -1238,11 +1239,11 @@ footer .footer-content {
     margin: 13px 21px 18px 21px;
     width: 100%;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container {
+  .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
     width: 230px;
     height: 50px;
     border-radius: 4px;
@@ -1250,29 +1251,29 @@ footer .footer-content {
             transform: translateY(26px);
     margin: 26px 20px 26px auto;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
   }
 }
 @media (min-width: 1024px) {
-  .transfer-form-popup .transfer-form-popup #transfer-form .main-section-transfer-form,
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container {
+  .transfer-form-popup #transfer-form .main-section-transfer-form,
+  .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 246px;
     margin-right: 246px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .save-order-box,
-  .transfer-form-popup .transfer-form-popup #transfer-form .order-name-container {
+  .transfer-form-popup #transfer-form .save-order-box,
+  .transfer-form-popup #transfer-form .order-name-container {
     margin-left: 266px;
     margin-right: 266px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container {
+  .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
     width: 230px;
     height: 50px;
     border-radius: 4px;
@@ -1280,14 +1281,13 @@ footer .footer-content {
             transform: translateY(26px);
     margin: 26px 266px 26px auto;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
   }
-  .transfer-form-popup .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
   }
 }
-
 #transfer-success {
   background-color: #3ca933;
   width: 100%;
