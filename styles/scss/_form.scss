@@ -51,6 +51,11 @@
                 border: solid 1px #b4b4b4;
                 display: flex;
                 height: 50px;
+                cursor: pointer;
+
+                .account-box-przekorzystne{
+
+                }
 
                 .arrow-account {
                     cursor: pointer;
@@ -74,6 +79,9 @@
                     height: 13px;
                 }
             }
+            .select-account-box-2{
+                transform: translateY(-10px);
+            }
 
             .account-number-box {
                 width: auto;
@@ -84,8 +92,8 @@
                 display: flex;
                 height: 50px;
 
-                #account-number {
-                    width: auto;
+                .account-number {
+                    width: 100%;
                     margin: 13px 21px 18px 21px;
                     font-size: 16px;
                     @include text-style-normal;
@@ -128,7 +136,7 @@
                 display: flex;
                 height: 50px;
 
-                #transfer-amount {
+                .transfer-amount {
                     width: 100%;
                     margin: 13px 21px 18px 21px;
                     font-size: 16px;
@@ -154,8 +162,8 @@
                 display: flex;
                 height: 50px;
 
-                #address-recipient {
-                    width: auto;
+                .address-recipient {
+                    width: 97%;
                     height: 19px;
                     font-size: 16px;
                     @include text-style-normal;
@@ -163,6 +171,18 @@
                     color: #858585;
                     border: 0px;
                     margin: 13px 21px 18px 21px;
+                }
+                #address-recipient{
+                    height: 19px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #858585;
+                    margin: 13px 21px 18px 21px;
+                    width: 94%;
                 }
             }
 
@@ -174,7 +194,7 @@
                 display: flex;
                 height: 50px;
 
-                #title-transfer {
+                .title-transfer {
                     height: 19px;
                     font-size: 16px;
                     @include text-style-normal;
@@ -203,7 +223,7 @@
             margin: 30px 20px 15px 20px;
             width: auto;
 
-            #save-order {
+            .save-order {
                 position: absolute;
                 opacity: 0;
                 cursor: pointer;
@@ -226,7 +246,7 @@
                 }
             }
 
-            #save-order:checked~.checkmark {
+            .save-order:checked~.checkmark {
                 background-color: $brand-color;
 
                 &:after {
@@ -276,7 +296,7 @@
                 border: solid 1px #b4b4b4;
                 display: flex;
 
-                #order-name {
+                .order-name {
                     font-size: 16px;
                     @include text-style-normal;
                     letter-spacing: normal;
@@ -411,7 +431,7 @@
                             .transfer-amount-box {
                                 margin: 9px 0px 0px 0px;
 
-                                #transfer-amount-desktop {
+                                .transfer-amount-desktop {
                                     width: 100%;
                                     margin: 13px 21px 18px 21px;
                                     font-size: 16px;
@@ -439,7 +459,7 @@
                             grid-column: 5/-1;
 
 
-                            #transfer-amount {
+                            .transfer-amount {
                                 width: 100%;
                             }
 
@@ -450,7 +470,7 @@
                             .title-transfer-box {
                                 margin: 9px 0px 0px 0px;
 
-                                #title-transfer-desktop {
+                                .title-transfer-desktop {
                                     height: 19px;
                                     font-size: 16px;
                                     @include text-style-normal;
@@ -526,4 +546,11 @@
                 }
             }
         }
+    }
+
+    .border-green {
+        border: 10px solid green;
+    }
+    .border-red {
+        border: 10px solid red;
     }

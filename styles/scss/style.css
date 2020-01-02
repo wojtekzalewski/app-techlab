@@ -841,6 +841,7 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
   height: 50px;
+  cursor: pointer;
 }
 .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box .arrow-account {
   cursor: pointer;
@@ -862,6 +863,10 @@ footer .footer-content {
   color: #858585;
   height: 13px;
 }
+.transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box-2 {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
 .transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box {
   width: auto;
   margin: 9px 20px 0px 20px;
@@ -873,8 +878,8 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
-.transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box #account-number {
-  width: auto;
+.transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box .account-number {
+  width: 100%;
   margin: 13px 21px 18px 21px;
   font-size: 16px;
   font-weight: normal;
@@ -924,7 +929,7 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
-.transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box #transfer-amount {
+.transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box .transfer-amount {
   width: 100%;
   margin: 13px 21px 18px 21px;
   font-size: 16px;
@@ -952,8 +957,8 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
-.transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box #address-recipient {
-  width: auto;
+.transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box .address-recipient {
+  width: 97%;
   height: 19px;
   font-size: 16px;
   font-weight: normal;
@@ -965,6 +970,18 @@ footer .footer-content {
   border: 0px;
   margin: 13px 21px 18px 21px;
 }
+.transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box #address-recipient {
+  height: 19px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #858585;
+  margin: 13px 21px 18px 21px;
+  width: 94%;
+}
 .transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box {
   width: auto;
   margin: 9px 20px 0px 20px;
@@ -975,7 +992,7 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
-.transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box #title-transfer {
+.transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box .title-transfer {
   height: 19px;
   font-size: 16px;
   font-weight: normal;
@@ -1002,7 +1019,7 @@ footer .footer-content {
   margin: 30px 20px 15px 20px;
   width: auto;
 }
-.transfer-form-popup #transfer-form .save-order-box #save-order {
+.transfer-form-popup #transfer-form .save-order-box .save-order {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -1022,13 +1039,13 @@ footer .footer-content {
   position: absolute;
   display: none;
 }
-.transfer-form-popup #transfer-form .save-order-box #save-order:checked ~ .checkmark {
+.transfer-form-popup #transfer-form .save-order-box .save-order:checked ~ .checkmark {
   background-color: #d71920;
 }
-.transfer-form-popup #transfer-form .save-order-box #save-order:checked ~ .checkmark:after {
+.transfer-form-popup #transfer-form .save-order-box .save-order:checked ~ .checkmark:after {
   display: block;
 }
-.transfer-form-popup #transfer-form .save-order-box #save-order:checked ~ .checkmark:after {
+.transfer-form-popup #transfer-form .save-order-box .save-order:checked ~ .checkmark:after {
   left: 4px;
   top: 3px;
   width: 11px;
@@ -1074,7 +1091,7 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
 }
-.transfer-form-popup #transfer-form .order-name-container .order-name-box #order-name {
+.transfer-form-popup #transfer-form .order-name-container .order-name-box .order-name {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -1194,7 +1211,7 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box {
     margin: 9px 0px 0px 0px;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box #transfer-amount-desktop {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box .transfer-amount-desktop {
     width: 100%;
     margin: 13px 21px 18px 21px;
     font-size: 16px;
@@ -1218,7 +1235,7 @@ footer .footer-content {
     margin-right: 20px;
     grid-column: 5/-1;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box #transfer-amount {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .transfer-amount {
     width: 100%;
   }
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box label[for=title-transfer] {
@@ -1227,7 +1244,7 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
     margin: 9px 0px 0px 0px;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box #title-transfer-desktop {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box .title-transfer-desktop {
     height: 19px;
     font-size: 16px;
     font-weight: normal;
@@ -1288,6 +1305,14 @@ footer .footer-content {
     margin: 17px 93px;
   }
 }
+.border-green {
+  border: 10px solid green;
+}
+
+.border-red {
+  border: 10px solid red;
+}
+
 #transfer-success {
   background-color: #3ca933;
   width: 100%;

@@ -1,61 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-	const result = JSON.stringify({
-		accountNumberValue: accountNumberValue.selector.value,
-		paymentValue: addressRecipientValue.selector.value,
-		titleValue: titleTransferValue.selector.value,
-		transferAmountValue: transferAmountValue.selector.value,
-		orderNameValue: orderNameValue.selector.value
-	  });
-
-	fetch("http://localhost:3001/rest/v1/pekao-requests/postForm", {
-		method: "POST",
-		mode: "cors",
-		body: result
-	  }).then(response => {
-		  if (response.status === 200) {
-			  response.json().then(z => {
-				console.log(z);
-				console.log(response);
-			});
-		  }
-		})
-		.catch(error => {
-		  console.log("Błąd: ", error);
-		});
-	});
-
 	class TransferInputElement {
 		constructor(selector, regexp, id) {
 			this.id = id;
 			this.selector = document.querySelector(`#${selector}`);
 			this.regexp = regexp;
 			this.shouldSend = false;
-			this.parentId = this.parentId;
 			this.value = '';
-			this.selectorSpan;
 		}
-
 		setInputListener() {
-			this.selectorSpan = document.querySelector(
-			  `.${this.parentId} .alert-empty-account-number`
-			);
-			if (this.selector && this.selectorSpan) {
-			  this.selector.addEventListener("keyup", () => {
+			this.selector.addEventListener("keyup", () => {
 				this.getValue();
 				console.log(this.value);
-				console.log(this.selectorSpan);
-				if (this.regexp.test(this.value)) {
-				//   this.selectorSpan.classList.remove("error");
-				  this.selectorSpan.classList.add("none");
-				  this.shouldSend = true;
-				  return true;
-				} else {
-				  this.selectorSpan.classList.add("none");
-				  this.shouldSend = false;
-				}
-			  });
-			}
+			})
 		}
 		finalValidation(functArg) {
 			return functArg(this);
@@ -100,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		return new TransferInputElement(selector, regexp, id);
 	}
 
-	// client 
+	// client object
 
 	class Client {
 		constructor(id, name, surname, accountNr, accountBalance, transactionHist, inputTable) {
@@ -137,8 +94,56 @@ document.addEventListener("DOMContentLoaded", function () {
 		return new Client(id, name, surname, accountNr, accountBalance, transactionHist, inputTable);
 	};
 
+	// validator scripts/
 
-	// events 
+	class Validator {
+		constructor() {}
+		finalFromValidation(sendData, clientData) {
+			let temp = sendData.every((element) => element.shouldSend === true);
+			if (temp) {
+				for (let i = 0; i < sendData.length; i++) {
+					if (sendData[i].id === "1") {
+						clientData.sendTransfer(sendData[i].getValue());
+						console.log("czy dzialam?");
+						break;
+					}
+				}
+			}
+			console.log(temp);
+			console.log(sendData.amount);
+		}
+
+
+		customValidation(inputElementObj) {
+			if (inputElementObj.regexp.test(inputElementObj.selector.value)) {
+				inputElementObj.selector.classList.contains("border-red") && inputElementObj.selector.classList.remove("border-red");
+				inputElementObj.selector.classList.add("border-green");
+				console.log("działa")
+				inputElementObj.shouldSend = true;
+				return true
+			} else {
+				inputElementObj.selector.classList.contains("border-green") && inputElementObj.selector.classList.remove("border-green")
+				inputElementObj.selector.classList.add("border-red");
+				console.log("nie działa")
+				inputElementObj.shouldSend = false;
+				return false
+			}
+		}
+		checkForm(param) {
+			for (let i = 0; i < inputTable.length; i++) {
+				param = inputTable[i].finalValidation(this.customValidation)
+			}
+			return param
+		}
+	}
+
+	function validatorObject() {
+		return new Validator();
+	}
+
+	let myValidator = new Validator();
+
+	// events click:
 	const transferBtn = document.querySelector(".new-paymant");
 	const trasnferFormPopup = document.querySelector(".transfer-form-popup");
 	const closePopupCross = document.querySelector(".close-popup-transfer-form");
@@ -154,30 +159,40 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	let testVariable = "1234";
-	fetch(`http://localhost:3001/rest/v1/products/${testVariable}`).then(response => {
-		console.log(response);
-		if (response.status === 200) {
-			response.json().then(resp => {
-				console.log(resp)
-			})
-		}
-	})
+	// let testVariable = "1234";
+	// fetch(`http://localhost:3001/rest/v1/products/${testVariable}`).then(response => {
+	// 	console.log(response);
+	// 	if (response.status === 200) {
+	// 		response.json().then(resp => {
+	// 			console.log(resp)
+	// 		})
+	// 	}
+	// })
+
+	const inputTable = [];
+	const customValidator = validatorObject();
+	let nameSurname;
+	const createInputElement = [];
+
+	createInputElement.map(element => {
+		console.log("as");
+		createInputElement.push();
+		element.setInputListener(customValidator.customValidation);
+	});
 
 
 // let data = new FormData();
-// data.append(name, "")
-// fetch(`http://localhost:3001/rest/v1/pekao-requests/postForm`, {
+// data.append(name, "dupa")
+// fetch(`http://localhost:3001/rest/v1/products/postForm`, {
 // 	method: 'POST',
 // 	mode: 'cors',
-// 	body: result
+// 	body: data
 // }).then(response => {
 // 	console.log(response)
 // 	if (response.status === 200) {
-// 		response.json().then(y => {
-// 			console.log(result)
-// 			console.log()
+// 		response.json().then(dupa => {
+// 			console.log(dupa)
 // 		})
 // 	}
 // });
-// });
+});
