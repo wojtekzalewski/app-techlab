@@ -1,11 +1,3 @@
-.none {
-    display: none;
-}
-
-.appear {
-    display: block;
-}
-
 .transfer-form-popup {
     width: 100%;
     z-index: 1;
@@ -278,7 +270,7 @@
         .order-name-container {
             display: flex;
             flex-direction: column;
-            margin: 19px 20px 185px 20px;
+            margin: 0px 20px 185px 20px;
 
             label[for=order-name] {
                 text-transform: uppercase;
@@ -286,7 +278,6 @@
                 font-size: 11px;
                 letter-spacing: 1.1px;
                 color: $second-brand-color;
-
             }
 
             .order-name-box {
@@ -324,7 +315,9 @@
                 flex-direction: column;
                 margin: auto;
                 z-index: 1;
-                transform: translateY(-15px);
+                transform: translateY(0px);
+                transform: translateY(-26px);
+                margin-right: 266px;
 
                 .next-arrow {
                     width: 20px;
@@ -415,7 +408,6 @@
                     label[for=transfer-amount],
                     .transfer-amount-box {
                         display: none;
-
                     }
 
                     .amount-and-title-desktop-box {
@@ -492,8 +484,8 @@
                         width: 230px;
                         height: 50px;
                         border-radius: 4px;
-                        transform: translateY(26px);
                         margin: 26px 20px 26px auto;
+                        transform: translateY(0px);
 
                         .next-arrow {
                             display: none;
@@ -505,25 +497,42 @@
                     }
                 }
             }
-
         }
     }
 
     @media (min-width: $desktop-width) {
         .transfer-form-popup {
+            .header-form {
+                padding-left: 246px;
+            }
             #transfer-form {
-                .main-section-transfer-form,
-                .submit-button-container {
-                    margin-left: 246px;
-                    margin-right: 246px;
+                .main-section-transfer-form {
+                    label[for=select-account],
+                    .select-account-box,
+                    .select-account-box-2,
+                    label[for=account-number],
+                    .account-number-box,
+                    .alert-empty-account-number,
+                    .address-desktop-box,
+                    label[for=title-transfer],
+                    .title-transfer-box,
+                    .title-transfer,
+                    .amount-and-title-desktop-box,
+                    .save-order-box,
+                    {
+                        margin-left: 246px;
+                        margin-right: 246px;
+                    }
+                    .order-name-container{
+                        margin: 0px 246px 185px 246px;
+                    }
+                    .address-desktop-box{
+                        label[for=address-recipient],
+                        .address-recipient-box{
+                            margin: 30px auto 9px 0px;
+                        }
+                    }
                 }
-
-                .save-order-box,
-                .order-name-container {
-                    margin-left: 266px;
-                    margin-right: 266px;
-                }
-
                 .submit-button-container {
                     margin-left: 0px;
                     margin-right: 0px;
@@ -532,9 +541,8 @@
                         width: 230px;
                         height: 50px;
                         border-radius: 4px;
-                        transform: translateY(26px);
-                        margin: 26px 266px 26px auto;
-
+                        transform: translateY(0px);
+                        margin-right: 266px;
                         .next-arrow {
                             display: none;
                         }
@@ -553,4 +561,11 @@
     }
     .border-red {
         border: 10px solid red;
+    }
+
+    .none {
+        display: none;
+    }
+    .appear {
+        display: block;
     }

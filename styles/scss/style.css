@@ -779,14 +779,6 @@ footer .footer-content {
     margin: 0px 100px 33px 100px;
   }
 }
-.none {
-  display: none;
-}
-
-.appear {
-  display: block;
-}
-
 .transfer-form-popup {
   width: 100%;
   z-index: 1;
@@ -1073,7 +1065,7 @@ footer .footer-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 19px 20px 185px 20px;
+  margin: 0px 20px 185px 20px;
 }
 .transfer-form-popup #transfer-form .order-name-container label[for=order-name] {
   text-transform: uppercase;
@@ -1126,8 +1118,11 @@ footer .footer-content {
           flex-direction: column;
   margin: auto;
   z-index: 1;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transform: translateY(-26px);
+          transform: translateY(-26px);
+  margin-right: 266px;
 }
 .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
   width: 20px;
@@ -1264,9 +1259,9 @@ footer .footer-content {
     width: 230px;
     height: 50px;
     border-radius: 4px;
-    -webkit-transform: translateY(26px);
-            transform: translateY(26px);
     margin: 26px 20px 26px auto;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
@@ -1276,15 +1271,30 @@ footer .footer-content {
   }
 }
 @media (min-width: 1024px) {
-  .transfer-form-popup #transfer-form .main-section-transfer-form,
-  .transfer-form-popup #transfer-form .submit-button-container {
+  .transfer-form-popup .header-form {
+    padding-left: 246px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=select-account],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box,
+  .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box-2,
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=account-number],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .account-number-box,
+  .transfer-form-popup #transfer-form .main-section-transfer-form .alert-empty-account-number,
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box,
+  .transfer-form-popup #transfer-form .main-section-transfer-form label[for=title-transfer],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box,
+  .transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer,
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box,
+  .transfer-form-popup #transfer-form .main-section-transfer-form .save-order-box {
     margin-left: 246px;
     margin-right: 246px;
   }
-  .transfer-form-popup #transfer-form .save-order-box,
-  .transfer-form-popup #transfer-form .order-name-container {
-    margin-left: 266px;
-    margin-right: 266px;
+  .transfer-form-popup #transfer-form .main-section-transfer-form .order-name-container {
+    margin: 0px 246px 185px 246px;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
+    margin: 30px auto 9px 0px;
   }
   .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
@@ -1294,9 +1304,9 @@ footer .footer-content {
     width: 230px;
     height: 50px;
     border-radius: 4px;
-    -webkit-transform: translateY(26px);
-            transform: translateY(26px);
-    margin: 26px 266px 26px auto;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-right: 266px;
   }
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
@@ -1311,6 +1321,14 @@ footer .footer-content {
 
 .border-red {
   border: 10px solid red;
+}
+
+.none {
+  display: none;
+}
+
+.appear {
+  display: block;
 }
 
 #transfer-success {
@@ -1866,4 +1884,11 @@ footer .footer-content {
             align-items: center;
     cursor: pointer;
   }
+}
+.none {
+  display: none;
+}
+
+.appear {
+  display: block;
 }
