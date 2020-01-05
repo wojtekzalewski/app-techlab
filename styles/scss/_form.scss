@@ -7,7 +7,6 @@
     transition: all 1s linear;
 
     .header-form {
-
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -45,10 +44,6 @@
                 height: 50px;
                 cursor: pointer;
 
-                .account-box-przekorzystne{
-
-                }
-
                 .arrow-account {
                     cursor: pointer;
                     width: 21px;
@@ -71,7 +66,8 @@
                     height: 13px;
                 }
             }
-            .select-account-box-2{
+
+            .select-account-box-2 {
                 transform: translateY(-10px);
             }
 
@@ -93,6 +89,21 @@
                     color: #858585;
                     height: 22px;
                 }
+            }
+
+            .transfer-error-alert {
+                width: auto;
+                height: 50px;
+                background-color: #ac1419;
+                color: $white;
+                line-height: 50px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                padding-left: 20px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                margin: 0px 20px 0px 20px;
+                font-size: 16px;
             }
 
             .address-desktop-box {
@@ -164,7 +175,8 @@
                     border: 0px;
                     margin: 13px 21px 18px 21px;
                 }
-                #address-recipient{
+
+                #address-recipient {
                     height: 19px;
                     font-size: 16px;
                     font-weight: normal;
@@ -212,7 +224,7 @@
         }
 
         .save-order-box {
-            margin: 30px 20px 15px 20px;
+            margin: 30px 20px 0px 20px;
             width: auto;
 
             .save-order {
@@ -278,10 +290,11 @@
                 font-size: 11px;
                 letter-spacing: 1.1px;
                 color: $second-brand-color;
+                margin: 19px auto 9px 0px;
             }
 
             .order-name-box {
-                width: auto;
+                width: 100%;
                 margin: 9px 0px 0px 0px;
                 border-radius: 4px;
                 border: solid 1px #b4b4b4;
@@ -293,7 +306,7 @@
                     letter-spacing: normal;
                     color: #858585;
                     width: 100%;
-                    margin: 13px 21px 18px 21px;
+                    margin: 13px 126px 18px 21px;
                 }
             }
         }
@@ -317,7 +330,6 @@
                 z-index: 1;
                 transform: translateY(0px);
                 transform: translateY(-26px);
-                margin-right: 266px;
 
                 .next-arrow {
                     width: 20px;
@@ -342,136 +354,144 @@
     }
 }
 
-.alert-display {
-    display: block;
-}
+@media (min-width: $tablet-width) {
+    .transfer-form-popup {
+        top: 20px;
 
-.transfer-form-popup {
-    #transfer-form {
-        .main-section-transfer-form {
-            .none {
-                display: none;
+        .header-form {
+            height: 80px;
+
+            h6 {
+                font-size: 26px;
+                font-size: 26px;
+                @include text-style-normal;
+                font-weight: 900;
+                letter-spacing: normal;
+                height: 32px;
             }
         }
-    }
-}
 
-.transfer-form-popup {
-    #transfer-form {
-        .main-section-transfer-form {
-            .alert-empty-account-number {
-                .alert-hidden {
-                    display: none;
-                }
-            }
-        }
-    }
-}
+        #transfer-form {
+            .main-section-transfer-form {
+                .amount-and-title-desktop-box {
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    grid-gap: 19px;
+                    margin-left: 19px;
+                    margin-right: 19px;
 
-    @media (min-width: $tablet-width) {
-        .transfer-form-popup {
-            top: 20px;
+                    .amount-desktop-box {
+                        grid-column: 1/5;
 
-            .header-form {
-                height: 80px;
+                        .transfer-amount-box {
+                            margin: 9px 0px 0px 0px;
 
-                h6 {
-                    font-size: 26px;
-                    font-size: 26px;
-                    @include text-style-normal;
-                    font-weight: 900;
-                    letter-spacing: normal;
-                    height: 32px;
-                }
-            }
-
-            #transfer-form {
-                .main-section-transfer-form {
-                    .address-desktop-box {
-                        display: block;
-                        margin-top: 0px;
-
-                        label[for=address-recipient],
-                        .address-recipient-box {
-                            display: block;
+                            .transfer-amount-desktop {
+                                width: 100%;
+                                margin: 13px 21px 18px 21px;
+                                font-size: 16px;
+                                font-weight: normal;
+                                letter-spacing: normal;
+                                color: $second-brand-color;
+                                border: 0px;
+                            }
                         }
-                    }
-
-                    label[for=address-recipient] {
-                        display: none;
-                    }
-
-                    .address-recipient-box {
-                        display: none;
                     }
 
                     label[for=transfer-amount],
                     .transfer-amount-box {
-                        display: none;
+                        display: flex;
                     }
 
-                    .amount-and-title-desktop-box {
-                        display: grid;
-                        grid-template-columns: repeat(12, 1fr);
-                        grid-gap: 19px;
-                        margin-left: 19px;
-                        margin-right: 19px;
+                    .amount-transfer-alert {
+                        margin: 0px !important;
+                    }
 
-                        .amount-desktop-box {
-                            grid-column: 1/5;
+                    label[for=transfer-amount] {
+                        margin: 30px auto 9px 0px;
+                    }
 
-                            .transfer-amount-box {
-                                margin: 9px 0px 0px 0px;
+                    .title-desktop-box {
+                        padding-top: 24px;
+                        width: 100%;
+                        margin-right: 20px;
+                        grid-column: 5/-1;
 
-                                .transfer-amount-desktop {
-                                    width: 100%;
-                                    margin: 13px 21px 18px 21px;
-                                    font-size: 16px;
-                                    font-weight: normal;
-                                    letter-spacing: normal;
-                                    color: $second-brand-color;
-                                    border: 0px;
-                                }
-                            }
+
+                        .transfer-amount {
+                            width: 100%;
                         }
 
-                        label[for=transfer-amount],
-                        .transfer-amount-box {
-                            display: flex;
-                        }
-
-                        label[for=transfer-amount] {
+                        label[for=title-transfer] {
                             margin: 30px auto 9px 0px;
                         }
 
-                        .title-desktop-box {
-                            padding-top: 24px;
-                            width: 100%;
-                            margin-right: 20px;
-                            grid-column: 5/-1;
+                        .title-transfer-box {
+                            margin: 9px 0px 0px 0px;
 
-
-                            .transfer-amount {
+                            .title-transfer-desktop {
+                                height: 19px;
+                                font-size: 16px;
+                                @include text-style-normal;
+                                letter-spacing: normal;
+                                color: #858585;
+                                margin: 13px 21px 18px 21px;
                                 width: 100%;
                             }
+                        }
 
-                            label[for=title-transfer] {
-                                margin: 30px auto 9px 0px;
-                            }
+                        .title-transfer-alert,
+                            {
+                            margin: 0px !important;
+                        }
+                    }
+                }
 
-                            .title-transfer-box {
-                                margin: 9px 0px 0px 0px;
+                .address-recipient-tablet,
+                .address-recipient-tablet-box {
+                    display: none;
+                }
 
-                                .title-transfer-desktop {
-                                    height: 19px;
-                                    font-size: 16px;
-                                    @include text-style-normal;
-                                    letter-spacing: normal;
-                                    color: #858585;
-                                    margin: 13px 21px 18px 21px;
-                                    width: 100%;
-                                }
-                            }
+                label[for=transfer-amount],
+                .transfer-amount-box {
+                    display: none;
+                }
+
+                .transfer-amount-box {
+                    +.trasnfer-error-alert {
+                        display: none;
+                    }
+                }
+
+                .address-recipient-box {
+                    +.transfer-error-alert {
+                        display: none;
+                    }
+                }
+
+                .error-alert-transfer-amount {
+                    display: none !important;
+                }
+
+                .address-desktop-box {
+                    display: block;
+                    margin-top: 30px;
+
+                    .transfer-error-alert {
+                        display: none !important;
+                    }
+
+                    .address-recipient-box {
+                        display: block;
+
+                        .transfer-error-alert {
+                            display: none !important;
+                        }
+                    }
+
+                    .order-name-container {
+                        .order-name-box {
+                            width: 31%;
                         }
                     }
                 }
@@ -499,73 +519,78 @@
             }
         }
     }
+}
 
-    @media (min-width: $desktop-width) {
-        .transfer-form-popup {
-            .header-form {
-                padding-left: 246px;
-            }
-            #transfer-form {
-                .main-section-transfer-form {
-                    label[for=select-account],
-                    .select-account-box,
-                    .select-account-box-2,
-                    label[for=account-number],
-                    .account-number-box,
-                    .alert-empty-account-number,
-                    .address-desktop-box,
-                    label[for=title-transfer],
-                    .title-transfer-box,
-                    .title-transfer,
-                    .amount-and-title-desktop-box,
-                    .save-order-box,
-                    {
-                        margin-left: 246px;
-                        margin-right: 246px;
-                    }
-                    .order-name-container{
-                        margin: 0px 246px 185px 246px;
-                    }
-                    .address-desktop-box{
-                        label[for=address-recipient],
-                        .address-recipient-box{
-                            margin: 30px auto 9px 0px;
-                        }
+@media (min-width: $desktop-width) {
+    .transfer-form-popup {
+        .header-form {
+            padding-left: 246px;
+        }
+
+        #transfer-form {
+            .main-section-transfer-form {
+
+                label[for=select-account],
+                .select-account-box,
+                .select-account-box-2,
+                label[for=account-number],
+                .account-number-box,
+                .alert-empty-account-number,
+                .address-desktop-box,
+                label[for=title-transfer],
+                .title-transfer-box,
+                .title-transfer,
+                .amount-and-title-desktop-box,
+                .save-order-box {
+                    margin-left: 246px;
+                    margin-right: 246px;
+                }
+
+                .order-name-container {
+                    margin: 0px 246px 185px 246px;
+                }
+
+                .address-desktop-box {
+
+                    label[for=address-recipient],
+                    .address-recipient-box {
+                        margin: 30px auto 9px 0px;
                     }
                 }
-                .submit-button-container {
-                    margin-left: 0px;
-                    margin-right: 0px;
 
-                    .next-button-box {
-                        width: 230px;
-                        height: 50px;
-                        border-radius: 4px;
-                        transform: translateY(0px);
-                        margin-right: 266px;
-                        .next-arrow {
-                            display: none;
-                        }
+                .transfer-error-alert {
+                    margin: 0px 246px 0px 246px;
+                }
+            }
 
-                        .next {
-                            margin: 17px 93px;
-                        }
+            .submit-button-container {
+                margin-left: 0px;
+                margin-right: 0px;
+
+                .next-button-box {
+                    width: 230px;
+                    height: 50px;
+                    border-radius: 4px;
+                    transform: translateY(0px);
+                    margin-right: 266px;
+
+                    .next-arrow {
+                        display: none;
+                    }
+
+                    .next {
+                        margin: 17px 93px;
                     }
                 }
             }
         }
     }
+}
 
-    .border-green {
-        border: 10px solid green;
-    }
-    .border-red {
-        border: 10px solid red;
-    }
+.none {
+    display: none !important;
+}
 
-    .none {
-        display: none;
-    }
-    .appear {
-        display: block;
-    }
+.appear {
+    display: block;
+}

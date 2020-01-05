@@ -206,37 +206,30 @@
                 <div class="account-number-box">
                     <input type="text" placeholder="Wpisz rachunek odbiorcy" class="account-number">
                 </div>
-                <span class="alert-empty-account-number">
-                    <p class="enter-account-number">Wpisz kwotę
-                    </p>
-                </span>
+                <div class="transfer-error-alert" style="display:block;">Wpisz wartość</div>
                 <div class="address-desktop-box">
                     <label for="address-recipient">adres odbiorcy (opcjonalnie)</label>
                     <div class="address-recipient-box">
-                        <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy">
+                        <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy" name="targetAccount">
                     </div>
+                    <div class="transfer-error-alert" style="display:block;">Podaj nazwę</div>
                 </div>
-                <!-- <span class="alert-empty-account-number alert-hidden">
-                    <p class="enter-account-number">Wpisz adres
-                    </p>
-                </span> -->
+
                 <label for="transfer-amount">kwota przelewu</label>
                 <div class="transfer-amount-box">
                     <input class="transfer-amount" type="text" placeholder="12 040,37">
                     <span class="currency-transfer-amount">PLN</span>
                 </div>
-                <label for="address-recipient">adres odbiorcy (opcjonalnie)</label>
-                <div class="address-recipient-box">
+                <div class="transfer-error-alert error-alert-transfer-amount" style="display:block;">Podaj kwotę</div>
+                <label for="address-recipient" class="address-recipient-tablet">adres odbiorcy (opcjonalnie)</label>
+                <div class="address-recipient-box address-recipient-tablet-box">
                     <input type="text" class="address-recipient" placeholder="Wpisz adres odbiorcy">
                 </div>
                 <label for="title-transfer">tytułem</label>
                 <div class="title-transfer-box">
                     <input type="text" class="title-transfer" placeholder="Placeholder" name="transferTitle">
                 </div>
-                <span class="alert-empty-account-number">
-                    <p class="enter-account-number">Wpisz tytuł
-                    </p>
-                </span>
+                <div class="transfer-error-alert" style="display:block;">Podaj wartość</div>
                 <div class="amount-and-title-desktop-box">
                     <div class="amount-desktop-box">
                         <label for="transfer-amount">kwota przelewu</label>
@@ -244,13 +237,16 @@
                             <input class="transfer-amount-desktop" type="text" placeholder="12 040,37">
                             <span class="currency-transfer-amount">PLN</span>
                         </div>
+                        <div class="transfer-error-alert amount-transfer-alert" style="display:block;"
+                        >Podaj kwotę</div>
                     </div>
                     <div class="title-desktop-box">
                         <label for="title-transfer">tytułem</label>
-                        <div class="title-transfer-box">
-                            <input type="text" name="transferTitle" class="title-transfer-desktop" class="title-transfer"
-                                placeholder="Placeholder">
+                        <div class="title-transfer-box transfer__textField--error">
+                            <input type="text" name="transferTitle" class="title-transfer-desktop transferTitle" placeholder="Placeholder">
                         </div>
+                        <div class="transfer-error-alert title-transfer-alert" style="display:block;"
+                        >Podaj wartość</div>
                     </div>
                 </div>
             </dciv>
@@ -267,7 +263,7 @@
 
             </div>
             <div class="submit-button-container">
-                <button type="submit" class="next-button-box">
+                <button type="submit" class="next-button-box transferSubmit">
                     <img src="img/110.png" srcset="img/110@2x.png 2x,
                  img/110@3x.png 3x" class="next-arrow">
                     <span class="next">dalej</span>
@@ -340,7 +336,6 @@
                 <p class="saldo">saldo po operacji: 123 123, 12 PLN</p>
                 <p class="pdf-confirmation">spróbuj ponownie</p>
             </div>
-            
         </div>
         <p class="pdf-confirmation-desktop">spróbuj ponownie</p>
     </section>
@@ -370,15 +365,6 @@
         </p>
     </footer>
     <!-- footer -->
-
-    <!-- <script src="./scripts/app.js"></script> -->
-    <!-- <script src="./scripts/form.js"></script> -->
-    <!-- <script src="./scripts/index.js"></script> -->
-
-    <script src="./scripts/inputObject.js"></script>
-    <script src="./scripts/consumer.js"></script>
-    <script src="./scripts/validators.js"></script>
-    <script src="./scripts/app.js"></script>
+    <script src="scripts/transferFormValidation.js"></script>
 </body>
-
 </html>
