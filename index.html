@@ -176,7 +176,7 @@
 
     <!-- transfer-form -->
 
-    <section class="transfer-form-popup none">
+    <section class="transfer-form-popup none trForm">
         <div class="header-form">
             <h6>Przelew krajowy</h6>
             <img src="img/a.png" srcset="img/a@2x.png 2x,
@@ -204,7 +204,7 @@
                 </div>
                 <label for="account-number">na rachunek</label>
                 <div class="account-number-box">
-                    <input type="text" placeholder="Wpisz rachunek odbiorcy" class="account-number">
+                    <input type="text" placeholder="Wpisz rachunek odbiorcy" class="account-number targetAccount">
                 </div>
                 <div class="transfer-error-alert" style="display:block;">Wpisz wartość</div>
                 <div class="address-desktop-box">
@@ -226,10 +226,10 @@
                     <input type="text" class="address-recipient" placeholder="Wpisz adres odbiorcy">
                 </div>
                 <label for="title-transfer">tytułem</label>
-                <div class="title-transfer-box">
-                    <input type="text" class="title-transfer" placeholder="Placeholder" name="transferTitle">
+                <div class="title-transfer-box title-transfer-mobile">
+                    <input type="text" class="title-transfer title-transfer-mob" placeholder="Placeholder"">
                 </div>
-                <div class="transfer-error-alert" style="display:block;">Podaj wartość</div>
+                <div class="transfer-error-alert title-transfer-alert" style="display:block;">Podaj wartość</div>
                 <div class="amount-and-title-desktop-box">
                     <div class="amount-desktop-box">
                         <label for="transfer-amount">kwota przelewu</label>
@@ -243,7 +243,7 @@
                     <div class="title-desktop-box">
                         <label for="title-transfer">tytułem</label>
                         <div class="title-transfer-box transfer__textField--error">
-                            <input type="text" name="transferTitle" class="title-transfer-desktop transferTitle" placeholder="Placeholder">
+                            <input type="text" class="title-transfer-desktop" placeholder="Placeholder">
                         </div>
                         <div class="transfer-error-alert title-transfer-alert" style="display:block;"
                         >Podaj wartość</div>
@@ -263,7 +263,7 @@
 
             </div>
             <div class="submit-button-container">
-                <button type="submit" class="next-button-box transferSubmit">
+                <button class="next-button-box transfer__btn transfer-submit">
                     <img src="img/110.png" srcset="img/110@2x.png 2x,
                  img/110@3x.png 3x" class="next-arrow">
                     <span class="next">dalej</span>
@@ -272,9 +272,9 @@
         </form>
     </section>
 
-    <!-- section transfer success -->
+     <!-- section transfer -->
 
-    <section id="transfer-success" style="display: none">
+    <section id="transfer-success" class="none transferFinishForm">
         <div class="header-transfer-success">
             <img src="img/97.png" srcset="img/97@2x.png 2x,
                         img/97@3x.png 3x" class="transfer-success-check">
@@ -307,7 +307,7 @@
         <p class="pdf-confirmation-desktop">potwierdzenie pdf</p>
     </section>
 
-    <section id="transfer-failed" style="display: none">
+    <section id="transfer-failed" class="none transferFinishForm">
         <div class="header-transfer-failed">
             <img src="img/97.png" srcset="img/97@2x.png 2x,
                         img/97@3x.png 3x" class="transfer-failed-check">
@@ -340,7 +340,7 @@
         <p class="pdf-confirmation-desktop">spróbuj ponownie</p>
     </section>
 
-    <!-- section transfer success
+    <!-- section transfer -->
 
     <!-- transfer-form -->
 

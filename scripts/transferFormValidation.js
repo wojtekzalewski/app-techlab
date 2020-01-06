@@ -2,12 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	const newPaymentBtn = document.querySelector(".new-paymant");
 	const closePayment = document.querySelector(".close-popup-transfer-form");
 	const transferForm = document.querySelector(".transfer-form-popup");
-
 	newPaymentBtn.addEventListener("click", function () {
 		transferForm.classList.contains('none') && transferForm.classList.remove('none');
 		const transfer = new Transfer();
 	});
-
 	closePayment.addEventListener("click", function () {
 		transferForm.classList.add('none');
     });
@@ -16,53 +14,62 @@ document.addEventListener("DOMContentLoaded", function () {
 	secondAccount.classList.add('none');
 	const closeSelectaccount = document.querySelector('.arrow-account');
 	closeSelectaccount.addEventListener("click", function(){
-			console.log('aaa');
-		// secondAccount.style.display = "none";
-		// secondAccount.classList.remove('none')
 		secondAccount.classList.toggle('none');
-
 	});
 
 class Transfer {
     constructor() {
-        // ------------------- data element -------------------
         this.data = {};
 
-        // ------------------- dom elements -------------------
         this.targetAccount = document.querySelector(".targetAccount");
-        this.transferAmount = document.querySelector(".transferAmount");
+        
+        this.transferAmount = document.querySelector(".transfer-amount");
+        this.transferAmountDesktop = document.querySelector(".transfer-amount-desktop");
+
         this.targetAddress = document.querySelector(".targetAddress");
-        this.transferTitle = document.querySelector(".transferTitle");
+        
+        this.transferTitle = document.querySelector(".title-transfer-mob");
+        this.transferTitleDesktop = document.querySelector(".title-transfer-desktop");
+
         this.transferType = document.querySelector(".transferType");
-        this.transferSubmit = document.querySelector(".transferSubmit");
+        this.transferSubmit = document.querySelector(".transfer-submit");
         this.transferForm= document.querySelector(".transferForm");
         this.transferFinish = document.querySelector(".transferFinishForm");
         this.transferFinishCloseBtn = document.querySelector(".transferFinishCloseBtn");
 
-        // ------------------- regexp -------------------
         // this.regexpAccNr = /^[0-9]{26}$/;
         this.regexpAccNr = /^[0-9]{4}$/;
         this.regexpAmount = /^[0-9]{1,10}[,][0-9]{2}$/;
         this.regexpTitle = /^[a-zA-z\s\dżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,60}$/;
 
-        // ------------------- input validation -------------------
 
         this.validationElementTable = [
-            // {
-            //     element: this.targetAccount,
-            //     regexp: this.regexpAccNr,
-            //     status: false,
-            // },
-            // {
-            //     element: this.transferAmount,
-            //     regexp: this.regexpAmount,
-            //     status: false,
-            // },
+            {
+                element: this.targetAccount,
+                regexp: this.regexpAccNr,
+                status: false,
+            },
+            {
+                element: this.transferAmount,
+                regexp: this.regexpAmount,
+                status: false,
+            },
+            {
+                element: this.transferAmountDesktop,
+                regexp: this.regexpAmount,
+                status: false,
+            },
             {
                 element: this.transferTitle,
                 regexp: this.regexpTitle,
                 status: false,
-            }
+            },
+            {
+                element: this.transferTitleDesktop,
+                regexp: this.regexpTitle,
+                status: false,
+            },
+
         ];
 
         this.createValidationEvent();
@@ -90,8 +97,10 @@ class Transfer {
         this.data = {
             targetAccount: this.targetAccount.value,
             amount: this.transferAmount.value,
+            amountDesktop: this.transferAmountDesktop.value,
             address: this.targetAddress.value,
             title: this.transferTitle.value,
+            titleDesktop: this.transferTitleDesktop.value,
             transferType: this.transferType.value,
             success: true
         };
@@ -105,18 +114,23 @@ class Transfer {
 
     validateField(obj, regexp, index) {
         if (regexp.test(obj.value)) {
-            obj.classList.contains("transfer__textField--error") && obj.classList.remove("transfer__textField--error");
-            obj.parentElement.parentElement.children[2].style.display = 'none';
+            // obj.classList.contains("transfer__textField--error") && obj.classList.remove("transfer__textField--error");
+            obj.parentElement.nextElementSibling.classList.add('none');
+            obj.parentElement.parentElement.children[2].classList.add('none');
             this.validationElementTable[index].status = true;
             return true;
+
         } else {
             this.validationElementTable[index].status = false;
-            obj.classList.add("transfer__textField--error");
-            obj.parentElement.parentElement.children[2].style.display = 'block';
+            // obj.classList.add("transfer__textField--error");
+            obj.parentElement.parentElement.children[2].classList.add('apear');
+            obj.parentElement.nextElementSibling.classList.add('apear');
             if (obj.value) {
-                obj.parentElement.parentElement.children[2].innerText = 'zła wartość';
+                obj.parentElement.parentElement.children[2].innerText = 'error';
+                obj.parentElement.nextElementSibling.innerText = 'error';
             } else {
                 obj.parentElement.parentElement.children[2].innerText = 'podaj wartość';
+                obj.parentElement.nextElementSibling.innerText = 'podaj wartość';
             }
             return false
         }
@@ -136,11 +150,11 @@ class Transfer {
         let listSuccess = document.querySelectorAll(".tcSuccess");
 
         listFail.forEach(element => {
-            element.classList.add('none')
+            element.classList.add('none');
         });
 
         listSuccess.forEach(element => {
-            element.classList.remove('none')
+            element.classList.remove('none');
         });
     }
 
@@ -166,12 +180,7 @@ class Transfer {
     async submitTransferForm() {
         if (this.validateAllFields()) {
             this.getAllValue();
-            // this.fillFinishForm(this.data);
-            // console.log(this.data);
             const response = await this.sendData(this.data);
-            // const json = response.json();
-
-            // console.log(json);
 
             if (response.status === 201) {
                 const json = await response.json();
@@ -225,5 +234,4 @@ class Transfer {
         tcReceiverTitle.innerText = obj.title;
     }
 }
-
 })

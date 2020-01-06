@@ -305,7 +305,7 @@
                     @include text-style-normal;
                     letter-spacing: normal;
                     color: #858585;
-                    width: 100%;
+                    width: auto;
                     margin: 13px 126px 18px 21px;
                 }
             }
@@ -410,7 +410,6 @@
                     label[for=transfer-amount] {
                         margin: 30px auto 9px 0px;
                     }
-
                     .title-desktop-box {
                         padding-top: 24px;
                         width: 100%;
@@ -429,6 +428,17 @@
                         .title-transfer-box {
                             margin: 9px 0px 0px 0px;
 
+                            .title-transfer-alert{
+                                display: none;
+                            }
+
+                            .title-transfer-alert{
+                                display: none;
+                            }
+
+                            + .transfer-error-alert {
+                                display:none;
+                            }
                             .title-transfer-desktop {
                                 height: 19px;
                                 font-size: 16px;
@@ -440,8 +450,7 @@
                             }
                         }
 
-                        .title-transfer-alert,
-                            {
+                        .title-transfer-alert{
                             margin: 0px !important;
                         }
                     }
@@ -463,12 +472,6 @@
                     }
                 }
 
-                .address-recipient-box {
-                    +.transfer-error-alert {
-                        display: none;
-                    }
-                }
-
                 .error-alert-transfer-amount {
                     display: none !important;
                 }
@@ -483,16 +486,14 @@
 
                     .address-recipient-box {
                         display: block;
-
-                        .transfer-error-alert {
-                            display: none !important;
-                        }
                     }
-
-                    .order-name-container {
-                        .order-name-box {
-                            width: 31%;
-                        }
+                    .alert-recipient-box{
+                        display:none;
+                    }
+                }
+                .order-name-container {
+                    .order-name-box {
+                        width: 31.60%;
                     }
                 }
 
@@ -515,6 +516,17 @@
                             margin: 17px 93px;
                         }
                     }
+                }
+            }
+            .address-recipient-tablet-box{
+                + label[for=title-transfer] {
+                    display: none;
+                }
+            }
+            .title-transfer-mobile{
+                display:none !important;
+                + .title-transfer-alert{
+                    display: none !important;
                 }
             }
         }
@@ -551,10 +563,9 @@
                 }
 
                 .address-desktop-box {
-
                     label[for=address-recipient],
                     .address-recipient-box {
-                        margin: 30px auto 9px 0px;
+                        margin: 9px auto 0px 0px;
                     }
                 }
 
@@ -586,7 +597,6 @@
         }
     }
 }
-
 .none {
     display: none !important;
 }

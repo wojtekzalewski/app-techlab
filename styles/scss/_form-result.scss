@@ -160,83 +160,6 @@
     }
 }
 
-@media (min-width: $tablet-width) {
-    #transfer-success {
-        .header-transfer-success {
-            margin-left: 0px;
-            justify-content: normal;
-
-            .transfer-realized-header {
-                margin-left: 15px;
-            }
-            .transfer-realized-box-oval{
-                position: absolute;
-                right: 22px;
-            }
-
-            .body-transfer-success {
-                .sender-reciver-row {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-left: 55px;
-
-                    .sender-col {
-                        .sender {
-                            margin: 4px 91px 4px 0px;
-                            text-transform: uppercase;
-                        }
-
-                        .my-account {
-                            margin: 4px 91px 4px 0px;
-                        }
-
-                        .acc-number {
-                            margin: 4px 91px 4px 0px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: $desktop-width) {
-    #transfer-success {
-        height: 204px;
-
-        .body-transfer-success {
-            display: flex;
-
-            .sender-reciver-row {
-                display: flex;
-
-            }
-            .amount-col {
-                .pdf-confirmation {
-                    display: none;
-                }
-            }
-        }
-
-        .pdf-confirmation-desktop {
-            display: flex;
-            margin: 0px 121px 21px 54px;
-            width: 186px;
-            height: 30px;
-            border-radius: 4px;
-            background-color: rgba(47, 50, 52, 0.3);
-            font-size: 12px;
-            @include text-style-normal;
-            letter-spacing: 1.1px;
-            color: $white;
-            text-transform: uppercase;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-    }
-}
-
 #transfer-failed {
     background-color: #ac1419;
     width: 100%;
@@ -245,7 +168,6 @@
     flex-direction: column;
 
     .header-transfer-failed {
-        display: flex;
         display: flex;
         justify-content: space-between;
         padding: 21px 17px 20px 20px;
@@ -405,15 +327,27 @@
     }
 }
 
+#transfer-success,
+#transfer-failed {
+    position: absolute;
+    z-index: 1;
+    top: 56px;
+}
+
 @media (min-width: $tablet-width) {
-    #transfer-failed {
-        .header-transfer-failed {
+    #transfer-success {
+        position: absolute;
+        z-index: 1;
+        top: 56px;
+
+        .header-transfer-success {
             margin-left: 0px;
             justify-content: normal;
 
             .transfer-realized-header {
                 margin-left: 15px;
             }
+
             .transfer-realized-box-oval {
                 position: absolute;
                 right: 22px;
@@ -433,31 +367,78 @@
 
                         .my-account {
                             margin: 4px 91px 4px 0px;
-                            text-transform: uppercase;
                         }
 
                         .acc-number {
                             margin: 4px 91px 4px 0px;
-                            text-transform: uppercase;
                         }
                     }
                 }
             }
         }
     }
+
+    .header-transfer-failed {
+        margin-left: 0px;
+        justify-content: normal;
+
+        .transfer-realized-header {
+            margin-left: 15px;
+        }
+
+        .transfer-realized-box-oval {
+            position: absolute;
+            right: 22px;
+        }
+
+        .body-transfer-success {
+            .sender-reciver-row {
+                display: flex;
+                justify-content: space-between;
+                margin-left: 55px;
+
+                .sender-col {
+                    .sender {
+                        margin: 4px 91px 4px 0px;
+                        text-transform: uppercase;
+                    }
+
+                    .my-account {
+                        margin: 4px 91px 4px 0px;
+                        text-transform: uppercase;
+                    }
+
+                    .acc-number {
+                        margin: 4px 91px 4px 0px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    #transfer-success,
+    #transfer-failed {
+        position: absolute;
+        z-index: 1;
+        top: 112px;
+    }
 }
 
+
+
 @media (min-width: $desktop-width) {
-    #transfer-failed {
+    #transfer-success {
         height: 204px;
 
-        .body-transfer-failed {
+        .body-transfer-success {
             display: flex;
 
             .sender-reciver-row {
                 display: flex;
 
             }
+
             .amount-col {
                 .pdf-confirmation {
                     display: none;
@@ -484,10 +465,49 @@
     }
 }
 
-.none {
-    display: none;
-}
-
 .appear {
     display: block;
 }
+.transfer__finish--close {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    margin: 24px 20px 10px auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+  }
+.transfer__finish {
+    position: absolute;
+    top: 150px;
+    z-index: 170;
+    width: 100%;
+    min-width: 360px;
+    max-width: 1200px;
+    color: white;
+  }
+  .transfer__finish--close {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    margin: 24px 20px 10px auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+  }
+  .transfer__finish--success {
+    background-color: #3ca933;
+  }
+  .transfer__finish--fail {
+    background-color: #ac1419;
+  }

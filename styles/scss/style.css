@@ -1106,7 +1106,7 @@ footer .footer-content {
   line-height: normal;
   letter-spacing: normal;
   color: #858585;
-  width: 100%;
+  width: auto;
   margin: 13px 126px 18px 21px;
 }
 .transfer-form-popup #transfer-form .submit-button-container {
@@ -1226,6 +1226,15 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
     margin: 9px 0px 0px 0px;
   }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box .title-transfer-alert {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box .title-transfer-alert {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box + .transfer-error-alert {
+    display: none;
+  }
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box .title-transfer-desktop {
     height: 19px;
     font-size: 16px;
@@ -1252,9 +1261,6 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box + .trasnfer-error-alert {
     display: none;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-box + .transfer-error-alert {
-    display: none;
-  }
   .transfer-form-popup #transfer-form .main-section-transfer-form .error-alert-transfer-amount {
     display: none !important;
   }
@@ -1268,11 +1274,11 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
     display: block;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box .transfer-error-alert {
-    display: none !important;
+  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .alert-recipient-box {
+    display: none;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .order-name-container .order-name-box {
-    width: 31%;
+  .transfer-form-popup #transfer-form .main-section-transfer-form .order-name-container .order-name-box {
+    width: 31.60%;
   }
   .transfer-form-popup #transfer-form .main-section-transfer-form .submit-button-container {
     margin-left: 0px;
@@ -1291,6 +1297,15 @@ footer .footer-content {
   }
   .transfer-form-popup #transfer-form .main-section-transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
+  }
+  .transfer-form-popup #transfer-form .address-recipient-tablet-box + label[for=title-transfer] {
+    display: none;
+  }
+  .transfer-form-popup #transfer-form .title-transfer-mobile {
+    display: none !important;
+  }
+  .transfer-form-popup #transfer-form .title-transfer-mobile + .title-transfer-alert {
+    display: none !important;
   }
 }
 @media (min-width: 1024px) {
@@ -1317,7 +1332,7 @@ footer .footer-content {
   }
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
-    margin: 30px auto 9px 0px;
+    margin: 9px auto 0px 0px;
   }
   .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-error-alert {
     margin: 0px 246px 0px 246px;
@@ -1547,83 +1562,6 @@ footer .footer-content {
   display: none;
 }
 
-@media (min-width: 768px) {
-  #transfer-success .header-transfer-success {
-    margin-left: 0px;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-  }
-  #transfer-success .header-transfer-success .transfer-realized-header {
-    margin-left: 15px;
-  }
-  #transfer-success .header-transfer-success .transfer-realized-box-oval {
-    position: absolute;
-    right: 22px;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 55px;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .sender {
-    margin: 4px 91px 4px 0px;
-    text-transform: uppercase;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .my-account {
-    margin: 4px 91px 4px 0px;
-  }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number {
-    margin: 4px 91px 4px 0px;
-  }
-}
-@media (min-width: 1024px) {
-  #transfer-success {
-    height: 204px;
-  }
-  #transfer-success .body-transfer-success {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #transfer-success .body-transfer-success .sender-reciver-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #transfer-success .body-transfer-success .amount-col .pdf-confirmation {
-    display: none;
-  }
-  #transfer-success .pdf-confirmation-desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0px 121px 21px 54px;
-    width: 186px;
-    height: 30px;
-    border-radius: 4px;
-    background-color: rgba(47, 50, 52, 0.3);
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.1px;
-    color: #fff;
-    text-transform: uppercase;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer;
-  }
-}
 #transfer-failed {
   background-color: #ac1419;
   width: 100%;
@@ -1639,7 +1577,6 @@ footer .footer-content {
 #transfer-failed .header-transfer-failed {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1824,21 +1761,33 @@ footer .footer-content {
   display: none;
 }
 
+#transfer-success,
+#transfer-failed {
+  position: absolute;
+  z-index: 1;
+  top: 56px;
+}
+
 @media (min-width: 768px) {
-  #transfer-failed .header-transfer-failed {
+  #transfer-success {
+    position: absolute;
+    z-index: 1;
+    top: 56px;
+  }
+  #transfer-success .header-transfer-success {
     margin-left: 0px;
     -webkit-box-pack: normal;
         -ms-flex-pack: normal;
             justify-content: normal;
   }
-  #transfer-failed .header-transfer-failed .transfer-realized-header {
+  #transfer-success .header-transfer-success .transfer-realized-header {
     margin-left: 15px;
   }
-  #transfer-failed .header-transfer-failed .transfer-realized-box-oval {
+  #transfer-success .header-transfer-success .transfer-realized-box-oval {
     position: absolute;
     right: 22px;
   }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row {
+  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1847,37 +1796,77 @@ footer .footer-content {
             justify-content: space-between;
     margin-left: 55px;
   }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .sender {
+  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .sender {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
   }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .my-account {
+  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .my-account {
+    margin: 4px 91px 4px 0px;
+  }
+  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number {
+    margin: 4px 91px 4px 0px;
+  }
+
+  .header-transfer-failed {
+    margin-left: 0px;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .header-transfer-failed .transfer-realized-header {
+    margin-left: 15px;
+  }
+  .header-transfer-failed .transfer-realized-box-oval {
+    position: absolute;
+    right: 22px;
+  }
+  .header-transfer-failed .body-transfer-success .sender-reciver-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 55px;
+  }
+  .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .sender {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
   }
-  #transfer-failed .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .acc-number {
+  .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .my-account {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
+  }
+  .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .acc-number {
+    margin: 4px 91px 4px 0px;
+    text-transform: uppercase;
+  }
+
+  #transfer-success,
+  #transfer-failed {
+    position: absolute;
+    z-index: 1;
+    top: 112px;
   }
 }
 @media (min-width: 1024px) {
-  #transfer-failed {
+  #transfer-success {
     height: 204px;
   }
-  #transfer-failed .body-transfer-failed {
+  #transfer-success .body-transfer-success {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #transfer-failed .body-transfer-failed .sender-reciver-row {
+  #transfer-success .body-transfer-success .sender-reciver-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #transfer-failed .body-transfer-failed .amount-col .pdf-confirmation {
+  #transfer-success .body-transfer-success .amount-col .pdf-confirmation {
     display: none;
   }
-  #transfer-failed .pdf-confirmation-desktop {
+  #transfer-success .pdf-confirmation-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1903,10 +1892,56 @@ footer .footer-content {
     cursor: pointer;
   }
 }
-.none {
-  display: none;
-}
-
 .appear {
   display: block;
+}
+
+.transfer__finish--close {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  margin: 24px 20px 10px auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+
+.transfer__finish {
+  position: absolute;
+  top: 150px;
+  z-index: 170;
+  width: 100%;
+  min-width: 360px;
+  max-width: 1200px;
+  color: white;
+}
+
+.transfer__finish--close {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  margin: 24px 20px 10px auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+
+.transfer__finish--success {
+  background-color: #3ca933;
+}
+
+.transfer__finish--fail {
+  background-color: #ac1419;
 }
