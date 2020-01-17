@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const transfer = new Transfer();
 	});
 	closePayment.addEventListener("click", function () {
-		transferForm.classList.add('none');
+		transferForm.classList.add('none');1
     });
 
     const przekorzystneAccount = document.querySelector('.account-box-przekorzystne');
@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	secondAccount.classList.add('none');
     const closeSelectAccount = document.querySelector('.arrow-account');
     const arrowAccCurent = document.querySelector('.arrow-account-2');
-
+    const saveOrderLabel = document.querySelector('.save_order_label');
+    const saveOrderInput = document.querySelector('.save-order');
+    const ArraySaveOrder = document.querySelectorAll('.save_order');
     arrowAccCurent.classList.add('none');
 
 	closeSelectAccount.addEventListener("click", function(){
@@ -29,7 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
         przekorzystneAccMain.classList.toggle('none');
         arrowAccCurent.classList.toggle('none');
     });
-    
+    saveOrderInput.checked = true;
+    ArraySaveOrder.forEach(function(element){
+        element.addEventListener("click", function() {
+            if (saveOrderInput.checked ) {
+                saveOrderInput.checked = false;
+            } else {
+                saveOrderInput.checked = true;
+            }
+        })
+    })
 
 class Transfer {
     constructor() {
