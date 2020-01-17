@@ -176,7 +176,7 @@
 
     <!-- transfer-form -->
 
-    <section class="transfer-form-popup none trForm">
+    <section class="transfer-form-popup none">
         <div class="header-form">
             <h6>Przelew krajowy</h6>
             <img src="img/a.png" srcset="img/a@2x.png 2x,
@@ -193,6 +193,7 @@
                     <img src="img/arrow.png" srcset="img/arrow@2x.png 2x,
                         img/arrow@3x.png 3x" class="arrow-account">
                 </div>
+                <div style="display: none !important;"></div>
 
                 <div class="select-account-box select-account-box-2">   
                     <div class="account-box-current">
@@ -204,7 +205,7 @@
                 </div>
                 <label for="account-number">na rachunek</label>
                 <div class="account-number-box">
-                    <input type="text" placeholder="Wpisz rachunek odbiorcy" class="account-number targetAccount">
+                    <input type="text" placeholder="Wpisz rachunek odbiorcy" class="account-number">
                 </div>
                 <div class="transfer-error-alert" style="display:block;">Wpisz wartość</div>
                 <div class="address-desktop-box">
@@ -251,7 +252,7 @@
                 </div>
             </dciv>
 
-            <div class="save-order-box ">
+            <div class="save-order-box">
                 <input type="checkbox" class="save-order save_order custom-checkbox" checked="checked">
                 <span class="checkmark save_order"></span><label for="save-order" class="save_order save_order_label">Zapisz zlecenie stałe</label>
             </div>
@@ -263,11 +264,11 @@
 
             </div>
             <div class="submit-button-container">
-                <button class="next-button-box transfer__btn transfer-submit">
+                <div class="next-button-box">
                     <img src="img/110.png" srcset="img/110@2x.png 2x,
                  img/110@3x.png 3x" class="next-arrow">
-                    <span class="next">dalej</span>
-                </button>
+                    <a href="javascript:void(0)" class="next transfer__btn transfer-submit transferSubmit">dalej</a>
+                </d>
             </div>
         </form>
     </section>
@@ -288,13 +289,13 @@
             <div class="sender-reciver-row">
                 <div class="sender-col">
                     <p class="sender">nadawca</p>
-                    <p class="my-account">Moje konto Przekorzystne</p>
-                    <p class="acc-number">12 1234 1234 1234 1234 1234 1234</p>
+                    <div class="my-account">Moje konto Przekorzystne</div>
+                    <p class="acc-number-sender">12 1234 1234 1234 1234 1234 1234</p>
                 </div>
                 <div class="receiver-col">
                     <p class="recipient">odbiorca</p>
-                    <p class="name">Marek Kowalewski</p>
-                    <p class="account">12 1234 1234 1234 1234 1234 1234</p>
+                    <p class="name-reciver">Marek Kowalewski</p>
+                    <p class="account-reciver">12 1234 1234 1234 1234 1234 1234</p>
                 </div>
             </div>
             <div class="amount-col">
@@ -322,12 +323,12 @@
                 <div class="sender-col">
                     <p class="sender">nadawca</p>
                     <p class="my-account">Moje konto Przekorzystne</p>
-                    <p class="acc-number">12 1234 1234 1234 1234 1234 1234</p>
+                    <p class="acc-number-sender">12 1234 1234 1234 1234 1234 1234</p>
                 </div>
                 <div class="receiver-col">
                     <p class="recipient">odbiorca</p>
                     <p class="name">Marek Kowalewski</p>
-                    <p class="account">12 1234 1234 1234 1234 1234 1234</p>
+                    <p class="account-reciver">12 1234 1234 1234 1234 1234 1234</p>
                 </div>
             </div>
             <div class="amount-col">

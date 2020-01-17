@@ -2,14 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	const newPaymentBtn = document.querySelector(".new-paymant");
 	const closePayment = document.querySelector(".close-popup-transfer-form");
 	const transferForm = document.querySelector(".transfer-form-popup");
-	newPaymentBtn.addEventListener("click", function () {
-		transferForm.classList.contains('none') && transferForm.classList.remove('none');
-		const transfer = new Transfer();
-	});
-	closePayment.addEventListener("click", function () {
-		transferForm.classList.add('none');1
-    });
-
     const przekorzystneAccount = document.querySelector('.account-box-przekorzystne');
     const przekorzystneAccMain = document.querySelector('.przekorzystne_account');
     const secondAccount = document.querySelector('.select-account-box-2');
@@ -19,17 +11,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const saveOrderLabel = document.querySelector('.save_order_label');
     const saveOrderInput = document.querySelector('.save-order');
     const ArraySaveOrder = document.querySelectorAll('.save_order');
-    arrowAccCurent.classList.add('none');
+    const transferSuccess = document.querySelector('#transfer-success');
+    const transferFailed = document.querySelector('#transfer-failed');
+    const closeFisnishTransferPopup = document.querySelector('.cross-white');
+    const transferFinish = document.querySelector(".transferFinishForm");
 
+    newPaymentBtn.addEventListener("click", function () {
+		transferForm.classList.contains('none') && transferForm.classList.remove('none');
+		const transfer = new Transfer();
+	});
+	closePayment.addEventListener("click", function () {
+		transferForm.classList.add('none');
+    });
+    arrowAccCurent.classList.add('none');
 	closeSelectAccount.addEventListener("click", function(){
         secondAccount.classList.toggle('none');
     });
     przekorzystneAccount.addEventListener("click" , function() {
         secondAccount.classList.add('none');
+        przekorzystneAccount.classList.add('selected_acc');
     });
     secondAccount.addEventListener("click", function() {
         przekorzystneAccMain.classList.toggle('none');
         arrowAccCurent.classList.toggle('none');
+        przekorzystneAccount.classList.remove('selected_acc');
+        secondAccount.classList.add('selected_acc');
     });
     saveOrderInput.checked = true;
     ArraySaveOrder.forEach(function(element){
@@ -40,36 +46,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 saveOrderInput.checked = true;
             }
         })
-    })
+    });
+    closeFisnishTransferPopup.addEventListener("click", function() {
+        transferFinish.classList.add('none');
+    });
 
 class Transfer {
     constructor() {
         this.data = {};
-
-        this.targetAccount = document.querySelector(".targetAccount");
-        
+        this.accountType = document.querySelector(".main-account");
+        this.numberAccount = document.querySelector(".account-number");
         this.transferAmount = document.querySelector(".transfer-amount");
         this.transferAmountDesktop = document.querySelector(".transfer-amount-desktop");
-
         this.targetAddress = document.querySelector(".targetAddress");
-        
         this.transferTitle = document.querySelector(".title-transfer-mob");
         this.transferTitleDesktop = document.querySelector(".title-transfer-desktop");
-
-        this.transferType = document.querySelector(".transferType");
-        this.transferSubmit = document.querySelector(".transfer-submit");
+        this.transferType = document.querySelector(".order-name");
+        this.transferSubmit = document.querySelector(".transferSubmit");
         this.transferForm= document.querySelector(".transferForm");
         this.transferFinish = document.querySelector(".transferFinishForm");
         this.transferFinishCloseBtn = document.querySelector(".transferFinishCloseBtn");
 
         // this.regexpAccNr = /^[0-9]{26}$/;
-        this.regexpAccNr = /^[0-9]{4}$/;
+        this.regexpAccNr = /^[0-9]{4}$/; //regex do testowania
         this.regexpAmount = /^[0-9]{1,10}[,][0-9]{2}$/;
         this.regexpTitle = /^[a-zA-z\s\dżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,60}$/;
-
         this.validationElementTable = [
             {
-                element: this.targetAccount,
+                element: this.numberAccount,
                 regexp: this.regexpAccNr,
                 status: false,
             },
@@ -95,129 +99,81 @@ class Transfer {
             },
 
         ];
-
-        this.createValidationEvent();
-        // this.targetAccount.addEventListener('keyup', () => this.validateField(this.targetAccount, this.regexpAccNr));
-        // this.transferAmount.addEventListener('keyup', () => this.validateField(this.transferAmount, this.regexpAmount));
-        // this.transferTitle.addEventListener('keyup', () => this.validateField(this.transferTitle, this.regexpTitle));
-
-        // ------------------- events -------------------
+        this.validationEvent();
         this.transferSubmit.addEventListener('click', () => this.submitTransferForm());
-        // this.transferFinishCloseBtn.addEventListener('click', () => this.closeFinishForm());
     }
 
-    createValidationEvent() {
-
+    validationEvent() {
         for (let i = 0; i < this.validationElementTable.length; i++) {
             this.validationElementTable[i].element.addEventListener('keyup', () => this.validateField(this.validationElementTable[i].element, this.validationElementTable[i].regexp, i));
         }
-        // this.validationElementTable.forEach(obj => {
-        //     console.log(obj);
-        //     obj.element.addEventListener('keyup', () => this.validateField(obj.element, obj.regexp));
-        // });
     }
 
-    getAllValue() {
+    getValue() {
         this.data = {
-            targetAccount: this.targetAccount.value,
-            amount: this.transferAmount.value,
+            accountType: this.accountType.innerHTML,
+            numberAccount: this.numberAccount.value,
+            transferAmount: this.transferAmount.value,
             amountDesktop: this.transferAmountDesktop.value,
             address: this.targetAddress.value,
-            title: this.transferTitle.value,
+            transferTitle: this.transferTitle.value,
             titleDesktop: this.transferTitleDesktop.value,
             transferType: this.transferType.value,
             success: true
         };
-
+        console.log(this.data);
         return this.data;
     }
 
-    validateAllFields() {
+    validateFields() {
         return this.validationElementTable.every((test) => test.status === true);
     }
 
     validateField(obj, regexp, index) {
         if (regexp.test(obj.value)) {
-            // obj.classList.contains("transfer__textField--error") && obj.classList.remove("transfer__textField--error");
             obj.parentElement.nextElementSibling.classList.add('none');
             obj.parentElement.parentElement.children[2].classList.add('none');
             this.validationElementTable[index].status = true;
             return true;
-
         } else {
             this.validationElementTable[index].status = false;
-            // obj.classList.add("transfer__textField--error");
             obj.parentElement.parentElement.children[2].classList.add('apear');
             obj.parentElement.nextElementSibling.classList.add('apear');
-            if (obj.value) {
-                obj.parentElement.parentElement.children[2].innerText = 'error';
-                obj.parentElement.nextElementSibling.innerText = 'error';
-            } else {
-                obj.parentElement.parentElement.children[2].innerText = 'podaj wartość';
-                obj.parentElement.nextElementSibling.innerText = 'podaj wartość';
-            }
             return false
         }
     }
 
-    closeFinishForm() {
+    closeForm() {
         this.transferFinish.classList.add('none');
     }
 
-    setFinalFormSuccess() {
-        this.transferForm.classList.add('none');
-        this.transferFinish.classList.remove('none');
-        this.transferFinish.classList.remove('transfer__finish--fail');
-        this.transferFinish.classList.add('transfer__finish--success');
-
-        let listFail = document.querySelectorAll(".tcFail");
-        let listSuccess = document.querySelectorAll(".tcSuccess");
-
-        listFail.forEach(element => {
-            element.classList.add('none');
-        });
-
-        listSuccess.forEach(element => {
-            element.classList.remove('none');
-        });
+    formSuccess() {
+        transferForm.classList.add('none');
+        transferSuccess.classList.remove('none');
     }
 
-    setFinalFormFail() {
-        this.transferForm.classList.add('none');
-        this.transferFinish.classList.remove('transfer__finish--success');
-        this.transferFinish.classList.add('transfer__finish--fail');
-
-        let listFail = document.querySelectorAll(".tcFail");
-        let listSuccess = document.querySelectorAll(".tcSuccess");
-
-        listFail.forEach(element => {
-            element.classList.remove('none')
-        });
-
-        listSuccess.forEach(element => {
-            element.classList.add('none')
-        });
-
-        this.transferFinish.classList.remove('none');
+    formFail() {
+        transferForm.classList.add('none');
+        transferForm.classList.remove('none');
     }
 
     async submitTransferForm() {
-        if (this.validateAllFields()) {
-            this.getAllValue();
+        if (this.validateFields()) {
+            this.getValue();
+            this.fillFinishForm(this.data);
             const response = await this.sendData(this.data);
-
             if (response.status === 201) {
                 const json = await response.json();
                 if (json.success){
                     this.fillFinishForm(json);
-                    this.setFinalFormSuccess();
+                    this.formSuccess();
                 } else {
                     this.fillFinishForm(this.data);
-                    this.setFinalFormFail();
+                    this.formFail();
                 }
             } else {
                 this.fillFinishForm(this.data);
-                this.setFinalFormFail();
+                this.formFail();
             }
 
         } else {
@@ -226,36 +182,31 @@ class Transfer {
     }
 
     async sendData(data) {
-
         const header = {
-            method: 'POST', // *GET, POST, PUT, DELETE, etc.
-            // mode: 'no-cors', // no-cors, *cors, same-origin
-            // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-            // credentials: 'same-origin', // include, *same-origin, omit
+            method: 'POST',
             headers: {
                 "Content-type": "application/json; charset=UTF-8"
-                // 'Content-Type': 'application/x-www-form-urlencoded',
             },
-            redirect: 'follow', // manual, *follow, error
-            referrer: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify(data) // body data type must match "Content-Type" header
+            redirect: 'follow', 
+            referrer: 'no-referrer', 
+            body: JSON.stringify(data) 
         }
-        // const response = await fetch('https://jsonplaceholder.typicode.com/posts', header);
-        // return await response.json();
         const response = await fetch('https://jsonplaceholder.typicode.com/posts', header);
         console.log(response);
         return await response;
     }
 
-    fillFinishForm(obj, user) {
-        let tcUserAccountNr = document.querySelector(".tcUserAccountNr");
-        let tcReceiverAccountNr = document.querySelector(".tcReceiverAccountNr");
-        let tcTransferAmount = document.querySelector(".tcTransferAmount");
-        let tcReceiverTitle = document.querySelector(".tcReceiverTitle");
+    fillFinishForm(obj) {
+        let selectedAccount = document.querySelector('.selected_acc');
+        let filedAccountSender = document.querySelector(".acc-number-sender");
+        let filledAccountReciver = document.querySelector(".account-reciver");
+        let filledAmountValue = document.querySelector(".amount-value");
+        let filledNameReciver = document.querySelector(".name-reciver");
 
-        tcReceiverAccountNr.innerText = obj.targetAccount;
-        tcTransferAmount.innerText = obj.amount;
-        tcReceiverTitle.innerText = obj.title;
+        selectedAccount.innerText = obj.accountType;
+        filledAccountReciver.innerText = obj.numberAccount;
+        filledAmountValue.innerText = obj.transferAmount;
+        filledNameReciver.innerText = obj.transferType;
     }
 }
 })

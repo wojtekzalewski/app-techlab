@@ -72,7 +72,7 @@
                     color: $white;
                 }
 
-                .acc-number {
+                .acc-number-sender {
                     margin: 0px 87px 20px 55px;
                     font-size: 11px;
                     @include text-style-normal;
@@ -91,7 +91,7 @@
                     text-transform: uppercase;
                 }
 
-                .name {
+                .name-reciver {
                     margin: 0px 151px 4px 55px;
                     font-size: 16px;
                     @include text-style-normal;
@@ -100,7 +100,7 @@
                     color: $white;
                 }
 
-                .account {
+                .account-reciver {
                     font-size: 11px;
                     @include text-style-normal;
                     letter-spacing: 1.1px;
@@ -239,7 +239,7 @@
                     color: $white;
                 }
 
-                .acc-number {
+                .acc-number-sender {
                     margin: 0px 87px 20px 55px;
                     font-size: 11px;
                     @include text-style-normal;
@@ -258,7 +258,7 @@
                     text-transform: uppercase;
                 }
 
-                .name {
+                .name-reciver {
                     margin: 0px 151px 4px 55px;
                     font-size: 16px;
                     @include text-style-normal;
@@ -267,7 +267,7 @@
                     color: $white;
                 }
 
-                .account {
+                .account -reciver{
                     font-size: 11px;
                     @include text-style-normal;
                     letter-spacing: 1.1px;
@@ -369,7 +369,7 @@
                             margin: 4px 91px 4px 0px;
                         }
 
-                        .acc-number {
+                        .acc-number-sender {
                             margin: 4px 91px 4px 0px;
                         }
                     }
@@ -408,7 +408,7 @@
                         text-transform: uppercase;
                     }
 
-                    .acc-number {
+                    .acc-number-sender {
                         margin: 4px 91px 4px 0px;
                         text-transform: uppercase;
                     }

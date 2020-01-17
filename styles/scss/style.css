@@ -1164,6 +1164,7 @@ footer .footer-content {
   font-weight: 900;
   letter-spacing: 1px;
   color: #fff;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -1465,7 +1466,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
-#transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number {
+#transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number-sender {
   margin: 0px 87px 20px 55px;
   font-size: 11px;
   font-weight: normal;
@@ -1486,7 +1487,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
-#transfer-success .body-transfer-success .sender-reciver-row .receiver-col .name {
+#transfer-success .body-transfer-success .sender-reciver-row .receiver-col .name-reciver {
   margin: 0px 151px 4px 55px;
   font-size: 16px;
   font-weight: normal;
@@ -1497,7 +1498,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
-#transfer-success .body-transfer-success .sender-reciver-row .receiver-col .account {
+#transfer-success .body-transfer-success .sender-reciver-row .receiver-col .account-reciver {
   font-size: 11px;
   font-weight: normal;
   font-stretch: normal;
@@ -1664,7 +1665,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
-#transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .acc-number {
+#transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .acc-number-sender {
   margin: 0px 87px 20px 55px;
   font-size: 11px;
   font-weight: normal;
@@ -1685,7 +1686,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
-#transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .name {
+#transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .name-reciver {
   margin: 0px 151px 4px 55px;
   font-size: 16px;
   font-weight: normal;
@@ -1696,7 +1697,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
-#transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .account {
+#transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .account -reciver {
   font-size: 11px;
   font-weight: normal;
   font-stretch: normal;
@@ -1810,7 +1811,7 @@ footer .footer-content {
   #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .my-account {
     margin: 4px 91px 4px 0px;
   }
-  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number {
+  #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number-sender {
     margin: 4px 91px 4px 0px;
   }
 
@@ -1844,7 +1845,7 @@ footer .footer-content {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
   }
-  .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .acc-number {
+  .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .acc-number-sender {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
   }
