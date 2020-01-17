@@ -9,13 +9,27 @@ document.addEventListener("DOMContentLoaded", function () {
 	closePayment.addEventListener("click", function () {
 		transferForm.classList.add('none');
     });
-    
+
+    const przekorzystneAccount = document.querySelector('.account-box-przekorzystne');
+    const przekorzystneAccMain = document.querySelector('.przekorzystne_account');
     const secondAccount = document.querySelector('.select-account-box-2');
 	secondAccount.classList.add('none');
-	const closeSelectaccount = document.querySelector('.arrow-account');
-	closeSelectaccount.addEventListener("click", function(){
-		secondAccount.classList.toggle('none');
-	});
+    const closeSelectAccount = document.querySelector('.arrow-account');
+    const arrowAccCurent = document.querySelector('.arrow-account-2');
+
+    arrowAccCurent.classList.add('none');
+
+	closeSelectAccount.addEventListener("click", function(){
+        secondAccount.classList.toggle('none');
+    });
+    przekorzystneAccount.addEventListener("click" , function() {
+        secondAccount.classList.add('none');
+    });
+    secondAccount.addEventListener("click", function() {
+        przekorzystneAccMain.classList.toggle('none');
+        arrowAccCurent.classList.toggle('none');
+    });
+    
 
 class Transfer {
     constructor() {
@@ -41,7 +55,6 @@ class Transfer {
         this.regexpAccNr = /^[0-9]{4}$/;
         this.regexpAmount = /^[0-9]{1,10}[,][0-9]{2}$/;
         this.regexpTitle = /^[a-zA-z\s\dżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,60}$/;
-
 
         this.validationElementTable = [
             {
