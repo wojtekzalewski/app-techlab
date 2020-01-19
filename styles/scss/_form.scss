@@ -243,6 +243,9 @@
             height: 0;
             width: 0;
         }
+        .save_order_label{
+            cursor: pointer;
+        }
 
         .checkmark {
             width: 24px;
@@ -251,6 +254,7 @@
             border: solid 1px $brand-color;
             background-color: $white;
             position: absolute;
+            cursor: pointer;
 
             &:after {
                 content: "";
@@ -620,6 +624,6 @@
     display: none !important;
 }
 
-.appear {
+.show {
     display: block !important;
 }

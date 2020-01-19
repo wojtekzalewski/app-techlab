@@ -9,8 +9,7 @@
     <meta name="keywords" content="Projekt zeplin">
     <meta name="author" content="Wojciech">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Projekt zeplin</title>
-    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <title>Projekt Pekao Techlab</title>
     <!-- scss -->
     <link rel="stylesheet" href="styles/scss/style.css">
 </head>
@@ -187,7 +186,7 @@
                 <label for="select-account">z rachunku</label>
                 <div class="select-account-box przekorzystne_account">
                     <div class="account-box-przekorzystne">
-                        <div class="main-account">Moje Konto Przekorzystne</div>
+                        <div class="main-account main-acc selected_acc">Moje Konto Przekorzystne</div>
                         <div class="amount-account">12 734,56 PLN</div>
                     </div>
                     <img src="img/arrow.png" srcset="img/arrow@2x.png 2x,
@@ -195,9 +194,9 @@
                 </div>
                 <div style="display: none !important;"></div>
 
-                <div class="select-account-box select-account-box-2">   
+                <div class="select-account-box select-account-box-2">
                     <div class="account-box-current">
-                        <div class="main-account">Moje Konto biezące</div>
+                        <div class="main-account selected-account-2">Moje Konto biezące</div>
                         <div class="amount-account">734,56 PLN</div>
                     </div>
                     <img src="img/arrow.png" srcset="img/arrow@2x.png 2x,
@@ -211,7 +210,8 @@
                 <div class="address-desktop-box">
                     <label for="address-recipient">adres odbiorcy (opcjonalnie)</label>
                     <div class="address-recipient-box">
-                        <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy" name="targetAccount">
+                        <input type="text" id="address-recipient" placeholder="Wpisz adres odbiorcy"
+                            name="targetAccount" class="target-address">
                     </div>
                     <div class="transfer-error-alert" style="display:block;">Podaj nazwę</div>
                 </div>
@@ -230,7 +230,7 @@
                 <div class="title-transfer-box title-transfer-mobile">
                     <input type="text" class="title-transfer title-transfer-mob" placeholder="Placeholder"">
                 </div>
-                <div class="transfer-error-alert title-transfer-alert" style="display:block;">Podaj wartość</div>
+                <div class=" transfer-error-alert title-transfer-alert" style="display:block;">Podaj wartość</div>
                 <div class="amount-and-title-desktop-box">
                     <div class="amount-desktop-box">
                         <label for="transfer-amount">kwota przelewu</label>
@@ -238,42 +238,42 @@
                             <input class="transfer-amount-desktop" type="text" placeholder="12 040,37">
                             <span class="currency-transfer-amount">PLN</span>
                         </div>
-                        <div class="transfer-error-alert amount-transfer-alert" style="display:block;"
-                        >Podaj kwotę</div>
+                        <div class="transfer-error-alert amount-transfer-alert" style="display:block;">Podaj kwotę</div>
                     </div>
                     <div class="title-desktop-box">
                         <label for="title-transfer">tytułem</label>
                         <div class="title-transfer-box transfer__textField--error">
                             <input type="text" class="title-transfer-desktop" placeholder="Placeholder">
                         </div>
-                        <div class="transfer-error-alert title-transfer-alert" style="display:block;"
-                        >Podaj wartość</div>
+                        <div class="transfer-error-alert title-transfer-alert" style="display:block;">Podaj wartość
+                        </div>
                     </div>
                 </div>
-            </dciv>
+                </dciv>
 
-            <div class="save-order-box">
-                <input type="checkbox" class="save-order save_order custom-checkbox" checked="checked">
-                <span class="checkmark save_order"></span><label for="save-order" class="save_order save_order_label">Zapisz zlecenie stałe</label>
-            </div>
-            <div class="order-name-container">
-                <label for="order-name">nazwa zlecenia</label>
-                <div class="order-name-box">
-                    <input type="text" placeholder="Placeholder" class="order-name">
+                <div class="save-order-box">
+                    <input type="checkbox" class="save-order save_order custom-checkbox" checked="checked">
+                    <span class="checkmark save_order"></span><label for="save-order"
+                        class="save_order save_order_label">Zapisz zlecenie stałe</label>
                 </div>
+                <div class="order-name-container">
+                    <label for="order-name">nazwa zlecenia</label>
+                    <div class="order-name-box">
+                        <input type="text" placeholder="Placeholder" class="order-name">
+                    </div>
 
-            </div>
-            <div class="submit-button-container">
-                <div class="next-button-box">
-                    <img src="img/110.png" srcset="img/110@2x.png 2x,
+                </div>
+                <div class="submit-button-container">
+                    <div class="next-button-box">
+                        <img src="img/110.png" srcset="img/110@2x.png 2x,
                  img/110@3x.png 3x" class="next-arrow">
-                    <a href="javascript:void(0)" class="next transfer__btn transfer-submit transferSubmit">dalej</a>
-                </d>
-            </div>
+                        <a href="javascript:void(0)" class="next transfer-submit transferSubmit">dalej</a>
+                        </d>
+                    </div>
         </form>
     </section>
 
-     <!-- section transfer -->
+    <!-- section transfer -->
 
     <section id="transfer-success" class="none transferFinishForm">
         <div class="header-transfer-success">
@@ -315,7 +315,7 @@
             <h5 class="transfer-realized-header">Twój przelew nie został zrealizowany</h5>
             <div class="transfer-realized-box-oval">
                 <img src="img/white-cross@.png" srcset="img/white-cross@2x.png 2x,
-                                img/white-cross@3x.png 3x" class="cross-white">
+                                img/white-cross@3x.png 3x" class="cross-white cross-white-failed">
             </div>
         </div>
         <div class="body-transfer-failed">
@@ -327,7 +327,7 @@
                 </div>
                 <div class="receiver-col">
                     <p class="recipient">odbiorca</p>
-                    <p class="name">Marek Kowalewski</p>
+                    <p class="name-reciver">Marek Kowalewski</p>
                     <p class="account-reciver">12 1234 1234 1234 1234 1234 1234</p>
                 </div>
             </div>
@@ -335,10 +335,10 @@
                 <p class="amount">kwota</p>
                 <p class="amount-value">23 100,23 PLN</p>
                 <p class="saldo">saldo po operacji: 123 123, 12 PLN</p>
-                <p class="pdf-confirmation">spróbuj ponownie</p>
+                <p class="pdf-confirmation transfer-retry-btn">spróbuj ponownie</p>
             </div>
         </div>
-        <p class="pdf-confirmation-desktop">spróbuj ponownie</p>
+        <p class="pdf-confirmation-desktop transfer-retry-btn">spróbuj ponownie</p>
     </section>
 
     <!-- section transfer -->
@@ -366,6 +366,6 @@
         </p>
     </footer>
     <!-- footer -->
-    <script src="scripts/transferFormValidation.js"></script>
+    <script src="scripts/transform_form_validation.js"></script>
 </body>
 </html>
