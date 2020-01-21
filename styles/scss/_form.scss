@@ -318,8 +318,8 @@
                 @include text-style-normal;
                 letter-spacing: normal;
                 color: #858585;
-                width: auto;
-                margin: 13px 126px 18px 21px;
+                width: 100%;
+                margin: 13px 21px 18px 21px;
             }
         }
     }
@@ -557,12 +557,14 @@
 @media (min-width: $desktop-width) {
     .transfer-form-popup {
         .header-form {
-            padding-left: 246px;
+            padding-left: 265px;
+            h6 {
+                margin-left: 0px;
+            }
         }
 
         #transfer-form {
             .main-section-transfer-form {
-
                 label[for=select-account],
                 .select-account-box,
                 .select-account-box-2,
@@ -575,12 +577,12 @@
                 .title-transfer,
                 .amount-and-title-desktop-box,
                 .save-order-box {
-                    margin-left: 246px;
-                    margin-right: 246px;
+                    margin-left: 266px;
+                    margin-right: 266px;
                 }
 
                 .order-name-container {
-                    margin: 0px 246px 185px 246px;
+                    margin: 0px 266px 185px 266px;
                 }
 
                 .address-desktop-box {
@@ -592,7 +594,7 @@
                 }
 
                 .transfer-error-alert {
-                    margin: 0px 246px 0px 246px;
+                    margin: 0px 266px 0px 266px;
                 }
             }
 
@@ -605,7 +607,7 @@
                     height: 50px;
                     border-radius: 4px;
                     transform: translateY(0px);
-                    margin-right: 266px;
+                    margin-right: 266px !important;
 
                     .next-arrow {
                         display: none;

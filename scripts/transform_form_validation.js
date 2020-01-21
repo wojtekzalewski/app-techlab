@@ -206,12 +206,12 @@ class TransferMobile {
 
         fillFinishForm(obj) {
             let selectedAccount = document.querySelector('.selected_acc');
-            let filledAccountSender = document.querySelector('.acc-number-sender');
-            let filledAccountReciver = document.querySelector('.account-reciver');
+            // let filledAccountSender = document.querySelector('.acc-number-sender');
+            // let filledAccountReciver = document.querySelector('.account-reciver');
             let filledAmountValue = document.querySelector('.amount-value');
             let filledNameReciver = document.querySelector('.name-reciver');
             selectedAccount.innerText = obj.accountType;
-            filledAccountReciver.innerText = obj.numberAccount;
+            // filledAccountReciver.innerText = obj.numberAccount;
             filledAmountValue.innerHTML = obj.transferAmount;
             filledNameReciver.innerText = obj.transferType;
     }
@@ -221,10 +221,10 @@ class TransferMobile {
         constructor() {
             this.accountType = document.querySelector('.main-account');
             this.numberAccount = document.querySelector('.account-number');
-            this.transferAmount = document.querySelector('.transfer-amount');
+            // this.transferAmount = document.querySelector('.transfer-amount');
             this.transferAmountDesktop = document.querySelector('.transfer-amount-desktop');
             this.targetAddress = document.querySelector('.target-address');
-            this.transferTitle = document.querySelector('.title-transfer-mob');
+            // this.transferTitle = document.querySelector('.title-transfer-mob');
             this.transferTitleDesktop = document.querySelector('.title-transfer-desktop');
             this.transferType = document.querySelector('.order-name');
             this.transferSubmit = document.querySelector('.transferSubmit');
@@ -233,8 +233,8 @@ class TransferMobile {
             this.transferFinishCloseBtn = document.querySelector('.transferFinishCloseBtn');
             this.viewPortWidth = window.innerWidth || document.documentElement.clientWidth;
     
-            this.regexpAccNr = /^[0-9]{26}$/;
-            // this.regexpAccNr = /^[0-9]{4}$/; //regex do testowania
+            // this.regexpAccNr = /^[0-9]{26}$/;
+            this.regexpAccNr = /^[0-9]{4}$/; //regex do testowania
             this.regexpAmount = /^[0-9]{1,10}[,][0-9]{2}$/;
             this.regexpTitle = /^[a-zA-z\s\dżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,60}$/;
             this.data = {};
@@ -347,13 +347,13 @@ class TransferMobile {
             }
             fillFinishForm(obj) {
                 let selectedAccount = document.querySelector('.selected_acc');
-                let filledAccountSender = document.querySelector('.acc-number-sender');
-                let filledAccountReciver = document.querySelector('.account-reciver');
+                // let filledAccountSender = document.querySelector('.acc-number-sender');
+                // let filledAccountReciver = document.querySelector('.account-reciver');
                 let filledAmountValue = document.querySelector('.amount-value');
                 let filledNameReciver = document.querySelector('.name-reciver');
                 selectedAccount.innerText = obj.accountType;
-                filledAccountReciver.innerText = obj.numberAccount;
-                filledAmountValue.innerHTML = obj.transferAmount;
+                // filledAccountReciver.innerText = obj.numberAccount;
+                filledAmountValue.innerHTML = obj.amountDesktop;
                 filledNameReciver.innerText = obj.transferType;
         }
     }

@@ -425,11 +425,11 @@
     }
 }
 
-
-
 @media (min-width: $desktop-width) {
     #transfer-success {
         height: 204px;
+        margin: 39px 75px auto 75px;
+        width: 88.89%;
 
         .body-transfer-success {
             display: flex;
