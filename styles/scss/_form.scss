@@ -514,7 +514,7 @@
                         width: 31.60%;
                     }
                 }
-
+            }
                 .submit-button-container {
                     margin-left: 0px;
                     margin-right: 0px;
@@ -523,8 +523,8 @@
                         width: 230px;
                         height: 50px;
                         border-radius: 4px;
-                        margin: 26px 20px 26px auto;
-                        transform: translateY(0px);
+                        transform: translateY(26px);
+                        margin-right: 20px !important;
 
                         .next-arrow {
                             display: none;
@@ -535,7 +535,7 @@
                         }
                     }
                 }
-            }
+            
 
             .address-recipient-tablet-box {
                 +label[for=title-transfer] {
@@ -575,7 +575,12 @@
                 label[for=title-transfer],
                 .title-transfer-box,
                 .title-transfer,
-                .amount-and-title-desktop-box,
+                .amount-and-title-desktop-box
+                {
+                    margin-left: 266px;
+                    margin-right: 266px;
+                }
+            }
                 .save-order-box {
                     margin-left: 266px;
                     margin-right: 266px;
@@ -596,7 +601,7 @@
                 .transfer-error-alert {
                     margin: 0px 266px 0px 266px;
                 }
-            }
+           
 
             .submit-button-container {
                 margin-left: 0px;
@@ -606,7 +611,7 @@
                     width: 230px;
                     height: 50px;
                     border-radius: 4px;
-                    transform: translateY(0px);
+                    transform: translateY(26px);
                     margin-right: 266px !important;
 
                     .next-arrow {

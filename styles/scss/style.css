@@ -1292,22 +1292,22 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form .order-name-container .order-name-box {
     width: 31.60%;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .submit-button-container {
+  .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .submit-button-container .next-button-box {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
     width: 230px;
     height: 50px;
     border-radius: 4px;
-    margin: 26px 20px 26px auto;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(26px);
+            transform: translateY(26px);
+    margin-right: 20px !important;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .submit-button-container .next-button-box .next-arrow {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .submit-button-container .next-button-box .next {
+  .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
   }
   .transfer-form-popup #transfer-form .address-recipient-tablet-box + label[for=title-transfer] {
@@ -1337,19 +1337,22 @@ footer .footer-content {
   .transfer-form-popup #transfer-form .main-section-transfer-form label[for=title-transfer],
   .transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer-box,
   .transfer-form-popup #transfer-form .main-section-transfer-form .title-transfer,
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box,
-  .transfer-form-popup #transfer-form .main-section-transfer-form .save-order-box {
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
     margin-left: 266px;
     margin-right: 266px;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .order-name-container {
+  .transfer-form-popup #transfer-form .save-order-box {
+    margin-left: 266px;
+    margin-right: 266px;
+  }
+  .transfer-form-popup #transfer-form .order-name-container {
     margin: 0px 266px 185px 266px;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box label[for=address-recipient],
-  .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
+  .transfer-form-popup #transfer-form .address-desktop-box label[for=address-recipient],
+  .transfer-form-popup #transfer-form .address-desktop-box .address-recipient-box {
     margin: 9px auto 0px 0px;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-error-alert {
+  .transfer-form-popup #transfer-form .transfer-error-alert {
     margin: 0px 266px 0px 266px;
   }
   .transfer-form-popup #transfer-form .submit-button-container {
@@ -1360,8 +1363,8 @@ footer .footer-content {
     width: 230px;
     height: 50px;
     border-radius: 4px;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(26px);
+            transform: translateY(26px);
     margin-right: 266px !important;
   }
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
