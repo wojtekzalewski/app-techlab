@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,20 +20,24 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 header .logo {
   margin-left: 20px;
 }
+
 header .ikona-lupa {
   position: absolute;
   right: 70px;
 }
+
 header .ikona-hamburger {
   position: absolute;
   right: 20px;
 }
+
 header .Logo-tablet,
 header .settings,
 header .mail,
@@ -46,11 +51,13 @@ header .user-name {
   header {
     background-color: #ac1419;
   }
+
   header .logo,
   header .ikona-lupa,
   header .ikona-hamburger {
     display: none;
   }
+
   header .Logo-tablet,
   header .settings,
   header .mail,
@@ -60,21 +67,26 @@ header .user-name {
     display: -ms-flexbox;
     display: flex;
   }
+
   header .Logo-tablet {
     margin-left: 20px;
   }
+
   header .settings {
     right: 197px;
     position: absolute;
   }
+
   header .mail {
     right: 157px;
     position: absolute;
   }
+
   header .user {
     position: absolute;
     right: 121px;
   }
+
   header .log-out {
     position: absolute;
     right: 20px;
@@ -84,25 +96,31 @@ header .user-name {
     font-weight: bold;
   }
 }
+
 @media (min-width: 1024px) {
   header .Logo-tablet {
     display: none;
   }
+
   header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 75px;
   }
+
   header .settings {
     right: 430px;
   }
+
   header .mail {
     right: 390px;
   }
+
   header .user {
     right: 354px;
   }
+
   header .user-name {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -114,10 +132,12 @@ header .user-name {
     right: 201px;
     color: #fff;
   }
+
   header .log-out {
     right: 75px;
   }
 }
+
 .main-nav {
   display: none;
 }
@@ -131,16 +151,18 @@ header .user-name {
     background-color: #d71920;
     height: 56px;
   }
+
   .main-nav .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     margin-left: 20px;
     list-style: none;
   }
+
   .main-nav .cards .card-item {
     width: 113px;
     height: 41px;
@@ -149,12 +171,13 @@ header .user-name {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .main-nav .cards .card-item a {
     text-transform: uppercase;
     color: #d71920;
@@ -163,12 +186,15 @@ header .user-name {
     font-weight: bold;
     letter-spacing: 0.14px;
   }
+
   .main-nav .cards .card-item-2 {
     background-color: #d71920;
   }
+
   .main-nav .cards .card-item-2 a {
     color: #fff;
   }
+
   .main-nav .search-bar {
     width: 280px;
     height: 40px;
@@ -177,14 +203,15 @@ header .user-name {
     position: absolute;
     right: 20px;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .main-nav .search-bar input.search {
     width: 150px;
     height: 22px;
@@ -194,17 +221,20 @@ header .user-name {
     letter-spacing: 0.19px;
     border: 0px;
   }
+
   .main-nav .search-bar input.search:placeholder {
     color: #b4b4b4;
   }
+
   .main-nav .search-bar .icon-search {
     width: 20px;
     height: 20px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     margin-right: 18px;
   }
 }
+
 @media (min-width: 1024px) {
   .main-nav {
     display: grid;
@@ -213,27 +243,29 @@ header .user-name {
     padding-left: 75px;
     padding-right: 76px;
   }
+
   .main-nav .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     margin-left: 0px;
     grid-column: 1/4;
   }
+
   .main-nav .search-bar {
     height: 40px;
     border-radius: 4px;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: auto;
     position: static;
     right: 0px;
@@ -243,9 +275,11 @@ header .user-name {
     grid-column: 9/-1;
   }
 }
+
 body main .main-section .titles-row {
   display: none;
 }
+
 body main .main-section .main-headers .main-headers-col-1 h1 {
   font-size: 10px;
   letter-spacing: 1px;
@@ -254,6 +288,7 @@ body main .main-section .main-headers .main-headers-col-1 h1 {
   margin: 31px auto 2px 18px;
   text-transform: uppercase;
 }
+
 body main .main-section .main-headers .main-headers-col-1 h2 {
   margin: 0px auto 2px 17px;
   font-size: 24px;
@@ -261,11 +296,13 @@ body main .main-section .main-headers .main-headers-col-1 h2 {
   letter-spacing: 0.29px;
   display: inline-block;
 }
+
 body main .main-section .main-headers .main-headers-col-1 img {
   width: 19.6px;
   height: 16px;
   margin-left: 14px;
 }
+
 body main .main-section .main-headers .main-headers-col-1 .count-number {
   margin: 0px auto 17px 18px;
   width: 199px;
@@ -274,20 +311,24 @@ body main .main-section .main-headers .main-headers-col-1 .count-number {
   font-size: 10px;
   letter-spacing: 1px;
 }
+
 body main .main-section .main-headers .main-headers-col-2 h3 {
   margin: 17px auto 0px 19px;
   font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 body main .main-section .main-headers .main-headers-col-2 .account-founds {
   margin: 0px auto 16.5px 19px;
 }
+
 body main .main-section .main-headers .main-headers-col-2 .account-founds .account {
   font-size: 18px;
   color: #2f3234;
   font-weight: 900;
 }
+
 body main .main-section .line {
   margin: 0px 20px 0px 19px;
   background-color: #dbdbdb;
@@ -295,18 +336,21 @@ body main .main-section .line {
   width: auto;
   display: block;
 }
+
 body main .main-section .first-line {
   margin: 0px 20px 23.5px 19px;
 }
+
 body main .main-section .main-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
+
 body main .main-section .main-buttons .new-paymant {
   margin: auto 21px 25px 20px;
   background-color: #d71920;
@@ -321,6 +365,7 @@ body main .main-section .main-buttons .new-paymant {
   cursor: pointer;
   letter-spacing: 0.14px;
 }
+
 body main .main-section .main-buttons .history {
   background-color: #d71920;
   font-size: 12px;
@@ -335,65 +380,75 @@ body main .main-section .main-buttons .history {
   color: #d71920;
   border: 1px solid #f4f4f4;
 }
+
 body main .main-section .transaction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 17.5px 23.5px 14.5px 30.5px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
+
 body main .main-section .transaction .date-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 body main .main-section .transaction .date-box .data-arrow {
   width: 13px;
   height: 13px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0px;
 }
+
 body main .main-section .transaction .date-box .data {
   font-size: 14px;
   color: #858585;
 }
+
 body main .main-section .transaction .data-arrow-tablet {
   display: none;
 }
+
 body main .main-section .transaction .name-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
+
 body main .main-section .transaction .name-box .full-name {
   font-size: 14px;
   font-weight: 900;
   color: #000000;
 }
+
 body main .main-section .transaction .name-box .subscribe-transaction {
   font-size: 12px;
   color: #858585;
 }
+
 body main .main-section .transaction .category-section {
   display: none;
 }
+
 body main .main-section .transaction .price-transation {
   font-size: 14px;
   font-weight: 900;
@@ -401,6 +456,7 @@ body main .main-section .transaction .price-transation {
   width: 100px;
   text-align: right;
 }
+
 body main .main-section .more {
   text-transform: uppercase;
   color: #d71920;
@@ -417,6 +473,7 @@ body main .main-section .more {
   body {
     background-color: #f4f4f4;
   }
+
   body main .main-section {
     width: auto;
     height: 500px;
@@ -424,16 +481,18 @@ body main .main-section .more {
     background-color: #fff;
     padding-top: 1px;
   }
+
   body main .main-section .titles-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 0px 24px 0px 36px;
     margin: 0px auto 4.5px auto;
   }
+
   body main .main-section .titles-row div {
     color: #858585;
     line-height: 15px;
@@ -442,113 +501,137 @@ body main .main-section .more {
     font-size: 10px;
     letter-spacing: .12px;
   }
+
   body main .main-section .titles-row .type {
     -webkit-transform: translateX(-51px);
-            transform: translateX(-51px);
+    transform: translateX(-51px);
   }
+
   body main .main-section .titles-row .receiver-sender {
     -webkit-transform: translateX(-101px);
-            transform: translateX(-101px);
+    transform: translateX(-101px);
   }
+
   body main .main-section .titles-row .category {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
+
   body main .main-section .main-headers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   body main .main-section .main-headers .main-headers-col-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   body main .main-section .main-headers .main-headers-col-1 h1 {
     margin: 21px auto 0px 22px;
     color: #2f3234;
   }
+
   body main .main-section .main-headers .main-headers-col-1 h2 {
     margin: 0px auto 0px 22px;
   }
+
   body main .main-section .main-headers .main-headers-col-1 .count-number {
     margin: 0px auto 16px 22px;
   }
+
   body main .main-section .main-headers .main-headers-col-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   body main .main-section .main-headers .main-headers-col-2 h2 {
     font-size: 26px;
   }
+
   body main .main-section .main-headers .main-headers-col-2 h3 {
     margin: 22px 20px 0px auto;
   }
+
   body main .main-section .main-headers .main-headers-col-2 .account-founds {
     margin-right: 22px;
   }
+
   body main .main-section .main-headers .main-headers-col-2 .account-founds .account {
     font-size: 25px;
   }
+
   body main .main-section .main-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     margin: 16px auto 24px 20px;
   }
+
   body main .main-section .main-buttons .new-paymant,
   body main .main-section .main-buttons .history {
     width: 210px;
     height: 50px;
   }
+
   body main .main-section .main-buttons .new-paymant {
     margin: 0px 21px 0px 0px;
   }
+
   body main .main-section .main-buttons .history {
     margin: 0px;
   }
+
   body main .main-section .first-line {
     display: none;
   }
+
   body main .main-section .transaction {
     height: 15px;
     margin: 17.5px 23.5px 23.5px 33px;
   }
+
   body main .main-section .transaction .date-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
+
   body main .main-section .transaction .date-box .data-arrow {
     display: none;
   }
+
   body main .main-section .transaction .name-box {
     margin-top: -8px;
     height: 30px;
     -webkit-transform: translateX(-77px);
-            transform: translateX(-77px);
+    transform: translateX(-77px);
     margin-left: 0px;
   }
+
   body main .main-section .transaction .name-box .subscribe-transaction {
     font-size: 12px;
   }
+
   body main .main-section .transaction .data-arrow-tablet {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -556,8 +639,9 @@ body main .main-section .more {
     width: 13px;
     height: 13px;
     -webkit-transform: translateX(-41px);
-            transform: translateX(-41px);
+    transform: translateX(-41px);
   }
+
   body main .main-section .transaction .category-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -567,16 +651,19 @@ body main .main-section .more {
     font-size: 10px;
     letter-spacing: .12px;
     -webkit-transform: translateX(-21px);
-            transform: translateX(-21px);
+    transform: translateX(-21px);
   }
+
   body main .main-section .line {
     width: 100%;
     margin: 0px;
   }
+
   body main .main-section .more {
     margin: 27.5px auto 35px 32px;
   }
 }
+
 aside {
   display: none;
 }
@@ -588,41 +675,48 @@ aside {
     grid-column-gap: 40px;
     padding: 0px 75.5px;
   }
+
   body main .main-section {
     margin: 39px 0px 232.5px 0px;
     grid-column: 1 / 9;
   }
+
   body main aside {
     display: table-column-group;
     grid-column: 9 / -1;
   }
+
   body main aside .free-founds-box {
     margin: 39px 0px 41px 0px;
     height: 209.7px;
     background-color: #4c92e0;
     color: #fff;
   }
+
   body main aside .free-founds-box h4 {
     font-size: 22px;
     margin: 0px auto 21px 20px;
     padding-top: 18.8px;
   }
+
   body main aside .free-founds-box .free-founds-discription {
     font-size: 14px;
     width: auto;
     margin: 0px 72px 22px 20px;
     height: 60px;
   }
+
   body main aside .free-founds-box .free-founds-bottom-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 15px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 42px 27px 25.8px 20px;
   }
+
   body main aside .free-founds-box .free-founds-bottom-row .call {
     width: 117px;
     height: 17px;
@@ -633,11 +727,13 @@ aside {
     text-transform: uppercase;
     margin: 0px;
   }
+
   body main aside .free-founds-box .free-founds-bottom-row .dots-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   body main aside .free-founds-box .free-founds-bottom-row .dot {
     width: 11px;
     height: 11px;
@@ -645,15 +741,18 @@ aside {
     background-color: #fff;
     margin-left: 11px;
   }
+
   body main aside .free-founds-box .free-founds-bottom-row .dot:first-child {
     border: solid 2px #fff;
     color: black;
     background-color: #4c92e0;
   }
+
   body main aside .analize-box {
     background-color: #fff;
     height: 385px;
   }
+
   body main aside .analize-box h5 {
     font-size: 16px;
     color: #000;
@@ -663,6 +762,7 @@ aside {
     font-weight: 900;
   }
 }
+
 footer {
   width: 100%;
   height: 330px;
@@ -670,39 +770,43 @@ footer {
   position: relative;
   border-top: 1px solid #979797;
 }
+
 footer .footer-links-desktop-row .footer-links-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none;
   height: 120px;
   margin-top: 35px;
 }
+
 footer .footer-links-desktop-row .footer-links-box .footer-link-item a {
   color: #858585;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
 }
+
 footer .footer-links-desktop-row .footer-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 28px;
   font-size: 14px;
   height: 17px;
   color: #858585;
 }
+
 footer .footer-content {
   margin: 28px 15px 25px 15px;
   font-size: 9px;
@@ -715,70 +819,82 @@ footer .footer-content {
   footer {
     height: 140px;
   }
+
   footer .footer-links-desktop-row .tablet-footer-line {
     width: 100%;
     height: 0.5px;
     background-color: #979797;
   }
+
   footer .footer-links-desktop-row .footer-links-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     margin: 28.5px 30px 15px 30px;
     height: 17px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   footer .footer-links-desktop-row .footer-links-box .footer-link-item:first-child {
     margin-top: 0px;
   }
+
   footer .footer-links-desktop-row .footer-copyright {
     margin-top: 0px;
   }
+
   footer .footer-content {
     margin: 15px 30px 13px 30px;
   }
 }
+
 @media (min-width: 1024px) {
   footer {
     height: 140px;
   }
+
   footer .footer-links-desktop-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 30px 66px 38px 66px;
     height: 17px;
     font-size: 14px;
   }
+
   footer .footer-links-desktop-row .tablet-footer-line {
     display: none;
   }
+
   footer .footer-links-desktop-row .footer-links-box {
     margin: 0px;
     width: 630px;
   }
+
   footer .footer-links-desktop-row .footer-copyright {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   footer .footer-content {
     margin: 0px 100px 33px 100px;
   }
 }
+
 .transfer-form-popup {
   width: 100%;
   z-index: 1;
@@ -788,42 +904,47 @@ footer .footer-content {
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
+
 .transfer-form-popup .header-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #f4f4f4;
   height: 60px;
   width: 100%;
 }
+
 .transfer-form-popup .header-form h6 {
   font-size: 16px;
   font-weight: 900;
   height: 19px;
   margin-left: 20px;
 }
+
 .transfer-form-popup .header-form .close-popup-transfer-form {
   width: 18.2px;
   height: 18.2px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-right: 20px;
 }
+
 .transfer-form-popup #transfer-form .main-section-transfer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
+
 .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box {
   width: auto;
   margin: 9px 20px 0px 20px;
@@ -835,23 +956,27 @@ footer .footer-content {
   height: 50px;
   cursor: pointer;
 }
+
 .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box .account-box-przekorzystne {
   margin: 0px auto 0px 0px;
   width: 100%;
 }
+
 .transfer-form-popup #transfer-form .main-section-transfer-form .arrow-account {
   cursor: pointer;
   width: 21px;
   height: 11px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 21px 20px 19px 21px;
 }
+
 .transfer-form-popup #transfer-form .main-section-transfer-form .main-account {
   font-size: 18px;
   font-weight: 900;
   margin: 7px auto 0px 21px;
 }
+
 .transfer-form-popup #transfer-form .main-section-transfer-form .amount-account {
   margin: 0px auto 8px 21px;
   font-size: 11px;
@@ -859,13 +984,16 @@ footer .footer-content {
   color: #858585;
   height: 13px;
 }
+
 .transfer-form-popup #transfer-form .select-account-box-2 {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
+
 .transfer-form-popup #transfer-form .select-account-box-2 .account-box-current {
   width: 100%;
 }
+
 .transfer-form-popup #transfer-form .account-number-box {
   width: auto;
   margin: 9px 20px 0px 20px;
@@ -877,6 +1005,7 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
+
 .transfer-form-popup #transfer-form .account-number-box .account-number {
   width: 100%;
   margin: 13px 21px 18px 21px;
@@ -889,6 +1018,7 @@ footer .footer-content {
   color: #858585;
   height: 22px;
 }
+
 .transfer-form-popup #transfer-form .transfer-error-alert {
   width: auto;
   height: 50px;
@@ -903,9 +1033,11 @@ footer .footer-content {
   margin: 0px 20px 0px 20px;
   font-size: 16px;
 }
+
 .transfer-form-popup #transfer-form .address-desktop-box {
   display: none;
 }
+
 .transfer-form-popup #transfer-form .alert-empty-account-number {
   width: auto;
   margin: 0px 20px 0px 20px;
@@ -918,9 +1050,10 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 .transfer-form-popup #transfer-form .alert-empty-account-number .enter-account-number {
   margin: 10px auto 11px 21px;
   height: 19px;
@@ -932,6 +1065,7 @@ footer .footer-content {
   letter-spacing: normal;
   color: #fff;
 }
+
 .transfer-form-popup #transfer-form .transfer-amount-box {
   width: auto;
   margin: 9px 20px 0px 20px;
@@ -942,6 +1076,7 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
+
 .transfer-form-popup #transfer-form .transfer-amount-box .transfer-amount {
   width: 100%;
   margin: 13px 21px 18px 21px;
@@ -951,6 +1086,7 @@ footer .footer-content {
   color: #2f3234;
   border: 0px;
 }
+
 .transfer-form-popup #transfer-form .transfer-amount-box .currency-transfer-amount {
   margin: 13px 21px 18px auto;
   font-size: 16px;
@@ -960,6 +1096,7 @@ footer .footer-content {
   line-height: normal;
   letter-spacing: normal;
 }
+
 .transfer-form-popup #transfer-form .address-recipient-box {
   width: auto;
   margin: 9px 20px 0px 20px;
@@ -970,6 +1107,7 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
+
 .transfer-form-popup #transfer-form .address-recipient-box .address-recipient {
   width: 97%;
   height: 19px;
@@ -983,6 +1121,7 @@ footer .footer-content {
   border: 0px;
   margin: 13px 21px 18px 21px;
 }
+
 .transfer-form-popup #transfer-form .address-recipient-box #address-recipient {
   height: 19px;
   font-size: 16px;
@@ -995,6 +1134,7 @@ footer .footer-content {
   margin: 13px 21px 18px 21px;
   width: 94%;
 }
+
 .transfer-form-popup #transfer-form .title-transfer-box {
   width: auto;
   margin: 9px 20px 0px 20px;
@@ -1005,6 +1145,7 @@ footer .footer-content {
   display: flex;
   height: 50px;
 }
+
 .transfer-form-popup #transfer-form .title-transfer-box .title-transfer {
   height: 19px;
   font-size: 16px;
@@ -1017,9 +1158,11 @@ footer .footer-content {
   margin: 13px 21px 18px 21px;
   width: 100%;
 }
+
 .transfer-form-popup #transfer-form .amount-and-title-desktop-box {
   display: none;
 }
+
 .transfer-form-popup #transfer-form label {
   text-transform: uppercase;
   -webkit-text-stroke: 1px #979797;
@@ -1028,10 +1171,12 @@ footer .footer-content {
   color: #2f3234;
   margin: 30px auto 9px 20px;
 }
+
 .transfer-form-popup .save-order-box {
   margin: 30px 20px 0px 20px;
   width: auto;
 }
+
 .transfer-form-popup .save-order-box .save-order {
   position: absolute;
   opacity: 0;
@@ -1039,9 +1184,11 @@ footer .footer-content {
   height: 0;
   width: 0;
 }
+
 .transfer-form-popup .save-order-box .save_order_label {
   cursor: pointer;
 }
+
 .transfer-form-popup .save-order-box .checkmark {
   width: 24px;
   height: 24px;
@@ -1051,18 +1198,22 @@ footer .footer-content {
   position: absolute;
   cursor: pointer;
 }
+
 .transfer-form-popup .save-order-box .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.transfer-form-popup .save-order-box .save-order:checked ~ .checkmark {
+
+.transfer-form-popup .save-order-box .save-order:checked~.checkmark {
   background-color: #d71920;
 }
-.transfer-form-popup .save-order-box .save-order:checked ~ .checkmark:after {
+
+.transfer-form-popup .save-order-box .save-order:checked~.checkmark:after {
   display: block;
 }
-.transfer-form-popup .save-order-box .save-order:checked ~ .checkmark:after {
+
+.transfer-form-popup .save-order-box .save-order:checked~.checkmark:after {
   left: 4px;
   top: 3px;
   width: 11px;
@@ -1072,6 +1223,7 @@ footer .footer-content {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .transfer-form-popup .save-order-box label[for=save-order] {
   margin-left: 48px !important;
   font-size: 14px;
@@ -1082,16 +1234,18 @@ footer .footer-content {
   letter-spacing: normal;
   color: #2f3234;
 }
+
 .transfer-form-popup .order-name-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0px 20px 185px 20px;
 }
+
 .transfer-form-popup .order-name-container label[for=order-name] {
   text-transform: uppercase;
   -webkit-text-stroke: 1px #979797;
@@ -1100,6 +1254,7 @@ footer .footer-content {
   color: #2f3234;
   margin: 19px auto 9px 0px;
 }
+
 .transfer-form-popup .order-name-container .order-name-box {
   width: 100%;
   margin: 9px 0px 0px 0px;
@@ -1109,6 +1264,7 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
 }
+
 .transfer-form-popup .order-name-container .order-name-box .order-name {
   font-size: 16px;
   font-weight: normal;
@@ -1120,19 +1276,21 @@ footer .footer-content {
   width: 100%;
   margin: 13px 21px 18px 21px;
 }
+
 .transfer-form-popup .submit-button-container {
   width: 100%;
   height: 104px;
   -webkit-box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
   background-color: #f4f4f4;
 }
+
 .transfer-form-popup .submit-button-container .next-button-box {
   cursor: pointer;
   width: 104px;
   height: 104px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   background-color: #d71920;
   border-radius: 50%;
   display: -webkit-box;
@@ -1140,21 +1298,23 @@ footer .footer-content {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: auto;
   z-index: 1;
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
   -webkit-transform: translateY(-26px);
-          transform: translateY(-26px);
+  transform: translateY(-26px);
 }
+
 .transfer-form-popup .submit-button-container .next-button-box .next-arrow {
   width: 20px;
   height: 16px;
   color: #fff;
   margin: 27px 40px 5px 44px;
 }
+
 .transfer-form-popup .submit-button-container .next-button-box .next {
   text-transform: uppercase;
   margin: 0px 27px 25px 33px;
@@ -1175,9 +1335,11 @@ footer .footer-content {
   .transfer-form-popup {
     top: 20px;
   }
+
   .transfer-form-popup .header-form {
     height: 80px;
   }
+
   .transfer-form-popup .header-form h6 {
     font-size: 26px;
     font-size: 26px;
@@ -1189,6 +1351,7 @@ footer .footer-content {
     letter-spacing: normal;
     height: 32px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1196,12 +1359,15 @@ footer .footer-content {
     margin-left: 19px;
     margin-right: 19px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box {
     grid-column: 1/5;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box {
     margin: 9px 0px 0px 0px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-desktop-box .transfer-amount-box .transfer-amount-desktop {
     width: 100%;
     margin: 13px 21px 18px 21px;
@@ -1211,42 +1377,53 @@ footer .footer-content {
     color: #2f3234;
     border: 0px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount],
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .transfer-amount-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .amount-transfer-alert {
     margin: 0px !important;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box label[for=transfer-amount] {
     margin: 30px auto 9px 0px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box {
     padding-top: 24px;
     width: 100%;
     margin-right: 20px;
     grid-column: 5/-1;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .transfer-amount {
     width: 100%;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box label[for=title-transfer] {
     margin: 30px auto 9px 0px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box {
     margin: 9px 0px 0px 0px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box .title-transfer-alert {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box .title-transfer-alert {
     display: none;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box + .transfer-error-alert {
+
+  .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box+.transfer-error-alert {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-box .title-transfer-desktop {
     height: 19px;
     font-size: 16px;
@@ -1259,74 +1436,94 @@ footer .footer-content {
     margin: 13px 21px 18px 21px;
     width: 100%;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .amount-and-title-desktop-box .title-desktop-box .title-transfer-alert {
     margin: 0px !important;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-tablet,
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-recipient-tablet-box {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form label[for=transfer-amount],
   .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box {
     display: none;
   }
-  .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box + .trasnfer-error-alert {
+
+  .transfer-form-popup #transfer-form .main-section-transfer-form .transfer-amount-box+.trasnfer-error-alert {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .error-alert-transfer-amount {
     display: none !important;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box {
     display: block;
     margin-top: 30px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .transfer-error-alert {
     display: none !important;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .address-recipient-box {
     display: block;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .address-desktop-box .alert-recipient-box {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form .order-name-container .order-name-box {
     width: 31.60%;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
     margin-right: 0px;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
     width: 230px;
     height: 50px;
     border-radius: 4px;
     -webkit-transform: translateY(26px);
-            transform: translateY(26px);
+    transform: translateY(26px);
     margin-right: 20px !important;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
   }
-  .transfer-form-popup #transfer-form .address-recipient-tablet-box + label[for=title-transfer] {
+
+  .transfer-form-popup #transfer-form .address-recipient-tablet-box+label[for=title-transfer] {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .title-transfer-mobile {
     display: none !important;
   }
-  .transfer-form-popup #transfer-form .title-transfer-mobile + .title-transfer-alert {
+
+  .transfer-form-popup #transfer-form .title-transfer-mobile+.title-transfer-alert {
     display: none !important;
   }
 }
+
 @media (min-width: 1024px) {
   .transfer-form-popup .header-form {
     padding-left: 265px;
   }
+
   .transfer-form-popup .header-form h6 {
     margin-left: 0px;
   }
+
   .transfer-form-popup #transfer-form .main-section-transfer-form label[for=select-account],
   .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box,
   .transfer-form-popup #transfer-form .main-section-transfer-form .select-account-box-2,
@@ -1341,39 +1538,48 @@ footer .footer-content {
     margin-left: 266px;
     margin-right: 266px;
   }
+
   .transfer-form-popup #transfer-form .save-order-box {
     margin-left: 266px;
     margin-right: 266px;
   }
+
   .transfer-form-popup #transfer-form .order-name-container {
     margin: 0px 266px 185px 266px;
   }
+
   .transfer-form-popup #transfer-form .address-desktop-box label[for=address-recipient],
   .transfer-form-popup #transfer-form .address-desktop-box .address-recipient-box {
     margin: 9px auto 0px 0px;
   }
+
   .transfer-form-popup #transfer-form .transfer-error-alert {
     margin: 0px 266px 0px 266px;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container {
     margin-left: 0px;
     margin-right: 0px;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box {
     width: 230px;
     height: 50px;
     border-radius: 4px;
     -webkit-transform: translateY(26px);
-            transform: translateY(26px);
+    transform: translateY(26px);
     margin-right: 266px !important;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next-arrow {
     display: none;
   }
+
   .transfer-form-popup #transfer-form .submit-button-container .next-button-box .next {
     margin: 17px 93px;
   }
 }
+
 .none {
   display: none !important;
 }
@@ -1391,26 +1597,29 @@ footer .footer-content {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
+
 #transfer-success .header-transfer-success {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 21px 17px 20px 20px;
 }
+
 #transfer-success .header-transfer-success .transfer-success-check {
   width: 20px;
   height: 14px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  transform: translateY(3px);
 }
+
 #transfer-success .header-transfer-success .transfer-realized-header {
   height: 19px;
   font-size: 16px;
@@ -1420,6 +1629,7 @@ footer .footer-content {
   line-height: normal;
   color: #fff;
 }
+
 #transfer-success .header-transfer-success .transfer-realized-box-oval {
   font-family: LatoLatin;
   font-size: 16px;
@@ -1429,15 +1639,17 @@ footer .footer-content {
   line-height: normal;
   color: #fff;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
 }
+
 #transfer-success .header-transfer-success .transfer-realized-box-oval .cross-white {
   width: 20px;
   height: 14px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 7px;
 }
+
 #transfer-success .header-transfer-success .transfer-realized-box-oval {
   width: 27px;
   height: 27px;
@@ -1447,12 +1659,13 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 #transfer-success .body-transfer-success .sender-reciver-row .sender-col .sender {
   height: 13px;
   font-size: 11px;
@@ -1465,6 +1678,7 @@ footer .footer-content {
   text-transform: uppercase;
   margin: 0px 239px 0px 55px;
 }
+
 #transfer-success .body-transfer-success .sender-reciver-row .sender-col .my-account {
   margin: 4px 91px 4px 55px;
   font-size: 16px;
@@ -1476,6 +1690,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
+
 #transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number-sender {
   margin: 0px 87px 20px 55px;
   font-size: 11px;
@@ -1486,6 +1701,7 @@ footer .footer-content {
   letter-spacing: 1.1px;
   color: #fff;
 }
+
 #transfer-success .body-transfer-success .sender-reciver-row .receiver-col .recipient {
   margin: 0px 238px 4px 55px;
   font-size: 11px;
@@ -1497,6 +1713,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
+
 #transfer-success .body-transfer-success .sender-reciver-row .receiver-col .name-reciver {
   margin: 0px 151px 4px 55px;
   font-size: 16px;
@@ -1508,6 +1725,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
+
 #transfer-success .body-transfer-success .sender-reciver-row .receiver-col .account-reciver {
   font-size: 11px;
   font-weight: normal;
@@ -1518,6 +1736,7 @@ footer .footer-content {
   color: #fff;
   margin: 0px 87px 20px 55px;
 }
+
 #transfer-success .body-transfer-success .amount {
   margin: 0px 259px 4px 55px;
   font-size: 11px;
@@ -1529,6 +1748,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
+
 #transfer-success .body-transfer-success .amount-value {
   margin: 0px 184px 4px 55px;
   font-size: 16px;
@@ -1540,6 +1760,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
+
 #transfer-success .body-transfer-success .saldo {
   margin: 0px 75px 20px 55px;
   font-size: 11px;
@@ -1551,6 +1772,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
+
 #transfer-success .body-transfer-success .pdf-confirmation {
   margin: 0px 121px 21px 54px;
   width: 186px;
@@ -1569,13 +1791,14 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
 }
+
 #transfer-success .pdf-confirmation-desktop {
   display: none;
 }
@@ -1589,26 +1812,29 @@ footer .footer-content {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
+
 #transfer-failed .header-transfer-failed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 21px 17px 20px 20px;
 }
+
 #transfer-failed .header-transfer-failed .transfer-failed-check {
   width: 20px;
   height: 14px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  transform: translateY(3px);
 }
+
 #transfer-failed .header-transfer-failed .transfer-realized-header {
   height: 19px;
   font-size: 16px;
@@ -1619,6 +1845,7 @@ footer .footer-content {
   letter-spacing: normal;
   color: #fff;
 }
+
 #transfer-failed .header-transfer-failed .transfer-realized-box-oval {
   font-family: LatoLatin;
   font-size: 16px;
@@ -1628,15 +1855,17 @@ footer .footer-content {
   line-height: normal;
   color: #fff;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
 }
+
 #transfer-failed .header-transfer-failed .transfer-realized-box-oval .cross-white {
   width: 20px;
   height: 14px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 7px;
 }
+
 #transfer-failed .header-transfer-failed .transfer-realized-box-oval {
   width: 27px;
   height: 27px;
@@ -1646,12 +1875,13 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 #transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .sender {
   height: 13px;
   font-size: 11px;
@@ -1664,6 +1894,7 @@ footer .footer-content {
   text-transform: uppercase;
   margin: 0px 239px 0px 55px;
 }
+
 #transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .my-account {
   margin: 4px 91px 4px 55px;
   font-size: 16px;
@@ -1675,6 +1906,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
+
 #transfer-failed .body-transfer-failed .sender-reciver-row .sender-col .acc-number-sender {
   margin: 0px 87px 20px 55px;
   font-size: 11px;
@@ -1685,6 +1917,7 @@ footer .footer-content {
   letter-spacing: 1.1px;
   color: #fff;
 }
+
 #transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .recipient {
   margin: 0px 238px 4px 55px;
   font-size: 11px;
@@ -1696,6 +1929,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
+
 #transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .name-reciver {
   margin: 0px 151px 4px 55px;
   font-size: 16px;
@@ -1707,6 +1941,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
+
 #transfer-failed .body-transfer-failed .sender-reciver-row .receiver-col .account-reciver {
   font-size: 11px;
   font-weight: normal;
@@ -1717,6 +1952,7 @@ footer .footer-content {
   color: #fff;
   margin: 0px 87px 20px 55px;
 }
+
 #transfer-failed .body-transfer-failed .amount {
   margin: 0px 259px 4px 55px;
   font-size: 11px;
@@ -1728,6 +1964,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
+
 #transfer-failed .body-transfer-failed .amount-value {
   margin: 0px 184px 4px 55px;
   font-size: 16px;
@@ -1739,6 +1976,7 @@ footer .footer-content {
   letter-spacing: 1px;
   color: #fff;
 }
+
 #transfer-failed .body-transfer-failed .saldo {
   margin: 0px 75px 20px 55px;
   font-size: 11px;
@@ -1750,6 +1988,7 @@ footer .footer-content {
   color: #fff;
   text-transform: uppercase;
 }
+
 #transfer-failed .body-transfer-failed .pdf-confirmation {
   margin: 0px 121px 21px 54px;
   width: 186px;
@@ -1768,13 +2007,14 @@ footer .footer-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
 }
+
 #transfer-failed .pdf-confirmation-desktop {
   display: none;
 }
@@ -1792,35 +2032,42 @@ footer .footer-content {
     z-index: 1;
     top: 56px;
   }
+
   #transfer-success .header-transfer-success {
     margin-left: 0px;
     -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    -ms-flex-pack: normal;
+    justify-content: normal;
   }
+
   #transfer-success .header-transfer-success .transfer-realized-header {
     margin-left: 15px;
   }
+
   #transfer-success .header-transfer-success .transfer-realized-box-oval {
     position: absolute;
     right: 22px;
   }
+
   #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-left: 55px;
   }
+
   #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .sender {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
   }
+
   #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .my-account {
     margin: 4px 91px 4px 0px;
   }
+
   #transfer-success .header-transfer-success .body-transfer-success .sender-reciver-row .sender-col .acc-number-sender {
     margin: 4px 91px 4px 0px;
   }
@@ -1828,33 +2075,39 @@ footer .footer-content {
   .header-transfer-failed {
     margin-left: 0px;
     -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    -ms-flex-pack: normal;
+    justify-content: normal;
   }
+
   .header-transfer-failed .transfer-realized-header {
     margin-left: 15px;
   }
+
   .header-transfer-failed .transfer-realized-box-oval {
     position: absolute;
     right: 22px;
   }
+
   .header-transfer-failed .body-transfer-success .sender-reciver-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-left: 55px;
   }
+
   .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .sender {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
   }
+
   .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .my-account {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
   }
+
   .header-transfer-failed .body-transfer-success .sender-reciver-row .sender-col .acc-number-sender {
     margin: 4px 91px 4px 0px;
     text-transform: uppercase;
@@ -1867,25 +2120,30 @@ footer .footer-content {
     top: 112px;
   }
 }
+
 @media (min-width: 1024px) {
   #transfer-success {
     height: 204px;
     margin: 39px 75px auto 75px;
     width: 88.89%;
   }
+
   #transfer-success .body-transfer-success {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   #transfer-success .body-transfer-success .sender-reciver-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   #transfer-success .body-transfer-success .amount-col .pdf-confirmation {
     display: none;
   }
+
   #transfer-success .pdf-confirmation-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1904,21 +2162,22 @@ footer .footer-content {
     color: #fff;
     text-transform: uppercase;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     cursor: pointer;
   }
 }
+
 .appear {
   display: block;
 }
 
 .transfer__finish--close {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   color: white;
   display: block;
@@ -1944,7 +2203,7 @@ footer .footer-content {
 
 .transfer__finish--close {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   color: white;
   display: block;

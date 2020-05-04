@@ -360,6 +360,7 @@ aside {
                         height: 15px;
                         justify-content: space-between;
                         margin: 42px 27px 25.8px 20px;
+
                         .call {
                             width: 117px;
                             height: 17px;
@@ -370,20 +371,22 @@ aside {
                             margin: 0px;
 
                         }
-                        .dots-row{
-                            display:flex;
-                            }
-                            .dot{
-                                width: 11px;
-                                height: 11px;
-                                border-radius: 50%;
-                                background-color: $white;
-                                margin-left: 11px;
 
-                                &:first-child {
-                                    border: solid 2px $white;
-                                    color: black;
-                                    background-color: #4c92e0;
+                        .dots-row {
+                            display: flex;
+                        }
+
+                        .dot {
+                            width: 11px;
+                            height: 11px;
+                            border-radius: 50%;
+                            background-color: $white;
+                            margin-left: 11px;
+
+                            &:first-child {
+                                border: solid 2px $white;
+                                color: black;
+                                background-color: #4c92e0;
                             }
                         }
                     }

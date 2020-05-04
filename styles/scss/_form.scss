@@ -30,7 +30,6 @@
     }
 
     #transfer-form {
-
         .main-section-transfer-form {
             display: flex;
             flex-direction: column;
@@ -49,6 +48,7 @@
                     width: 100%;
                 }
             }
+
             .arrow-account {
                 cursor: pointer;
                 width: 21px;
@@ -74,7 +74,7 @@
 
         .select-account-box-2 {
             transform: translateY(-10px);
-            
+
             .account-box-current {
                 width: 100%;
             }
@@ -243,7 +243,8 @@
             height: 0;
             width: 0;
         }
-        .save_order_label{
+
+        .save_order_label {
             cursor: pointer;
         }
 
@@ -367,7 +368,6 @@
     }
 }
 
-
 @media (min-width: $tablet-width) {
     .transfer-form-popup {
         top: 20px;
@@ -430,7 +430,6 @@
                         width: 100%;
                         margin-right: 20px;
                         grid-column: 5/-1;
-
 
                         .transfer-amount {
                             width: 100%;
@@ -515,27 +514,27 @@
                     }
                 }
             }
-                .submit-button-container {
-                    margin-left: 0px;
-                    margin-right: 0px;
 
-                    .next-button-box {
-                        width: 230px;
-                        height: 50px;
-                        border-radius: 4px;
-                        transform: translateY(26px);
-                        margin-right: 20px !important;
+            .submit-button-container {
+                margin-left: 0px;
+                margin-right: 0px;
 
-                        .next-arrow {
-                            display: none;
-                        }
+                .next-button-box {
+                    width: 230px;
+                    height: 50px;
+                    border-radius: 4px;
+                    transform: translateY(26px);
+                    margin-right: 20px !important;
 
-                        .next {
-                            margin: 17px 93px;
-                        }
+                    .next-arrow {
+                        display: none;
+                    }
+
+                    .next {
+                        margin: 17px 93px;
                     }
                 }
-            
+            }
 
             .address-recipient-tablet-box {
                 +label[for=title-transfer] {
@@ -558,6 +557,7 @@
     .transfer-form-popup {
         .header-form {
             padding-left: 265px;
+
             h6 {
                 margin-left: 0px;
             }
@@ -565,6 +565,7 @@
 
         #transfer-form {
             .main-section-transfer-form {
+
                 label[for=select-account],
                 .select-account-box,
                 .select-account-box-2,
@@ -575,33 +576,32 @@
                 label[for=title-transfer],
                 .title-transfer-box,
                 .title-transfer,
-                .amount-and-title-desktop-box
-                {
+                .amount-and-title-desktop-box {
                     margin-left: 266px;
                     margin-right: 266px;
                 }
             }
-                .save-order-box {
-                    margin-left: 266px;
-                    margin-right: 266px;
-                }
 
-                .order-name-container {
-                    margin: 0px 266px 185px 266px;
-                }
+            .save-order-box {
+                margin-left: 266px;
+                margin-right: 266px;
+            }
 
-                .address-desktop-box {
+            .order-name-container {
+                margin: 0px 266px 185px 266px;
+            }
 
-                    label[for=address-recipient],
-                    .address-recipient-box {
-                        margin: 9px auto 0px 0px;
-                    }
-                }
+            .address-desktop-box {
 
-                .transfer-error-alert {
-                    margin: 0px 266px 0px 266px;
+                label[for=address-recipient],
+                .address-recipient-box {
+                    margin: 9px auto 0px 0px;
                 }
-           
+            }
+
+            .transfer-error-alert {
+                margin: 0px 266px 0px 266px;
+            }
 
             .submit-button-container {
                 margin-left: 0px;
