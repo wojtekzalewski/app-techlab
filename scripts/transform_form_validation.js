@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const transferRetryBtn = document.querySelector('.transfer-retry-btn');
     const accountType = document.querySelector('.main-account');
     const mainAcc = document.querySelector('.main-acc');
-
     secondAccount.classList.add('none');
     closePayment.addEventListener("click", () => {
         transferForm.classList.add('none');
@@ -28,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     closeSelectAccount.addEventListener("click", () => {
         secondAccount.classList.toggle('none');
     })
-
     przekorzystneAccount.addEventListener("click", () => {
         if (accountType.classList.contains('selected_acc')) {
             secondAccount.classList.add('none');
@@ -37,16 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
             secondAccount.classList.toggle('none');
         }
     })
-
     secondAccount.addEventListener("click", () => {
         mainAcc.classList.remove('selected_acc');
         przekorzystneAccMain.classList.toggle('none');
         arrowAccCurent.classList.toggle('none');
         przekorzystneAccount.classList.remove('selected_acc');
         secondAccountInner.classList.add('selected_acc');
-
     })
-
     saveOrderInput.checked = true;
     ArraySaveOrder.forEach((element) => {
         element.addEventListener("click", () => {
@@ -63,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
     closePopupFailed.addEventListener("click", () => {
         transferFailed.classList.add('none');
     })
-
     newPaymentBtn.addEventListener("click", () => {
         transferForm.classList.contains('none') && transferForm.classList.remove('none');
         if (viewPortWidth < 768) {
@@ -76,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
         transferFailed.classList.add('none');
 
     })
-
     class TransferMobile {
         constructor() {
             this.accountType = document.querySelector('.main-account');
@@ -114,13 +107,11 @@ document.addEventListener("DOMContentLoaded", () => {
             this.transferSubmit.addEventListener('click', () =>
                 this.submitTransferForm());
         }
-
         validationEvent() {
             for (let i = 0; i < this.validationElementTable.length; i++) {
                 this.validationElementTable[i].element.addEventListener('keyup', () => this.validateField(this.validationElementTable[i].element, this.validationElementTable[i].regexp, i));
             }
         }
-
         getValue() {
             this.data = {
                 accountType: this.accountType.innerHTML,
@@ -133,11 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             return this.data;
         }
-
         validateFields() {
             return this.validationElementTable.every((test) => test.status === true);
         }
-
         validateField(obj, regexp, index) {
             if (regexp.test(obj.value)) {
                 obj.parentElement.nextElementSibling.classList.add('none');
@@ -149,21 +138,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 return false;
             }
         }
-
         closeForm() {
             this.transferFinish.classList.add('none');
         }
-
         formSuccess() {
             transferForm.classList.add('none');
             transferSuccess.classList.remove('none');
         }
-
         formFail() {
             transferForm.classList.add('none');
             transferFailed.classList.remove('none');
         }
-
         async submitTransferForm() {
             if (this.validateFields()) {
                 this.getValue();
@@ -186,7 +171,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error('ERROR - pola walidacji formularza');
             }
         }
-
         async sendData(data) {
             const header = {
                 method: 'POST',
@@ -201,20 +185,15 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(response);
             return await response;
         }
-
         fillFinishForm(obj) {
             let selectedAccount = document.querySelector('.selected_acc');
-            // let filledAccountSender = document.querySelector('.acc-number-sender');
-            // let filledAccountReciver = document.querySelector('.account-reciver');
             let filledAmountValue = document.querySelector('.amount-value');
             let filledNameReciver = document.querySelector('.name-reciver');
             selectedAccount.innerText = obj.accountType;
-            // filledAccountReciver.innerText = obj.numberAccount;
             filledAmountValue.innerHTML = obj.transferAmount;
             filledNameReciver.innerText = obj.transferType;
         }
     }
-
     class TransferDesktop {
         constructor() {
             this.accountType = document.querySelector('.main-account');
@@ -259,7 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 this.validationElementTableDesktop[i].element.addEventListener('keyup', () => this.validateFieldDesktop(this.validationElementTableDesktop[i].element, this.validationElementTableDesktop[i].regexp, i));
             }
         }
-
         getValueDesktop() {
             this.data = {
                 accountType: this.accountType.innerHTML,
@@ -272,11 +250,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             return this.data;
         }
-
         validateFieldsDesktop() {
             return this.validationElementTableDesktop.every((test) => test.status === true);
         }
-
         validateFieldDesktop(obj, regexp, index) {
             if (regexp.test(obj.value)) {
                 obj.parentElement.nextElementSibling.classList.add('none');
@@ -288,21 +264,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 return false;
             }
         }
-
         closeForm() {
             this.transferFinish.classList.add('none');
         }
-
         formSuccess() {
             transferForm.classList.add('none');
             transferSuccess.classList.remove('none');
         }
-
         formFail() {
             transferForm.classList.add('none');
             transferFailed.classList.remove('none');
         }
-
         async submitTransferForm() {
             if (this.validateFieldsDesktop()) {
                 this.getValueDesktop();
